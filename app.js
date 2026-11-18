@@ -514,16 +514,27 @@ pace:function(){
  r.oninput=function(){tap();up()};main.querySelectorAll('.pl button').forEach(function(b){b.onclick=function(){r.value=b.getAttribute('data-i');tap();up()}});up();
  $('#go').onclick=function(){tap();next()}},
 imc:function(){
- var c=calc(),a=area(),v=c.imcv,pos=Math.max(2,Math.min(98,(v-12)/38*100));
- var cat=v<18.5?['Abaixo da faixa','Seu IMC está abaixo da faixa. O Evura vai priorizar nutrição e energia, sem foco em déficit.']:v<25?['Faixa saudável','Você está na faixa saudável. É uma boa base para o seu objetivo.']:v<30?['Acima da faixa','Seu IMC está acima da faixa. Pequenas mudanças de rotina já fazem diferença, e o Evura mostra quais.']:['Bem acima da faixa','Seu IMC está bem acima da faixa. O Evura vai priorizar hábitos sustentáveis e organizar dados para levar ao seu médico.'];
- var good=v>=18.5&&v<25;
+ var c=calc(),a=area(),v=c.imcv,cuts=[18.5,25,30];
+ var bands=[
+  ['low','Abaixo da faixa','O Evura vai priorizar nutrição e energia, sem foco em déficit.'],
+  ['ref','Faixa saudável','É uma boa base para o seu objetivo.'],
+  ['over','Acima da faixa','Pequenas mudanças de rotina já fazem diferença, e o Evura mostra quais.'],
+  ['high','Bem acima da faixa','O Evura vai priorizar hábitos sustentáveis e organizar dados para levar ao seu médico.']
+ ];
+ var band=bands[v<cuts[0]?0:v<cuts[1]?1:v<cuts[2]?2:3];
+ function percent(value){return Math.max(0,Math.min(100,(value-12)/38*100)).toFixed(2)+'%'}
+ var stops=cuts.map(percent),labels=cuts.map(function(cut){return String(cut).replace('.',',')});
+ var scaleStyle='--imc-pos:'+percent(v)+';--imc-low:'+stops[0]+';--imc-mid:'+stops[1]+';--imc-high:'+stops[2];
  setCta('<button class="btn" id="go">Continuar</button><p class="fine">'+esc(c.imcNote)+'</p>');
  shell('<span class="tag"><i></i>Seu perfil</span><h2 class="q" style="margin-bottom:12px">Seu ponto de partida, '+esc(nome())+'</h2><div class="chips"><span>'+S.age+' anos</span><span>'+S.h+' cm</span><span>'+S.w+' kg</span></div>'
- +'<div class="imcbox"><small>Índice de Massa Corporal (IMC)</small><b>'+c.imc+'</b><div class="irange"><i style="flex:6.5;background:#6FA8F2"></i><i style="flex:6.5;background:#4DBE8A"></i><i style="flex:5;background:#F2B04D"></i><i style="flex:20;background:#E8685B"></i><em id="imk" style="left:0"></em></div><div class="il"><span>Abaixo</span><span>Saudável</span><span>Sobrepeso</span><span>Obesidade</span></div></div>'
- +'<div class="imsg'+(good?' good':'')+'"><b>'+esc(cat[0])+'</b><p>'+esc(cat[1])+'</p></div>'
+ +'<section class="imcbox imc-'+band[0]+'" aria-labelledby="imc-title">'
+ +'<h3 id="imc-title"><span aria-hidden="true">'+IC('scale')+'</span>Índice de massa corporal (IMC)</h3>'
+ +'<div class="imc-result"><strong>'+c.imc+'</strong><span class="imc-badge">'+band[1]+'</span></div>'
+ +'<div class="imc-scale" style="'+scaleStyle+'" role="img" aria-label="Limites entre as faixas de IMC: '+labels[0]+', '+labels[1]+' e '+labels[2]+'.">'
+ +'<div class="imc-track"><i class="imc-pointer"></i></div><div class="imc-ticks">'+labels.map(function(label,i){return '<span style="left:'+stops[i]+'">'+label+'</span>'}).join('')+'</div></div>'
+ +'<p class="imc-detail">'+band[2]+'</p></section>'
  +'<div class="prow"><i class="ic">'+IC('target')+'</i><div><small>Foco</small><b>'+esc(a.n)+'</b></div></div>'
  +'<div class="prow"><i class="ic">'+IC('scale')+'</i><div><small>Faixa de peso saudável para a sua altura</small><b>'+Math.round(18.5*Math.pow(S.h/100,2))+' a '+Math.round(24.9*Math.pow(S.h/100,2))+' kg</b></div></div>');
- setTimeout(function(){var m=$('#imk');if(m)m.style.left=pos+'%'},300);
  $('#go').onclick=function(){tap();next()}},
 trust:function(){
  setCta('<button class="btn" id="go" disabled>Concordar e continuar</button>');
