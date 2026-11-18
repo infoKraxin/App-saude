@@ -14,7 +14,7 @@
 - 8 áreas: Emagrecimento, Canetas GLP-1, Intestino, Saúde hormonal (homem e mulher), Sono, Energia, Ganho de massa, Longevidade. Saúde hormonal para homem usa `isHM()` + troca de texto (`MX`, `mxDom`) para falar de testosterona/libido, sem "ciclo".
 - Histórico: `persist(id)` (pushState + sessionStorage `evura_q`); `popstate` volta uma tela/fecha sheet; `restore()` só em reload/back_forward.
 - Arte: `art(slug,h)` (3D), `lot(code,h,loop)` (Lottie), `mas(mood,h)` (mascote **Evu**, SVG original: hi/calm/think/cheer).
-- Config no topo: `CFG={pixel,ios,android,tour,users,proof}`. `?tour=0` desliga o carrossel inicial. `proof`/`users` só aparecem se preenchidos com dado REAL.
+- Config no topo: `CFG={pixel,ios,android,tour,users,proof}`. O quiz abre direto na introdução. `?tour=1` abre o carrossel para revisão e `?tour=0` o desativa. `proof`/`users` só aparecem se preenchidos com dado REAL.
 - Tracking: `track(ev,p)` → `dataLayer` + `fbq` (só carrega com `CFG.pixel`). Eventos: `QuizStep` (toda tela), `QuizComplete`, `AppClick`.
 
 ## Regras de conformidade (importantes, anúncio de saúde)
