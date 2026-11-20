@@ -12,7 +12,9 @@ with sync_playwright() as p:
         pg.wait_for_timeout(750);k=pg.evaluate("window.__k")
         if k in('proj','prog'):pg.wait_for_timeout(2600)
         if k=='analysis':
-            pg.wait_for_selector('.rep',timeout=30000)
+            pg.wait_for_selector('.rep,.pjfin',timeout=30000)
+            if pg.locator('.pjfin').count():
+                pg.wait_for_timeout(2500);out['analysis_fim']=pg.evaluate("document.getElementById('phone').innerText");pg.tap('#go')
         txt=pg.evaluate("document.getElementById('phone').innerText")
         out[k]=txt
         m=BAD.findall(txt)

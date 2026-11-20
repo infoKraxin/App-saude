@@ -1,0 +1,704 @@
+## 2_week_success (no fluxo local)
+  2_week_success.family: Viver melhor com a minha família
+  2_week_success.mental_health: Sentir-me melhor comigo mesma
+  2_week_success.sport: Ser melhor em um esporte
+## 2_week_success_gain_muscle (no fluxo local)
+  2_week_success_gain_muscle.energy: Ter mais energia
+  2_week_success_gain_muscle.muscle_gain: Ver ganho de massa muscular
+  2_week_success_gain_muscle.other: Outro
+  2_week_success_gain_muscle.question: 
+  2_week_success_gain_muscle.run: Participar de uma corrida (5k, maratona, etc.)
+  2_week_success_gain_muscle.sleep: Dormir melhor
+## 2_week_success_gain_weight (SÓ servidor)
+  2_week_success_gain_weight.gain_weight: Observar um ganho de peso
+## 2_week_success_lose_weight (no fluxo local)
+  2_week_success_lose_weight.energy: Ter mais energia
+  2_week_success_lose_weight.other: Outro
+  2_week_success_lose_weight.question: Como seria o seu sucesso em 2 semanas?
+  2_week_success_lose_weight.run: Participar de uma corrida (5k, maratona, etc.)
+  2_week_success_lose_weight.sleep: Dormir melhor
+  2_week_success_lose_weight.weight_loss: Perder peso
+## 2_week_success_lose_weight_gain_muscle (no fluxo local)
+  2_week_success_lose_weight_gain_muscle.energy: Ter mais energia
+  2_week_success_lose_weight_gain_muscle.muscle_gain: Ver ganho de massa muscular
+  2_week_success_lose_weight_gain_muscle.other: Outro
+  2_week_success_lose_weight_gain_muscle.question: 
+  2_week_success_lose_weight_gain_muscle.run: Participar de uma corrida (5k, maratona, etc.)
+  2_week_success_lose_weight_gain_muscle.sleep: Dormir melhor
+  2_week_success_lose_weight_gain_muscle.weight_loss: Perder peso
+## 2_week_success_maintain_weight (no fluxo local)
+  2_week_success_maintain_weight.eat_healthy: Comer de forma mais saudável
+  2_week_success_maintain_weight.energy: Ter mais energia
+  2_week_success_maintain_weight.maintain_weight: Manter meu peso
+  2_week_success_maintain_weight.other: Outro
+  2_week_success_maintain_weight.question: 
+  2_week_success_maintain_weight.run: Participar de uma corrida (5k, maratona, etc.)
+  2_week_success_maintain_weight.sleep: Dormir melhor
+## activity (no fluxo local)
+  activity.active_stand: Fico em pé o dia todo
+  activity.question: Durante um dia típico, quanto tempo você passa sentado(a)?
+  activity.sit_stand: Meio a meio
+  activity.sitter: Fico sentado(a) o dia todo
+  activity.sitter_1h: O dia todo, mas caminho pelo menos uma hora
+  activity.stand: Fico em pé quase o dia todo
+## behavioural_goal (SÓ servidor)
+  behavioural_goal.body: Me preocupar menos com meu corpo
+  behavioural_goal.guilt_free: Comer sem sentir culpa
+## category (no fluxo local)
+  category.needs: Suas necessidades
+  category.your_environment: Seu ambiente
+## core_motivation (no fluxo local)
+  core_motivation.family: Para a minha família
+  core_motivation.gain_weight.question: Todos temos motivos diferentes para ganhar peso. Quais são os seus?
+  core_motivation.get_bigger: Ter uma aparência mais musculosa
+  core_motivation.maintain_weight.question: Todos temos motivos diferentes para manter o peso. Quais são os seus?
+  core_motivation.mental_health: Melhorar a minha saúde mental
+  core_motivation.sport: Progredir em um esporte
+## core_motivation_gain_muscle (no fluxo local)
+  core_motivation_gain_muscle.question: Todos temos razões diferentes para ganhar músculo, quais são as suas?
+## core_motivation_gain_muscle_and_lose_fat (no fluxo local)
+  core_motivation_gain_muscle_and_lose_fat.question: Todos temos razões diferentes para ganhar músculo e perder gordura, quais são as suas?Isso nos ajudará a mantê-lo motivado a atingir seu objetivo.
+## core_motivation_healthy (no fluxo local)
+  core_motivation_healthy.question: Todos temos razões diferentes para comer de forma mais saudável, quais são as suas?
+## core_motivation_lose_weight (no fluxo local)
+  core_motivation_lose_weight.be_healthier: Estar mais saudável
+  core_motivation_lose_weight.better_in_body: Sentir-me melhor na minha pele
+  core_motivation_lose_weight.fit_in_old_cloth: Voltar a usar minhas roupas antigas
+  core_motivation_lose_weight.get_in_shape: Voltar à forma
+  core_motivation_lose_weight.live_longer: Aumentar minha expectativa de vida
+  core_motivation_lose_weight.medical: Por razões médicas
+  core_motivation_lose_weight.more_energy: Ter mais energia
+  core_motivation_lose_weight.other: Por outras razões
+  core_motivation_lose_weight.question: Todos temos razões diferentes para perder peso, quais são as suas?
+  core_motivation_lose_weight.social_pressure: A opinião dos outros
+## custom (SÓ servidor)
+  custom.email.final_cta: Criar minha conta
+  custom.email_error.cta: Continuar com esta conta
+  custom.email_error.description: O que você gostaria de fazer?
+  custom.email_error.main_cta: Tentar com outra conta
+  custom.email_error.second_CTA: Conectar
+  custom.email_error.subtitle: Já existe uma conta
+  custom.email_error.title: Opa...
+  custom.email_error_secondary_button: Criar uma nova conta
+  custom.finalSlide.sliderloader.title: Encontramos
+  custom.foodvisor_method.desc: Foodvisor encontra o que funciona melhor para você alcançar seus objetivos pessoais.
+  custom.foodvisor_method.pill1: Peso
+  custom.foodvisor_method.pill2: Programa genérico
+  custom.foodvisor_method.pill3: Seu programa Foodvisor
+  custom.foodvisor_method.title: Vamos encontrar seu programa personalizado
+## dedication (no fluxo local)
+  dedication.little: Um pouco
+  dedication.lot: Muito
+  dedication.mid: Uma duração moderada
+## dedication_gain_muscle_female (no fluxo local)
+  dedication_gain_muscle_female.question: Mulheres de {settings.age} anos que querem ganhar músculo podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_gain_muscle_lose_fat_female (no fluxo local)
+  dedication_gain_muscle_lose_fat_female.question: Mulheres de {settings.age} anos que querem ganhar músculo e perder peso podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_gain_muscle_lose_fat_male (no fluxo local)
+  dedication_gain_muscle_lose_fat_male.question: Homens de {settings.age} anos que querem ganhar músculo e perder peso podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_gain_muscle_lose_fat_other (no fluxo local)
+  dedication_gain_muscle_lose_fat_other.question: Pessoas de {settings.age} anos que querem ganhar músculo e perder peso podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_gain_muscle_male (no fluxo local)
+  dedication_gain_muscle_male.question: Homens de {settings.age} anos que querem ganhar músculo podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_gain_muscle_other (no fluxo local)
+  dedication_gain_muscle_other.question: Pessoas de {settings.age} anos que querem ganhar músculo podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_healthy_female (no fluxo local)
+  dedication_healthy_female.question: Mulheres de {settings.age} anos que querem comer de forma mais saudável podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_healthy_male (no fluxo local)
+  dedication_healthy_male.question: Homens de {settings.age} anos que querem comer de forma mais saudável podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_healthy_other (no fluxo local)
+  dedication_healthy_other.question: Pessoas de {settings.age} anos que querem comer de forma mais saudável podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_lose_weight_female (no fluxo local)
+  dedication_lose_weight_female.question: Mulheres de {settings.age} anos que querem perder peso podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_lose_weight_male (no fluxo local)
+  dedication_lose_weight_male.question: Homens de {settings.age} anos que querem perder peso podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## dedication_lose_weight_other (no fluxo local)
+  dedication_lose_weight_other.question: Pessoas de {settings.age} anos que querem perder peso podem precisar de uma abordagem diferente para alcançar seu objetivo.
+## demographics (SÓ servidor)
+  demographics.full_time: Empregado em período integral
+  demographics.not_employed: Desempregado
+  demographics.other.question: Seu horário de trabalho afeta sua saúde.
+  demographics.part_time: Empregado em meio período
+  demographics.question: Seu horário de trabalho afeta seu peso.
+  demographics.retired: Aposentado
+  demographics.student: Estudante
+## demographics_community (SÓ servidor)
+  demographics_community.city: Na cidade
+  demographics_community.countryside: No campo
+  demographics_community.other: Outro
+  demographics_community.question.gain_muscle.female: Para mulheres de {settings.age} anos, a abordagem mais eficaz para ganhar músculos pode depender de onde você mora.
+  demographics_community.question.gain_muscle.male: Para homens de {settings.age} anos, a abordagem mais eficaz para ganhar músculos pode depender de onde você mora.
+  demographics_community.question.gain_muscle.other: Para pessoas de {settings.age} anos, a abordagem mais eficaz para ganhar músculos pode depender de onde você mora.
+  demographics_community.question.gain_weight.female: Mulheres de {settings.age} anos que querem ganhar peso podem precisar de uma abordagem diferente dependendo de onde moram
+  demographics_community.question.gain_weight.male: Homens de {settings.age} anos que querem ganhar peso podem precisar de uma abordagem diferente, dependendo de onde moram.
+  demographics_community.question.gain_weight.other: Para pessoas de {settings.age} anos, a abordagem mais eficaz para ganhar peso pode depender do local onde vivem.
+  demographics_community.question.healthy.female: Para mulheres de {settings.age} anos, a abordagem mais eficaz para comer de forma mais saudável pode depender de onde você mora.
+  demographics_community.question.healthy.male: Para homens de {settings.age} anos, a abordagem mais eficaz para comer de forma mais saudável pode depender de onde você mora.
+  demographics_community.question.healthy.other: Para pessoas de {settings.age} anos, a abordagem mais eficaz para comer de forma mais saudável pode depender de onde você mora.
+  demographics_community.question.lose_fat_gain_muscle.female: Para mulheres de {settings.age} anos, a abordagem mais eficaz para ganhar músculos e emagrecer pode depender de onde você mora.
+  demographics_community.question.lose_fat_gain_muscle.male: Para homens de {settings.age} anos, a abordagem mais eficaz para ganhar músculos e emagrecer pode depender de onde você mora.
+## demographics_sedentary (SÓ servidor)
+  demographics_sedentary.active: Em pé
+  demographics_sedentary.question: Como você passa a maior parte do seu dia?
+  demographics_sedentary.seated: Sentado(a)
+## dietary_restriction (no fluxo local)
+  dietary_restriction.gluten_free: Sem glúten
+  dietary_restriction.lactose_into: Intolerância à lactose
+  dietary_restriction.none: Nenhuma
+  dietary_restriction.nut_allergy: Alergia a amendoim
+  dietary_restriction.other: Outro
+  dietary_restriction.pescatarian: Pescetarianismo
+  dietary_restriction.question: Quais restrições/alergias você tem?
+  dietary_restriction.religion: Preferências religiosas
+  dietary_restriction.seafood: Frutos do mar ou crustáceos
+  dietary_restriction.veganism: Veganismo
+  dietary_restriction.vegetarianism: Vegetarianismo
+## dietary_restriction_binary (no fluxo local)
+  dietary_restriction_binary.no: Não
+  dietary_restriction_binary.question: Você tem alguma restrição ou alergia alimentar?
+  dietary_restriction_binary.yes: Sim
+## dietgoal (SÓ servidor)
+  dietgoal.error: Com esse objetivo, você estaria na categoria de IMC de peso insuficiente. Consulte seu médico antes de prosseguir.
+## dietpace (SÓ servidor)
+  dietpace.fast: Tão rápido
+  dietpace.mid: Na metade do caminho
+  dietpace.question: Em qual ritmo você deseja alcançar seu objetivo?
+  dietpace.slow: Devagar
+  dietpace.title.main_goal_gain_muscle: Você está aqui para ganhar músculos!
+  dietpace.title.main_goal_gain_muscle_lose_fat: Você está aqui para ganhar músculos e perder gordura!
+  dietpace.title.main_goal_gain_weight: Então você está aqui para ganhar peso!
+  dietpace.title.main_goal_lose_weight: Você está aqui para perder peso!
+  dietpace.title.main_goal_maintain_weight: Então você está aqui para manter seu peso!
+## eat_more_weekend_day (SÓ servidor)
+  eat_more_weekend_day.option_1: Sábado e domingo
+  eat_more_weekend_day.option_2: Sexta, sábado e domingo
+  eat_more_weekend_day.option_3: Sexta e sábado
+## eat_more_weekend_day_question (SÓ servidor)
+  eat_more_weekend_day_question.title: Quais dias você gostaria de comer um pouco mais?
+## eat_more_weekend_question (SÓ servidor)
+  eat_more_weekend_question.no_option: Não
+  eat_more_weekend_question.title: Última pergunta! Você costuma comer mais no fim de semana?
+  eat_more_weekend_question.yes_option: Sim
+## enough_water_no (SÓ servidor)
+  enough_water_no: Não
+## enough_water_not_sure (SÓ servidor)
+  enough_water_not_sure: Não tenho certeza
+## enough_water_page_title (SÓ servidor)
+  enough_water_page_title: Você acha que bebe água suficiente?
+## enough_water_yes (SÓ servidor)
+  enough_water_yes: Sim
+## event_date (SÓ servidor)
+  event_date.question.birthday: Quando é esse aniversário?
+  event_date.question.holiday: Quando são essas férias?
+  event_date.question.other: Quando é esse evento?
+  event_date.question.reunion: Quando é essa festa?
+  event_date.question.vacation: Quando são essas férias?
+  event_date.question.wedding: Quando é esse casamento?
+  event_date.title: Ótimo!
+## feeling_goal (SÓ servidor)
+  feeling_goal.empowerment: Autônomo
+## first_screen (SÓ servidor)
+  first_screen.cta: Começar
+  first_screen.label: Já tem uma conta?
+  first_screen.subtitle: Seu guia de nutrição, independente de suas motivações
+## firstsliderloader (SÓ servidor)
+  firstsliderloader.female.label: Foodvisor ajudou mais de 5,5 milhões de mulheres
+  firstsliderloader.female.name: Maria J.
+  firstsliderloader.losing_weight.first_loader_label: Gravando seus dados
+  firstsliderloader.losing_weight.name.man: Martin
+  firstsliderloader.losing_weight.name.sup40.woman: Katharina
+  firstsliderloader.losing_weight.name.woman: Elizabeth
+  firstsliderloader.losing_weight.second_loader_label: Calculando sua linha do tempo
+  firstsliderloader.losing_weight.subtitle: Foodvisor é o primeiro método verdadeiramente adaptado às minhas necessidades. É fácil de seguir e obtive os resultados esperados.
+  firstsliderloader.losing_weight.subtitle.man: Foodvisor é um ótimo app para entender como seu corpo processa os alimentos, o que ele precisa e o que não precisa, e como gerenciar seus hábitos. Ten
+  firstsliderloader.losing_weight.subtitle.woman: Foodvisor foi revolucionário para mim. Gostei muito dos visuais positivos e das informações concisas. Não posso acreditar na diferença.
+  firstsliderloader.losing_weight.weight.man.imperial: -22 lbs em 30 dias
+  firstsliderloader.losing_weight.weight.man.imperialuk: -1st 8lb em 30 dias
+  firstsliderloader.losing_weight.weight.man.metric: -10kg em 30 dias
+  firstsliderloader.losing_weight.weight.sup40.woman: -6kg em 50 dias
+## firstsliderloader_results (SÓ servidor)
+  firstsliderloader_results.plot.description: De acordo com nossos estudos e nosso algoritmo, 92% dos usuários da versão premium alcançaram seu objetivo em 8 semanas.
+  firstsliderloader_results.plot.label1: Preparar
+  firstsliderloader_results.plot.label2: Avançar
+  firstsliderloader_results.plot.label3: Estabilizar
+  firstsliderloader_results.plot.subtitle: Aqui está seu gráfico de progresso de acordo com seu perfil
+  firstsliderloader_results.plot.title: Nossa previsão: você alcançará seu objetivo em %@ !
+## gdpr (SÓ servidor)
+  gdpr.checkbox.cta: Aplicar
+  gdpr.checkbox.label: Li e aceito os Termos de Uso, estou ciente das condições de processamento dos meus dados (inclusive de saúde) e da política de privacidade
+  gdpr.eligible_title: Suas informações estão seguras
+  gdpr.first_bullet: Seus dados pessoais são usados apenas para adaptar nossos conselhos de nutrição
+  gdpr.privacy_policy: Política de Privacidade
+  gdpr.second_bullet: Não compartilhamos seus dados pessoais para fins comerciais
+  gdpr.terms_conditions: Termos de Uso
+  gdpr.third_bullet: Suas informações permanecem privadas
+  gdpr.title: Seus dados pessoais estão seguros
+## general_answer (SÓ servidor)
+  general_answer.no: Não
+  general_answer.yes: Sim
+## general_loader (SÓ servidor)
+  general_loader: Carregando...
+## goal_and_profile (no fluxo local)
+  goal_and_profile.category: Objetivo & perfil
+  goal_and_profile.profile_set_up.gain_muscle.context_para: Idade, altura e peso têm um grande impacto na sua jornada de perda de peso.
+  goal_and_profile.profile_set_up.gain_muscle_lose_fat.context_para: Idade, altura e peso têm um grande impacto na sua jornada de perda de peso.
+  goal_and_profile.profile_set_up.healthy.context_para: Idade, altura e peso têm um grande impacto na sua jornada de perda de peso.
+  goal_and_profile.profile_set_up.lose_weight.context_para: Idade, altura e peso têm um grande impacto na sua jornada de perda de peso.
+## habits_behaviour (no fluxo local)
+  habits_behaviour: Seus hábitos e comportamentos
+## hard_meal (no fluxo local)
+  hard_meal.breakfast: No café da manhã
+  hard_meal.dinner: No jantar
+  hard_meal.lunch: No almoço
+  hard_meal.question: Para você, em qual refeição é mais difícil comer de forma saudável?
+## hard_meal_why (no fluxo local)
+  hard_meal_why.access: Não tenho fácil acesso a alimentos saudáveis
+  hard_meal_why.cook: Não tenho tempo para cozinhar
+  hard_meal_why.knowledge: Não sei o que é saudável
+  hard_meal_why.other: Outro
+  hard_meal_why.question: Por quê?
+  hard_meal_why.social: É difícil comer de forma diferente dos outros.
+## hear_about_us (SÓ servidor)
+  hear_about_us.friends_family.option: Amigos / Família
+  hear_about_us.gpt.option: Chat IA
+  hear_about_us.health_professionals.option: Médicos / Profissionais de saúde
+  hear_about_us.influencer.option: Influenciador
+  hear_about_us.instagram_facebook.option_label: Instagram / Facebook
+  hear_about_us.internet_search.option: Pesquisa online (Google, etc.)
+  hear_about_us.media.option: TV / Rádio / Imprensa
+  hear_about_us.other.option: Outro
+  hear_about_us.other_app_ad.option: Anúncio em outro app
+  hear_about_us.playstore.option: Play Store
+  hear_about_us.question_title: Como você ouviu falar do Foodvisor?
+  hear_about_us.radio.press.option: Rádio / Imprensa
+  hear_about_us.tiktok.option: TikTok
+  hear_about_us.tv.option: TV
+## interest (no fluxo local)
+  interest.behaviour: Ciências comportamentais
+  interest.failure: Lidar com o fracasso
+  interest.habit_creation: Desenvolver hábitos saudáveis
+  interest.motivation_helpers: Aumentar a motivação
+  interest.nutrition: As chaves da nutrição
+  interest.other: Outro
+  interest.question: O que você gostaria de aprender conosco?
+  interest.sleep: Os segredos do sono
+  interest.stress_management: Gerenciar meu estresse
+## journey (SÓ servidor)
+  journey.category: Suas motivações
+## know_intermittent_fasting_no (SÓ servidor)
+  know_intermittent_fasting_no: Não
+## know_intermittent_fasting_page_title (SÓ servidor)
+  know_intermittent_fasting_page_title: Você conhece o jejum intermitente?
+## know_intermittent_fasting_yes (SÓ servidor)
+  know_intermittent_fasting_yes: Sim
+## likert_scale_agree (SÓ servidor)
+  likert_scale_agree: Concordo
+## likert_scale_agree_tooltip (SÓ servidor)
+  likert_scale_agree_tooltip: Se você não concorda nem discorda, escolha o círculo do meio.
+## likert_scale_disagree (SÓ servidor)
+  likert_scale_disagree: Discordo
+## likert_scale_question (SÓ servidor)
+  likert_scale_question: Você concorda com a seguinte afirmação:
+## likert_scale_statement_title (SÓ servidor)
+  likert_scale_statement_title: Afirmação
+## main_goal (no fluxo local)
+  main_goal.gain_muscle: Ganhar músculos, perder gordura é secundário
+  main_goal.gain_muscle_lose_fat: Ganhar músculos e perder gordura
+  main_goal.gain_weight: Ganhar peso
+  main_goal.healthy: Comer mais saudável sem perder peso
+  main_goal.lose_weight: Perder peso
+  main_goal.maintain_weight: Manter meu peso
+  main_goal.question: Por que você está aqui?
+  main_goal.title: Bem-vindo(a)
+  main_goal.titleWithName: Olá {settings.name}!
+  main_goal.welcome_back.question: O que te traz aqui?
+## main_goal_web (SÓ servidor)
+  main_goal_web.question: O que te traz aqui?
+## medical_history (no fluxo local)
+  medical_history.depression: Depressão
+  medical_history.diabetes: Diabetes
+  medical_history.eating_disorders: Distúrbios alimentares (anorexia, bulimia)
+  medical_history.heart_disease: Doença cardíaca
+  medical_history.high_blood_pressure: Hipertensão ou pressão arterial alta
+  medical_history.kidney_disease: Doença renal
+  medical_history.liver_disease: Doença hepática
+  medical_history.none: Nenhuma
+  medical_history.other: Outro
+  medical_history.question: Você já sofreu de alguma das seguintes doenças?
+## money_issue (no fluxo local)
+  money_issue.no: Não
+  money_issue.question: Você diria que o dinheiro é um fator em sua jornada de saúde?
+  money_issue.yes: Sim
+## motivation_level (no fluxo local)
+  motivation_level._not_motivated_at_all: Não motivado(a) de jeito nenhum
+  motivation_level.motivated: Motivado(a)
+  motivation_level.not_motivated: Nada motivado(a)
+  motivation_level.question: Você está motivado(a) para alcançar seu objetivo?
+  motivation_level.quite_motivated: Motivado(a) o suficiente
+  motivation_level.very_motivated: Muito motivado(a)
+## need (no fluxo local)
+  need.behaviour_change: Terapia cognitivo-comportamental (TCC)
+  need.calorie_tracking: Acompanhamento de calorias e macronutrientes
+  need.community: Fazer parte de uma comunidade
+  need.daily: Uma avaliação diária para melhorar sua alimentação
+  need.food_delivery: Refeições saudáveis entregues em casa
+  need.food_recognition: Escaneie fotos de seus alimentos
+  need.gcm: Medição Contínua da Glicose (MCG)
+  need.meal_plan: Menus personalizados
+  need.nutri_review: Análise da sua refeição por um nutricionista
+  need.nutritionist: Um nutricionista dedicado (uma pessoa real ������)
+  need.other: Outro
+  need.question: O Foodvisor é totalmente personalizado para suas necessidades.
+  need.recipes: Receitas saudáveis e deliciosas
+  need.sleep: Monitoramento do sono
+## need_program (no fluxo local)
+  need_program.easy: Que seja fácil de seguir
+  need_program.eat_everything: Poder comer de tudo
+  need_program.fast_results: Obter resultados rápidos
+  need_program.no_sport: Nenhuma atividade física ou aeróbica
+  need_program.other: Outro
+  need_program.question: O que é mais importante para que seu programa seja um sucesso?
+## notification_setup_before_meals (SÓ servidor)
+  notification_setup_before_meals: Antes de todas as refeições
+## notification_setup_morning (SÓ servidor)
+  notification_setup_morning: Pela manhã
+## notification_setup_never (SÓ servidor)
+  notification_setup_never: Nunca
+## notification_setup_page_title (SÓ servidor)
+  notification_setup_page_title: Quando você gostaria de receber lembretes?
+## notification_setup_when_seed_needs_you (SÓ servidor)
+  notification_setup_when_seed_needs_you: Quando %@ precisar de você
+## nutrition (no fluxo local)
+  nutrition.bad: Preciso trabalhar muito na minha dieta
+  nutrition.good: Minha dieta é essencialmente saudável
+  nutrition.question: Qual afirmação parece mais verdadeira para você?
+## onboardingCustomSlide (SÓ servidor)
+  onboardingCustomSlide.event_date.birthday: Aniversário
+  onboardingCustomSlide.event_date.holiday: Férias
+  onboardingCustomSlide.event_date.input_placeholder: Selecione uma data
+  onboardingCustomSlide.event_date.no: Não tenho nenhum evento próximo
+  onboardingCustomSlide.event_date.other: Outro
+  onboardingCustomSlide.event_date.question: Ter um objetivo em mente é uma ótima fonte de motivação.
+  onboardingCustomSlide.event_date.reunion: Festa familiar ou entre amigos
+  onboardingCustomSlide.event_date.vacation: Férias
+  onboardingCustomSlide.event_date.wedding: Casamento
+  onboardingCustomSlide.goal_set_up.speed_context: Os usuários do Foodvisor perdem em média %@ por semana.
+  onboardingCustomSlide.profile.CTA: Próximo
+  onboardingCustomSlide.profile_set_up.age_question: Qual é a sua idade?
+  onboardingCustomSlide.profile_set_up.current_weight_question: Qual é o seu peso atual?
+  onboardingCustomSlide.profile_set_up.female: Feminino
+## onboardingMultipleAnswers (SÓ servidor)
+  onboardingMultipleAnswers.text.input_placeholder: Por favor, especifique
+## parent (no fluxo local)
+  parent.not_parent: Não
+  parent.parent: Sim
+  parent.question: Ter filhos tem um impacto enorme na vida de uma pessoa!
+## past (no fluxo local)
+  past.busy: Equilíbrio entre vida profissional e pessoal
+  past.covid: Covid-19
+  past.disability: Incapacidade após uma lesão
+  past.family_life: Vida familiar
+  past.hormonal_disorder: Distúrbio hormonal
+  past.marriage: Casamento ou relacionamento
+  past.medication: Medicamentos ou doença
+  past.menopause: Menopausa
+  past.none: Nenhuma dessas respostas
+  past.other: Outro
+  past.pregnancy: Gravidez
+  past.question: Nos últimos anos, algum desses eventos fez você ganhar peso?
+  past.stop_smoking: Parar de fumar
+  past.stress: Saúde mental ou estresse
+## past_attempt (no fluxo local)
+  past_attempt.no: Não
+  past_attempt.question: Você já tentou perder peso antes?
+  past_attempt.yes: Sim
+## past_method (no fluxo local)
+  past_method.alternative_medecine: Medicina alternativa
+  past_method.app: Aplicativo de perda de peso
+  past_method.balanced: Comer de forma equilibrada
+  past_method.book: Leu sobre perda de peso
+  past_method.calorie_counting: Contagem de calorias
+  past_method.diet: Dietas restritivas
+  past_method.fasting: Jejum intermitente
+  past_method.glp_1: Tratamentos GLP-1
+  past_method.gym: Academia
+  past_method.influencers: Seguiu o programa de um influenciador
+  past_method.low_carb: Dieta pobre em carboidratos (cetogênica, atkins, etc.)
+  past_method.meal_delivery: Entrega de refeições para emagrecimento
+  past_method.nutritionist: Consultou um nutricionista
+  past_method.other: Outro
+## past_method_redo (no fluxo local)
+  past_method_redo.no_failure: Não, não foi um sucesso
+  past_method_redo.no_hard: Não, foi muito complicado
+  past_method_redo.question: Sua última tentativa foi um sucesso?
+  past_method_redo.yes: Sim, sem dúvida
+  past_method_redo.yes_hard: Sim, mas foi difícil
+## premium (SÓ servidor)
+  premium.screen.advice.title: Conselhos adaptados a você
+  premium.screen.android.rate: 4,5/5
+  premium.screen.android.rate.number: +15k avaliações
+  premium.screen.caption: Criamos este programa com base em seu perfil único e aqui está o que ele inclui.
+  premium.screen.community.text: Obtenha ajuda e conselhos de pessoas que estão no mesmo caminho
+  premium.screen.community.title: Uma comunidade de apoio
+  premium.screen.editors.choice: Favorito
+  premium.screen.goal.maintain: para se sentir melhor a longo prazo
+  premium.screen.goal.reach: para alcançar %@ de forma permanente
+  premium.screen.goal.reach_stone: para alcançar %@ de forma permanente
+  premium.screen.ios.rate: 4,5/5
+  premium.screen.ios.rate.number: +60k avaliações
+  premium.screen.join.title: Junte-se a 4 milhões de usuários satisfeitos
+  premium.screen.lost1: Perdeu 6,5 kg em 2 meses
+## premium_explainer (SÓ servidor)
+  premium_explainer.first_bullet_point: Um programa personalizado
+  premium_explainer.fourth_bullet_point: E muito mais!
+  premium_explainer.second_bullet_point: Um nutricionista dedicado
+  premium_explainer.second_bullet_point.nonutritionist: Conselhos de nossos nutricionistas
+  premium_explainer.star: TESTE
+  premium_explainer.subtitle: 2 semanas grátis
+  premium_explainer.third_bullet_point: Centenas de receitas
+  premium_explainer.title: Experimente o Foodvisor
+## presentation_slide1 (SÓ servidor)
+  presentation_slide1.title: Parabéns
+## presentation_slide2 (SÓ servidor)
+  presentation_slide2.title: Na nutrição, encontrar o que funciona melhor para você faz toda a diferença
+## presentation_slide3 (SÓ servidor)
+  presentation_slide3.title: Você é único,
+## price_screen (SÓ servidor)
+  price_screen.begin: Inicie sua jornada
+  price_screen.cancel_any_time: Cancelar a qualquer momento
+  price_screen.congrats.restore: Você recuperou sua conta premium.
+  price_screen.congrats.text: Agora você é um membro Premium.
+  price_screen.congrats.text_max: Agora você é um membro Max.
+  price_screen.congrats.title: Parabéns!
+  price_screen.error.general.text: Ocorreu um erro, por favor, tente novamente
+  price_screen.error.general.title: Opa
+  price_screen.error.internet.text: Certifique-se de estar conectado ao Wi-Fi ou à sua rede de celular.
+  price_screen.error.internet.title: Conexão falhou
+  price_screen.error.restore.text: Não parece que você tenha uma assinatura ativa
+  price_screen.error.store.text: Não conseguimos nos conectar à Play Store
+  price_screen.error.store.title: Erro
+  price_screen.help: Vamos ajudá-lo a alcançar seu objetivo de %@ até %@!
+## reassurance (no fluxo local)
+  reassurance.loader.e.caption.a: Alcançar
+  reassurance.loader.e.caption.b: até o início de %@
+  reassurance.loader.e.caption.b_late: até o final de %@
+  reassurance.loader.e.today: Hoje
+  reassurance.your_environment.description: As seguintes perguntas nos ajudarão a entender melhor o que você será capaz de fazer.
+  reassurance.your_environment.title: Seu ambiente tem um impacto considerável na maneira como você pode atingir seu objetivo.
+## reassurance_community (SÓ servidor)
+  reassurance_community.subtitle: Já ajudamos
+  reassurance_community.title: Você está em boas mãos, {settings.name}
+## reassurance_goal_profile (SÓ servidor)
+  reassurance_goal_profile.description: Precisamos de algumas informações para começar a personalizar seu plano.
+  reassurance_goal_profile.title: Você está no lugar certo! Vamos nos conhecer.
+## reassurance_habits_behaviour (no fluxo local)
+  reassurance_habits_behaviour.description: Vários estudos mostraram que uma dieta equilibrada, sem restrições, é suficiente para a maioria das pessoas perder peso! Vamos verificar se você faz p
+  reassurance_habits_behaviour.description.other: Uma alimentação equilibrada e uma atividade física regular são essenciais para manter uma boa saúde. Vamos descobrir como podemos ajudá-lo a fazer esc
+  reassurance_habits_behaviour.title: Está quase terminando!
+## reassurance_past_failure (no fluxo local)
+  reassurance_past_failure.description: Não há uma solução única quando se trata de dieta. Com nosso programa personalizado, você alcançará seu objetivo de uma vez por todas.
+  reassurance_past_failure.title: Os fracassos passados não implicam falhas futuras.
+## reassurance_referral (SÓ servidor)
+  reassurance_referral.subtitle: Pessoas que têm o apoio de amigos e familiares alcançam seus objetivos 32% mais rápido.
+  reassurance_referral.title: Foodvisor, é melhor juntos
+## reassurance_snacker (no fluxo local)
+  reassurance_snacker.description: Sabemos que parar de beliscar é um grande obstáculo a superar. Mas ao entender por que você belisca, o primeiro passo já está dado.
+  reassurance_snacker.title: Não se preocupe. Todos passamos por isso!
+## referral (SÓ servidor)
+  referral.button_invite: Adicionar
+  referral.email_placeholder: E-mail
+  referral.invite_more: Adicionar outro convite
+  referral.skip: Pular
+  referral.title: Enviar para amigos
+## self_goal (SÓ servidor)
+  self_goal.acceptance: Me aceitar melhor
+  self_goal.awareness: Me conhecer melhor
+  self_goal.worth: Me valorizar mais
+## set_up_name (SÓ servidor)
+  set_up_name.cta: Próximo
+  set_up_name.input: Nome
+  set_up_name.paragraph: Vamos nos conhecer primeiro ������
+  set_up_name.title: Bem-vindo
+## sex (SÓ servidor)
+  sex.female: Feminino
+  sex.male: Masculino
+  sex.question: O Foodvisor propõe um programa personalizado com base em seu perfil hormonal. Qual é o seu sexo atribuído ao nascimento?
+## smart_scale (SÓ servidor)
+  smart_scale.no: Não, eu não preciso.
+  smart_scale.no_but_want: Não, mas eu quero uma!
+  smart_scale.question: Você tem uma balança conectada?
+  smart_scale.yes: Sim
+## snacker (no fluxo local)
+  snacker.no: Não
+  snacker.question: Você diria que beliscar é um problema para você?
+  snacker.yes: Sim
+## snacker_type (no fluxo local)
+  snacker_type.boredom: Tédio
+  snacker_type.emotion: Emoções fortes
+  snacker_type.food: Ver comida
+  snacker_type.hunger: Fome
+  snacker_type.other: Outro
+  snacker_type.question: Em geral, o que leva você a beliscar?
+  snacker_type.stress: Estresse
+## social_match (SÓ servidor)
+  social_match.question: Ser incentivado por pessoas que estão passando pela mesma situação que você pode ser muito motivador. Você deseja ser conectado a outros membros do Fo
+## social_pressure (no fluxo local)
+  social_pressure.no: Não
+  social_pressure.question: Você diria que algumas pessoas em sua vida estão pressionando você demais para perder peso?
+  social_pressure.yes: Sim
+## social_pressure_gain_muscle (no fluxo local)
+  social_pressure_gain_muscle.question: Você diria que algumas pessoas em sua vida estão pressionando você demais para ganhar músculo?
+## social_support (no fluxo local)
+  social_support.no: Não
+  social_support.question: Família, amigos e colegas podem ser de grande ajuda.
+  social_support.yes: Sim
+## social_support_gain_maintain_weight (no fluxo local)
+  social_support_gain_maintain_weight.question: Família, amigos e colegas podem ser de grande ajuda.
+## social_support_quote (SÓ servidor)
+  social_support_quote.question: Você sente apoio de amigos e familiares em sua jornada de perda de peso?
+## soda (no fluxo local)
+  soda.allday: O dia todo, todos os dias
+  soda.everyday: Quase todos os dias
+  soda.five_times_week: 4-5 vezes por semana
+  soda.no: Raramente
+  soda.once_week: Pelo menos uma vez por semana
+  soda.question: Com que frequência você bebe refrigerante?
+## start_signup_loader (SÓ servidor)
+  start_signup_loader.subtitle: O Foodvisor é completamente personalizado, só aceitamos usuários que temos certeza de poder ajudar.
+  start_signup_loader.title: Vamos verificar se você é compatível com nosso programa
+## student (no fluxo local)
+  student.not_student: Não
+  student.question: Estar estudando é ótimo, mas às vezes pode ser desgastante para sua saúde.
+  student.student: Sim
+## time (SÓ servidor)
+  time.full_time.question: Entre trabalho, vida social e tarefas domésticas, pode ser difícil encontrar tempo para si mesmo.
+  time.not_employed.question: Não ter emprego pode parecer disponibilizar mais tempo livre, mas também pode causar preocupações.
+  time.other.question: Você consegue encontrar tempo para as coisas que realmente importam para você?
+  time.part_time.question: Trabalhar meio período pode oferecer mais flexibilidade, mas nem sempre significa ter muito tempo livre.
+  time.retired.question: A aposentadoria pode oferecer mais tempo livre, mas nem sempre é o caso.
+  time.student.question: Como estudante, pode ser difícil equilibrar entre aulas, projetos e atividades pessoais.
+## time_on_app (SÓ servidor)
+  time_on_app.10mins: 5-10 min
+  time_on_app.5mins: 0-5 min
+  time_on_app.more10mins: 10-15 min
+  time_on_app.question: Vamos adaptar seu programa para se encaixar em sua vida diária
+## tried_calorie_counting_currently (SÓ servidor)
+  tried_calorie_counting_currently: Estou contando atualmente
+## tried_calorie_counting_new (SÓ servidor)
+  tried_calorie_counting_new: Estou começando agora
+## tried_calorie_counting_page_title (SÓ servidor)
+  tried_calorie_counting_page_title: Você já tentou contar calorias antes?
+## tried_calorie_counting_quit (SÓ servidor)
+  tried_calorie_counting_quit: Já tentei antes, mas parei
+## weight_curve (SÓ servidor)
+  weight_curve.cta: Continuar
+  weight_curve.date_estimation.event.subtitle: E perderá ~ %@ antes de %@
+  weight_curve.date_estimation.no_event.subtitle: E terá resultados duradouros!
+  weight_curve.date_estimation.title: Você estará com %@ até o
+  weight_curve.subtle_title: Com base em nossas estimativas
+  weight_curve.weight_details.bullet_point.1: Levamos em consideração seu perfil
+  weight_curve.weight_details.first_display.bullet_point.1: Com base no seu perfil
+  weight_curve.weight_details.first_display.bullet_point.2: Você irá perder ~%@ em 1 mês
+  weight_curve.weight_details.first_display.paragraph: As próximas perguntas nos ajudarão a determinar se você pode atingir seu objetivo mais cedo!
+  weight_curve.weight_details.no_event.bullet_point.2: Você perderá ~%@ em 1 mês.
+  weight_curve.weight_details.paragraph: As próximas perguntas nos ajudarão a determinar se você pode atingir seu objetivo mais cedo!
+  weight_curve.weight_details.second_display.bullet_point.1: Atualizado com suas respostas
+  weight_curve.weight_details.second_display.bullet_point.2: Você irá perder ~%@ em 1 mês
+  weight_curve.weight_details.second_display.paragraph: Nosso programa personalizado é feito para maximizar suas chances de sucesso nesta data.
+## weight_goal (SÓ servidor)
+  weight_goal.error_message: Seu peso não parece correto. Por favor, insira o peso que deseja atingir.
+## weight_goal_monetisation_goal_confident (SÓ servidor)
+  weight_goal_monetisation_goal_confident: Confiante
+## weight_goal_monetisation_goal_excited (SÓ servidor)
+  weight_goal_monetisation_goal_excited: Animado
+## weight_goal_monetisation_goal_grateful (SÓ servidor)
+  weight_goal_monetisation_goal_grateful: Grato
+## weight_goal_monetisation_goal_nervous (SÓ servidor)
+  weight_goal_monetisation_goal_nervous: Nervoso
+## weight_goal_monetisation_goal_question (SÓ servidor)
+  weight_goal_monetisation_goal_question: Você está chegando perto do seu objetivo!
+## weight_goal_monetisation_long_term_fit (SÓ servidor)
+  weight_goal_monetisation_long_term_fit: Tornando-se mais em forma e ativo
+## weight_goal_monetisation_long_term_goal_confident (SÓ servidor)
+  weight_goal_monetisation_long_term_goal_confident: Sentindo mais confiança em minhas habilidades e aparência.
+## weight_goal_monetisation_long_term_goal_healthy (SÓ servidor)
+  weight_goal_monetisation_long_term_goal_healthy: Abraçando um estilo de vida mais saudável e energético
+## weight_goal_monetisation_long_term_goal_look (SÓ servidor)
+  weight_goal_monetisation_long_term_goal_look: Aproveitando um novo, transformado e melhorado visual.
+## weight_goal_monetisation_long_term_goal_question (SÓ servidor)
+  weight_goal_monetisation_long_term_goal_question: Qual aspecto de alcançar seu objetivo de peso mais te anima?
+## weight_goal_monetisation_long_term_goal_social (SÓ servidor)
+  weight_goal_monetisation_long_term_goal_social: Estar socialmente ativo e experimentando novas experiências.
+## weight_goal_recommended_range (SÓ servidor)
+  weight_goal_recommended_range: Peso recomendado: %@ - %@ %@
+## weight_goal_recommended_range_validated (SÓ servidor)
+  weight_goal_recommended_range_validated: Ótimo!
+## weightgoal (SÓ servidor)
+  weightgoal.question: Qual seria seu peso ideal?
+## willingness_to_change_eating_habits_cook_at_home (SÓ servidor)
+  willingness_to_change_eating_habits_cook_at_home: Cozinhar mais em casa
+## willingness_to_change_eating_habits_less_junk_food (SÓ servidor)
+  willingness_to_change_eating_habits_less_junk_food: Comer menos fast food
+## willingness_to_change_eating_habits_more_greens_veggies (SÓ servidor)
+  willingness_to_change_eating_habits_more_greens_veggies: Comer mais verduras e legumes
+## willingness_to_change_eating_habits_page_title (SÓ servidor)
+  willingness_to_change_eating_habits_page_title: O que você gostaria de mudar nos seus hábitos alimentares?
+## willingness_to_change_eating_habits_reduce_sugar (SÓ servidor)
+  willingness_to_change_eating_habits_reduce_sugar: Reduzir o consumo de açúcar
+## willingness_to_change_eating_habits_stop_binge_eating (SÓ servidor)
+  willingness_to_change_eating_habits_stop_binge_eating: Parar com a compulsão alimentar
+## willingness_to_change_eating_habits_stop_stress_overeating (SÓ servidor)
+  willingness_to_change_eating_habits_stop_stress_overeating: Parar de comer em excesso por estresse
+## willingness_to_do (no fluxo local)
+  willingness_to_do.other: Outro
+## willingness_to_do_gain_muscle (no fluxo local)
+  willingness_to_do_gain_muscle.add_meals: Adicionar refeições
+  willingness_to_do_gain_muscle.specific_diet: Seguir uma dieta específica
+## willingness_to_do_loseweight_or_losefat (no fluxo local)
+  willingness_to_do_loseweight_or_losefat.count_calories: Contar minhas calorias
+  willingness_to_do_loseweight_or_losefat.physical_activity: Fazer atividade física
+  willingness_to_do_loseweight_or_losefat.question: O que você está disposto a fazer para atingir seu objetivo?
+  willingness_to_do_loseweight_or_losefat.restrictive_diet: Seguir uma dieta restritiva
+  willingness_to_do_loseweight_or_losefat.skip_meal: Alterar o padrão alimentar (jejum)
+## willingness_workout_gain_maintain_weight (no fluxo local)
+  willingness_workout_gain_maintain_weight.no: Não
+  willingness_workout_gain_maintain_weight.question: No Foodvisor, nunca pediremos que você faça algo que não queira. Você está disposto a praticar musculação?
+  willingness_workout_gain_maintain_weight.yes: Sim
+## willingness_workout_loseweight (no fluxo local)
+  willingness_workout_loseweight.no: Não
+  willingness_workout_loseweight.question: No Foodvisor, nunca pediremos que você faça algo que não queira. Você está disposto a praticar exercícios para perder peso?
+  willingness_workout_loseweight.yes: Sim
+## willingness_workout_loseweight_with_foodvisor (SÓ servidor)
+  willingness_workout_loseweight_with_foodvisor.question: Gostaria que o Foodvisor propusesse um programa de exercícios personalizado para você?
+## work (no fluxo local)
+  work.burnout: Estou perto do esgotamento
+  work.great: Estou trabalhando e me sinto bem
+  work.no: Atualmente não estou trabalhando
+  work.ok: Está tudo bem
+  work.other: Outro
+  work.question: E o trabalho, como está?
+  work.too_much: Estou trabalhando demais
+## workout (no fluxo local)
+  workout.1: Menos que isso
+  workout.2: 1-2 dias por semana
+  workout.5: 3-5 dias por semana
+  workout.most: 6-7 dias por semana
+  workout.none: Nunca
+  workout.question: Você pratica exercícios físicos?
+## workout_level (SÓ servidor)
+  workout_level.advanced: Avançado
+  workout_level.beginner: Iniciante
+  workout_level.expert: Especialista
+  workout_level.intermediate: Intermediário
+  workout_level.question: Qual é o seu nível de aptidão física?
+## workout_setup (SÓ servidor)
+  workout_setup.endofsetup.subtitle: Você sempre pode modificar seus dias de treino em suas configurações.
+  workout_setup.endofsetup.title: Ótimo! Tudo está pronto para você começar seu treino.
+  workout_setup.startofsetup.subtitle: Temos algumas perguntas para adaptar seu programa esportivo às suas necessidades.
+  workout_setup.startofsetup.title: Vamos configurar seu programa esportivo!
+  workout_setup.startofsetup_negative.subtitle: Você sempre pode retornar se mudar de ideia!
+  workout_setup.startofsetup_negative.title: Sem problemas.
+## workout_setup_mainTitle (SÓ servidor)
+  workout_setup_mainTitle: Meu programa esportivo
+## your_goal_and_profile (SÓ servidor)
+  your_goal_and_profile.category: Objetivo & perfil
