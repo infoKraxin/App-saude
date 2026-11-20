@@ -1,0 +1,3048 @@
+Coach.tab.last.class.done.cta.meal	Registrar mais refeições
+ErrorApi.body	Alguns de nossos usuários estão enfrentando um problema com o aplicativo. Pedimos desculpas, nossas equipes estão trabalhando para resolver esse problema.
+ErrorTimeout.body	Tente novamente quando tiver uma conexão melhor
+ErrorUnknown.body	Ocorreu um erro, tente novamente mais tarde ������������
+ErrorUnknown.title	Ops
+Error_message	Sua altura não parece válida
+Error_message.47	Seu peso não parece válido
+Error_message.74	Desculpe, você deve ter mais de 16 anos para usar o aplicativo!
+FREE	GRÁTIS
+FoodComposition.validate	Confirmar
+Foodvisorreminder.notification.afternoonclasses.subtitle	Não esqueça de fazer seus cursos para ter novos amanhã. ������
+Foodvisorreminder.notification.afternoonclasses.title	Já fez seus cursos do dia? ✅
+Foodvisorreminder.notification.breakfast	Comece bem adicionando sua refeição ������
+Foodvisorreminder.notification.breakfast.title	O dia está começando! ������
+Foodvisorreminder.notification.dailyadvice	Certifique-se de ter registrado todas as suas refeições do dia.
+Foodvisorreminder.notification.dailyadvice.gamified	Registre uma refeição para manter sua sequência.
+Foodvisorreminder.notification.dailyadvice.gamified.title	������ Não perca sua série!
+Foodvisorreminder.notification.dailyadvice.noclass	✅ Você registrou todas as refeições?
+Foodvisorreminder.notification.dailyadvice.noclass.title	Certifique-se de ter registrado todas as suas refeições do dia.
+Foodvisorreminder.notification.dailyadvice.title	✅ Você registrou todas as refeições?
+Foodvisorreminder.notification.dinner	Não se esqueça de registrar o jantar para ver sua avaliação ������
+Foodvisorreminder.notification.dinner.generic	Não se esqueça de inserir seu %@ para descobrir seu balanço ������
+Foodvisorreminder.notification.dinner.title	Em breve, jantar! ������
+Foodvisorreminder.notification.dinner.title.generic	Em breve %@! ������
+Foodvisorreminder.notification.fasting.stage	Estágio de jejum
+Foodvisorreminder.notification.fasting.time	Tempo de jejum
+Foodvisorreminder.notification.lunch	Não se esqueça de adicionar sua refeição ������
+Foodvisorreminder.notification.lunch.title	É hora do almoço! ������
+Foodvisorreminder.notification.lunch.title.generic	É hora do %@! ������
+Foodvisorreminder.notification.monthlyadvice	Motive-se adicionando uma refeição ������������
+Foodvisorreminder.notification.monthlyadvice.title	Não desista agora! ������
+Foodvisorreminder.notification.morningclasses.subtitle	Seus novos cursos estão prontos!
+Foodvisorreminder.notification.morningclasses.title	O dia começou! ������
+Foodvisorreminder.notification.water.afternoon	Não esqueça de beber água! ������
+Foodvisorreminder.notification.water.afternoon.title	Lembretes de água
+Foodvisorreminder.notification.water.morning	Mantenha-se hidratado(a) com um copo d'água! ������
+Foodvisorreminder.notification.water.title	Lembrete de água
+Foodvisorreminder.notification.weeklyadvice	Motive-se adicionando uma refeição ������������
+Foodvisorreminder.notification.weeklyadvice.title	Não desista agora! ������
+Foodvisorreminder.notification.weeklyweight	Hora de se pesar e verificar seu progresso ������
+Foodvisorreminder.notification.weeklyweight.title	Informe seu peso ������
+Foodvisorreminder.notification.workout.title	������ É hora da sua sessão de esporte!
+account_exists_other_provider_password_button	Redefinir a senha
+account_exists_other_provider_subtitle	Parece que você tem uma conta no %@.
+account_exists_other_provider_subtitle_email	um endereço de e-mail
+account_exists_other_provider_title	Uma conta já existe.
+account_exists_same_provider_subtitle	Parece que você já tem outra conta com %@.
+account_exists_same_provider_subtitle_email	um Email diferente
+activate_notification_card_cta	Ativar notificações
+activate_notification_card_subtitle	Ative notificações e atinja seus objetivos!
+activate_notification_card_title	Aumente suas chances de sucesso com nossos lembretes
+activities_health_connect_toggle	Atividades
+activities_health_connect_toggle_description	Ative para recuperar atividades detectadas pelo Health Connect. Aplicativos de terceiros podem não retornar todos os dados.
+activitySummary.duration.title.label	Duração
+activitySummary.type.title.label	Tipo
+activitySummary.validate.addTitle	Adicionar este exercício
+activitySummary.validate.modifyTitle	Atualizar este exercício
+activity_page_title	Atividade
+add.custom.activity.calories.quantity	Kcal:
+add.custom.activity.name	Nome do esporte:
+add.custom.activity.name.placeholder	digite aqui...
+add.custom.activity.title	Atividade personalizada
+add.ingredient.cta	Adicionar ingrediente
+addActivity.all.label	Todas as atividades
+addActivity.myActivities	Minhas atividades
+addActivity.personalized	Minhas atividades personalizadas
+addActivity.recent.label	Minhas atividades recentes
+addActivity.searchBar.placeholder	Pesquisar atividade física
+addActivity.title.label	Adicionar uma atividade
+add_activity_page_cta	Adicionar a atividade
+add_activity_page_title	Adicionar atividade
+add_meals_page_additional_label	Refeições adicionais
+add_meals_page_hidden_label	oculto
+add_meals_page_main_label	Refeições principais
+add_meals_page_modal_cta	Entendi
+add_meals_page_modal_title	Número de refeições exibidas no seu diário mudou
+add_meals_page_subtitle	Refeições marcadas aparecerão no seu diário
+add_meals_page_warning_label	Você deve ter pelo menos uma refeição ativa
+add_new_food_screen_instruction_exact_info	Garanta a precisão das informações
+add_new_food_screen_instruction_help_other	Você está contribuindo para ajudar milhões de usuários
+add_new_food_screen_start_button	Iniciar
+add_new_food_screen_title	Vamos adicionar este novo alimento juntos!
+add_to_meal_food_created_cta	Adicionar
+ads_label	Anúncio
+advanced_label	Para uso avançado
+all_activities_tab	Todas atividades
+analyzing_your_photos_subtitle	Isso pode levar alguns segundos
+analyzing_your_photos_title	Analisando suas fotos
+android.credentials.TYPE_PASSWORD_CREDENTIAL	Senha
+api_error_limit_exceeded_message	Você excedeu o limite de mensagens para esta sessão. Tente mais tarde.
+api_error_message	Ocorreu um problema do nosso lado.
+api_error_message_cta	Tentar novamente
+automatic_disconnect_toast	Por motivos de segurança, você foi desconectado automaticamente do Foodvisor
+automatic_tracking_app_connect_button	Conectado
+automatic_tracking_app_disconnect_button	Desconectar
+automatic_tracking_app_sync_data_button	Sincronizar dados
+barcode.alert.enter.btn1	Paciência ������
+barcode.alert.missing.content	Campos estão vazios
+barcode.alert.success.content	Graças a você, esse código de barras foi registrado e agora pode ser usado por qualquer pessoa ������
+barcode.custom.header.edit	Editar informações
+barcode.edit	Modificar informações
+barcode.info.barcode	Código de barras
+barcode.info.calories	Calorias (kcal por
+barcode.info.calories.serving	Calorias (kcal por porção)
+barcode.info.carbs	Carboidratos (g para
+barcode.info.carbs.serving	Carboidratos (g por porção)
+barcode.info.fibers	Fibras (g para
+barcode.info.fibers.serving	Fibras (g por porção)
+barcode.info.lipids	Lipídios (g para
+barcode.info.lipids.serving	Lipídios (g por porção)
+barcode.info.name	Nome
+barcode.info.proteins	Proteínas (g por
+barcode.info.proteins.serving	Proteínas (g por porção)
+barcode.info.serving	Porção média (g)
+barcode.nutritional.per100g	por 100g
+barcode.nutritional.perServing	por porção
+barcode.nutritional.title	Informações nutricionais
+barcode.nutritionalscore.title	Pontuação nutricional
+barcode.toolbar.next	Seguinte
+barcodeAnalysis.errorMessage.text	Ops, encontramos um problema
+barcode_exists_message_cta	Abrir este alimento
+barcode_exists_message_cta_edit	Abrir este alimento
+barcode_exists_message_title	Este código de barras já existe em nosso banco de dados!
+barcode_exists_title	Este código de barras corresponde a outro produto
+barcode_screen_bullet1	Garanta a precisão das informações
+barcode_screen_bullet2	Você está ajudando milhões de usuários
+barcode_screen_cta	Criar este alimento
+barcode_screen_title	Este código de barras corresponde a outro produto. Vamos adicioná-lo juntos!
+base_info_subtitle_create_activity	Informações básicas
+best_matches_section_title_search	Melhores correspondências
+breakdown_goal_comparison_objective	Objetivo
+breakdown_goal_comparison_title	Comparação de metas
+breakdown_goal_comparison_your_day	Seu dia
+browse_all_fasting_plan_subtitle	Encontre o plano que melhor se adapte à sua vida
+browse_all_fasting_plan_title	Navegue por todos os planos de jejum
+bundle.update.fail	Ops! Falha na atualização
+bundle.update.fail.contactsupport	Contatar o suporte
+bundlePage_CTA	Desbloquear por %@ %@
+bundlePage_benefit_1	Sessões de esporte personalizadas
+bundlePage_benefit_2	Receitas saudáveis e deliciosas
+bundlePage_benefit_20voucher	Vale-presente aplicado! -20€
+bundlePage_benefit_chat	Converse com seu nutricionista
+bundlePage_benefit_daily_assessment	Faça uma avaliação diária do que você come
+bundlePage_benefit_diet_article	Acesse 500 artigos
+bundlePage_benefit_giftvoucher	Oferta por tempo limitado! -20€
+bundlePage_benefit_journal	Diário personalizado
+bundlePage_benefit_meal_plan	Menus personalizados
+bundlePage_benefit_nutritional_facts	Acesse 500 artigos
+bundlePage_benefit_recipe	Receitas saudáveis e deliciosas
+bundlePage_benefit_title	Pacote de Esporte e Receitas
+bundlePage_benefit_title_mealplan_workout	Pacote de Esportes e Menus
+bundlePage_benefit_title_recipe_workout	Pacote de Esportes e Receitas
+bundlePage_benefit_workout	Exercícios personalizados
+bundlePage_reassurance_paragraph	Desbloqueie este pacote vitalício e aumente suas chances de sucesso em 37%.
+bundlePage_subtitle	com nosso pacote Premium
+bundlePage_title	Aumente suas chances
+bundleVoucher_CTA	Continuar
+bundleVoucher_para	Este vale-presente é válido em sua próxima compra Foodvisor
+bundleVoucher_subpara	*Válido apenas para compras únicas.
+bundleVoucher_title	Vale-presente de 20€
+bundle_freeze_trick	truque de congelamento
+bundle_loading_subtitle	Carregando…
+cal_burned_subtitle	%@ calorias por %@ min
+cal_per_minute_create_activity	calorias / min
+calorie_goal_label	Meta de calorias
+calorie_goal_screen_title	Meta de Calorias
+calories_cal_text	%@ kcal
+calories_info_activity	Calorias
+cancel_custom_activity_button	Cancelar
+cancel_plan_feedback_text	Diga-nos por que aqui...
+cancel_plan_feedback_title	Por que você está cancelando o Premium?
+cancel_plan_prompt_title	Indo embora tão cedo?
+cancel_plan_reminder_message_1	Nós lembraremos você 30 dias antes do término da sua assinatura Premium.
+cancel_plan_reminder_message_2	30 dias
+cancel_trial_payment_popup_CTA	Desbloquear a oferta
+cancel_trial_payment_popup_para	Esta oferta é única e nunca mais estará disponível.
+cancel_trial_payment_popup_striken_price	%@
+cancel_trial_payment_popup_subtitle	Apenas %@/%@
+cancel_trial_payment_popup_tertiary	Recusar a oferta
+cancel_trial_payment_popup_title	Economize %@%%
+changeCalGoal.cancelButton.title	Cancelar
+changeCalGoal.recommendedButton.title	Recomendado
+changeCalGoal.saveButton.title	Salvar
+change_plan_feedback_title	Por que você quer mudar seu plano?
+chat.camera.auth.description	Permita o acesso à câmera para enviar fotos
+chat.camera.auth.title	Acesso à câmera não autorizado
+chat.headers.first.text	Laura responde em algumas horas, das 9h às 19h.
+chat.takePicture	Tirar uma foto
+chat.textField.placeholder.default	Escreva sua mensagem...
+chat.textField.placeholder.feedback	Deixe seu feedback...
+chat.textField.placeholder.question	Faça sua pergunta...
+chat.textField.placeholder.report	Reportar um erro nesta foto...
+chat.title	Minha nutricionista
+chooseHistory.camRoll.btn.title	Escolher da galeria
+choose_preset_label	Escolher um predefinido (cal fim de semana)
+class_library_all_emptystate	Leia pelo menos uma aula para encontrá-la aqui
+class_library_error_api_cta	Tentar Novamente
+class_library_error_api_subtitle	Algo inesperado aconteceu.
+class_library_error_api_title	Parece que houve um probleminha.
+class_library_error_offline_cta	Tentar Novamente
+class_library_error_offline_subtitle	Tente se conectar à internet para acessar suas aulas
+class_library_error_offline_title	Parece que você está offline
+class_library_filter_all	Tudo
+class_library_filter_emptystate	Clique em %@ ao final da sua aula para encontrá-la aqui
+class_library_filter_saved	Salvo
+class_library_title	Minhas aulas
+clear_note_button	Limpar nota
+close_drawer	Fechar menu de navegação
+close_sheet	Fechar planilha
+coach.all_class_done.no_daily.subtitle	Volte amanhã para novas lições.
+coach.all_class_done.subtitle	Aqui está o resultado do seu dia.
+coach.all_class_done.subtitle_log_meal	Preencha suas refeições para acessar seu resumo.
+coach.all_class_done.title	Parabéns, você completou suas aulas!
+coach.free.1.label	Acesse um coaching diário personalizado
+coach.free.2.label	Converse com nossos nutricionistas sempre que desejar
+coach.free.2.label.nonutritionist	Conselhos personalizados de nossos nutricionistas
+coach.free.3.label	Aproveite mais de 300 receitas simples e deliciosas
+coach.free.4.label	Leia mais de 500 artigos para alcançar o corpo perfeito
+coach.free.5.label	Acesse informações detalhadas sobre micronutrientes e pontuação completa de alimentos
+coach.free.cta	Descubra minha oferta
+coach.free.pills	50% de desconto
+coach.free.title	Desbloqueie seu programa personalizado
+coach.header.fri.10	Estamos aqui para você, {settings.name}
+coach.header.fri.18	Está chegando o fim de semana!
+coach.header.fri.20	Entregue-se ao sono
+coach.header.fri.23	Até amanhã, {settings.name}
+coach.header.fri.5	Dormiu bem, {settings.name}?
+coach.header.mon.10	Feliz em vê-lo novamente!
+coach.header.mon.18	Boa noite, {settings.name}
+coach.header.mon.20	Estamos aqui para você
+coach.header.mon.23	Tenha uma boa noite, {settings.name}
+coach.header.mon.5	Uma nova semana começa
+coach.header.no.name	Bem-vindo ao Foodvisor!
+coach.header.sat.10	Quem tem fome, tem pressa!
+coach.header.sat.18	Quase na hora do jantar, {settings.name}
+coach.header.sat.20	Seu dia está terminando, {settings.name}
+coach.header.sat.23	Tenha bons sonhos
+coach.header.sat.5	O dia amanhece, {settings.name}
+coach.header.sun.10	Tenha um bom dia, {settings.name}
+coach.header.sun.18	Não desista de seus esforços
+coach.header.sun.20	A semana está acabando, {settings.name}
+coach.header.sun.23	À noite todos os gatos são pardos
+coach.header.sun.5	Que bom te ver logo cedo!
+coach.header.thu.10	Tenha um bom dia, {settings.name}
+coach.header.thu.18	Dê-se um momento de relaxamento
+coach.header.thu.20	Seu dia está terminando
+coach.header.thu.23	Durma bem {settings.name}
+coach.header.thu.5	O dia amanhece, {settings.name}!
+coach.header.tue.10	Tenha um bom dia, {settings.name}
+coach.header.tue.18	Quase na hora do jantar, {settings.name}
+coach.header.tue.20	O dia está terminando
+coach.header.tue.23	Até amanhã, {settings.name}
+coach.header.tue.5	Dormiu bem, {settings.name}?
+coach.header.wed.10	Em direção ao sucesso!
+coach.header.wed.18	Não desista de seus esforços
+coach.header.wed.20	De volta à calma, {settings.name}
+coach.header.wed.23	A noite é um sábio conselheiro
+coach.header.wed.5	Um belo dia se inicia
+coach.no_tag_card.cta	Faça o teste em 8 minutos
+coach.no_tag_card.subtitle	Pode parecer longo, mas isso ajudará você a estabelecer hábitos saudáveis de forma definitiva!
+coach.no_tag_card.title	Descubra o novo Foodvisor e seu programa personalizado!
+coach.set_up_tags.subtitle	Descubra seu programa personalizado na aba 'Coach'!
+coach.tab.articles.header	Meus artigos
+coach.tab.class.done.answer.no	Não
+coach.tab.class.done.answer.yes	Sim
+coach.tab.class.done.cta	Continuar
+coach.tab.class.done.no.thank	Obrigado, vamos levar em consideração.
+coach.tab.class.done.question	Você achou esta aula interessante?
+coach.tab.class.done.title	Aula feita
+coach.tab.class.done.yes.thank	Obrigado, sua opinião é importante para nós
+coach.tab.class.feedback.thank.text	Sua opinião é importante para nós.
+coach.tab.class.feedback.thank.title	Obrigado!
+coach.tab.classes.error.api.cta	Tentar novamente
+coach.tab.classes.error.api.text	Algo inesperado aconteceu.
+coach.tab.classes.error.api.title	Houve um pequeno contratempo.
+coach.tab.classes.error.internet.text	Tente se conectar à internet para acessar seu conteúdo
+coach.tab.classes.error.internet.title	Parece que você está offline
+coach.tab.classes.finished.text	Se você não souber como proceder, não tenha medo de pedir ajuda à sua nutricionista!
+coach.tab.classes.finished.title	Novo conteúdo em breve!
+coach.tab.classes.header	Minhas aulas do dia
+coach.tab.section.3	Minhas ferramentas
+coach.tab.section.3.tool.1.subtitle	Chat com Laura
+coach.tab.section.3.tool.1.title	Minha nutricionista
+coach.tab.section.3.tool.2.subtitle	Mais de 300 receitas
+coach.tab.section.3.tool.2.title	Minhas receitas
+coach.tab.section.3.tool.3.subtitle	Mais de 500 artigos
+coach.tab.section.3.tool.4.title	Meus artigos
+coach.tab.section.3.tool.5.subtitle	Planeje sua semana
+coach.tab.section.3.tool.5.title	Menus
+coach.tab.section3.tool.4.subtitle	Concluído e Salvo
+coach.tab.section3.tool.4.title	Minhas aulas
+coach.tabbar.coach	Coach
+coach.tabbar.profile	Perfil
+coachTab.classes.end_of_class.title.a	Aula concluída!
+coachTab.classes.end_of_class.title.b	Bravo!
+coachTab.classes.end_of_class.title.c	Parabéns!
+coachTab.classes.end_of_class.title.d	Muito bem!
+coachTab_class_donePage_GoToNextClass	Ir para a próxima aula
+coachTab_class_donePage_doneForNow	Mais tarde
+coachTab_classes_time	min
+coachTab_premium_cta	Continuar
+coach_ai_daily_insight_question	O que você acha do meu dia?
+coach_ai_error_cta	Tentar novamente
+coach_ai_error_message	Parece que há um problema do nosso lado.
+coach_ai_error_oops	Ops...
+coach_ai_home_greeting	Oi %@, como posso ajudar você?
+coach_ai_input_placeholder	Faça sua pergunta
+coach_ai_meal_insight_question	O que você acha da minha refeição?
+coach_ai_menu_new_chat_button	Nova conversa
+coach_ai_response_feedback_prompt	O que achou desta resposta?
+coach_ai_thinking_message	Pensando...
+coach_ai_thought_message	Reflexão para %@.
+coach_free_mode_workout_cta	Desbloquear agora
+coach_gamification_FirstFreezeEarned_subtitle	Você ganhou dois géis!
+coach_gamification_FirstFreezeEarned_text	Com um gel, você pode perder um dia sem perder sua série!
+coach_gamification_FirstFreezeEarned_title	Aqui está um pouco de ajuda
+coach_gamification_calendar_best	Melhor série
+coach_gamification_calendar_freezeText	Eles permitem proteger sua sequência por um dia.
+coach_gamification_calendar_freezeTitle	O que são congelamentos de sequência?
+coach_gamification_calendar_streak	Série em andamento
+coach_gamification_calendar_title	Série
+coach_gamification_earn_freeze_cta	Continuar
+coach_gamification_flame_cta	Continuar
+coach_gamification_flame_log_paragraph_1	Registre sua refeição todos os dias para manter sua sequência!
+coach_gamification_flame_log_paragraph_10	Registre sua refeição todos os dias para continuar sua série!
+coach_gamification_flame_log_paragraph_2	Nunca duas sem três, te vemos amanhã!
+coach_gamification_flame_log_paragraph_3	Bom começo! Você está fazendo tudo certo
+coach_gamification_flame_log_paragraph_4	Registre sua refeição todos os dias para continuar sua série!
+coach_gamification_flame_log_paragraph_5	Registre sua refeição todos os dias para continuar sua série!
+coach_gamification_flame_log_paragraph_6	Só mais um dia para alcançar uma série de 7. Parabéns!
+coach_gamification_flame_log_paragraph_7	Já uma semana! É o início de uma longa jornada.
+coach_gamification_flame_log_paragraph_8	Apenas 8% dos nossos usuários chegam a uma série de 8. Você é incrível!
+coach_gamification_flame_log_paragraph_9	Registre sua refeição todos os dias para continuar sua série!
+coach_gamification_flame_paragraph_1	Leia suas aulas todos os dias para continuar sua série!
+coach_gamification_flame_paragraph_10	Leia suas aulas todos os dias para continuar sua série!
+coach_gamification_flame_paragraph_2	Nunca duas sem três, te vemos amanhã!
+coach_gamification_flame_paragraph_3	Bom começo! Você está fazendo tudo certo
+coach_gamification_flame_paragraph_4	Leia suas aulas todos os dias para continuar sua série!
+coach_gamification_flame_paragraph_5	Leia suas aulas todos os dias para continuar sua série!
+coach_gamification_flame_paragraph_6	Só mais um dia para alcançar uma série de 7. Parabéns!
+coach_gamification_flame_paragraph_7	Já uma semana! É o início de uma longa jornada.
+coach_gamification_flame_paragraph_8	Apenas 8% dos nossos usuários chegam a uma série de 8. Você é incrível!
+coach_gamification_flame_paragraph_9	Leia suas aulas todos os dias para continuar sua série!
+coach_gamification_flame_paragraph_rand_a	Continue assim!
+coach_gamification_flame_paragraph_rand_b	Continue assim!
+coach_gamification_flame_paragraph_rand_c	Continue assim!
+coach_gamification_flame_text	Leia suas aulas diariamente para que sua série não comece do zero!
+coach_gamification_go_cta	Vamos lá!
+coach_gamification_milestone_cta	Continuar
+coach_gamification_streakAdvice_text	As pessoas que completam uma série de 5 dias têm 4 vezes mais chances de perder peso nas primeiras 2 semanas!
+coach_gamification_streakAdvice_title	Você consegue alcançar 5 dias?
+coach_gamification_streakEarned_text	Isso ajudará caso você perca um dia.
+coach_gamification_streakEarned_title	Você ganhou um gel!
+coach_gamification_streakLost_text	As séries se encerram se você perder um dia de leitura.
+coach_gamification_streakLost_title	Você perdeu sua série
+coach_gamification_streak_lost_log_text	Sequências terminam se você perder um dia de registro.
+coach_gamification_streak_lost_request_cta	Enviar solicitação para reparar sequência
+coach_gamification_usefreeze_cta	Continuar
+coach_gamification_usefreeze_para	Continue voltando todos os dias para manter sua sequência ativa.
+coach_gamification_usefreeze_title	Seu gel salvou sua série!
+coach_max_banner_cta	Atualize agora
+coach_max_banner_description	Tenha acesso a plano de refeições personalizado, treinos personalizados e coach com IA.
+coach_max_banner_logo	Max
+coach_max_banner_title	Tenha resultados mais rápido
+coach_tab_convert_bundle_CTA	Desbloquear vitalício
+coach_tab_convert_bundle_free_CTA	Desbloquear agora
+coach_tab_convert_bundle_free_title	Desbloqueie suas aulas e seu nutricionista!
+coach_tab_convert_bundle_free_title_nonutritionist	Desbloqueie seu programa e suas aulas!
+coach_tab_convert_bundle_subtitle	Desbloqueie seu esporte e suas receitas!
+coach_tab_convert_bundle_subtitle_benefits	Desbloqueie seus %@
+coach_tab_convert_bundle_title	Resultados mais rápidos
+coach_tab_convert_premium_cta	Desbloquear a oferta
+coach_tab_convert_premium_title	Oferta especial
+coach_weightWidget_gfit	via Google Fit
+coach_weightWidget_progress	%@ desde o início
+coach_weightWidget_progress_noChangeOrNegativeChange	Até amanhã!
+coach_weightWidget_progress_stone	%@ desde o início
+coach_weightWidget_title	Minha pesagem do dia
+coach_workout_noTag_button	Iniciar meu programa
+coach_workout_noTag_new	NOVO
+coach_workout_noTag_secondary_button	Não, obrigado
+coach_workout_noTag_text	Associe o esporte à nutrição para resultados duradouros.
+coachtab.classes.end_of_class.comment_explainer	Nos diga por que você não gostou desta aula.
+coachtab.classes.end_of_class.leave_comment	Nos diga por quê!
+coachtab_classes_header_bookmark_popup_add	foi salvo em "Minhas aulas"
+coachtab_classes_header_bookmark_popup_error	Parece que houve um probleminha.
+coachtab_classes_header_bookmark_popup_remove	foi removido de "Minhas aulas"
+coachtab_classes_header_bookmark_tooltip	Salve a aula para encontrá-la em "Minhas aulas"
+community_ambassador_email_body	Olá equipe Foodvisor,
+community_ambassador_email_subject	Quero participar do Programa Embaixador
+community_button_ambassador	Junte-se ao nosso Programa de Embaixadores
+community_button_follow_instagram	Siga o Foodvisor no Instagram
+community_button_follow_tiktok	Siga o Foodvisor no Tiktok
+community_button_join_beta	Participe do nosso Programa Beta
+community_button_join_facebook	Participar do Grupo no Facebook
+community_button_join_subreddit	Participar do Subreddit
+community_button_rate_in_store	Avalie o Foodvisor na Play Store
+community_link_ambassador	https://bit.ly/43OSaA5
+community_link_facebook	https://bit.ly/3JaHa3y
+community_link_instagram	https://bit.ly/3q4JQYV
+community_link_rate_app	https://bit.ly/44WPnFp
+community_link_reddit	https://bit.ly/4oNcv0X
+community_link_tiktok	https://bit.ly/3JHE9gT
+community_page_subtitle_communities	Nossas comunidades
+community_page_subtitle_help	Ajude a apoiar o Foodvisor
+community_title_page	Participe das nossas comunidades
+confirmPhoto.customize	Personalizar meu alimento
+container_food_example_1	Dois ovos, arroz e um suco de laranja caseiro
+container_food_example_2	Tomei 35g de proteínas e 140 calorias
+container_food_example_3	Comi uma salada mista no restaurante
+container_food_example_4	Tomei um grande café da manhã doce!
+container_food_example_5	100g de quinoa e 50g de abacate
+continue_button	Continuar
+continue_button_wheel	Continuar
+cookie_policy_title	Política de cookies
+correcting_food_status_message	Corrigindo comida…
+countdown_modal_month	/mês
+create_activity_page_cta	Criar a atividade
+create_activity_page_title	Criar atividade
+create_custom_activity_button	Criar uma atividade personalizada
+create_food_screen_photo_question	Você gostaria de tirar uma foto da sua comida?
+create_food_screen_skip_and_finish_cta	Pular e finalizar
+create_food_screen_take_photo_cta	Tirar foto
+creating_food_status_message	Criando alimento...
+creation_failed_error_message	Não conseguimos criar um alimento com base na sua mensagem. Tente novamente descrevendo uma refeição completa ou alimentos únicos.
+cta_create_myfoods_tab	Criar novo alimento ou receita
+cta_go_new_level	Ir para o Nível %@
+current_preset_label	Atual: personalizado
+custom_preset_selected	Número personalizado de calorias para cada dia
+customize_each_day_manually_label	Personalizar cada dia manualmente
+customize_header_modal_cta	Confirmar
+customize_header_modal_subtitle	Bravo!
+customize_header_modal_text	Você encontrou nossa surpresa. Então, você prefere floresta ou montanha?
+customize_header_modal_topNav_title	Personalize seu espaço
+daily.health.steps.above	Ótimo trabalho, você deu %@ passos!
+daily.health.steps.above.other	Boa! Você deu %@ passos!
+daily.health.steps.below	Você deu %@ passos dos 10.000 recomendados por dia.
+daily.health.steps.below.withActivities	Você deu %@ passos dos 10.000 recomendados por dia.
+dailyReport.stepCount.activate.stepCount	Ative a importação de passos nas configurações do seu aplicativo de saúde para saber quantos passos você deu hoje
+dailyReport.stepCount.comment.android	Você deu {step_done} passos dos {step_goal} recomendados por dia.
+dailyReport.stepCount.comment.noActivity.android	Você deu {step_done} passos dos {step_goal} recomendados por dia.
+dailyReport.stepCount.comment.noActivity.other	Você deu {step_done} passos dos {step_goal} recomendados por dia.
+dailyReport.stepCount.comment.other	Você deu {step_done} passos dos {step_goal} recomendados por dia.
+daily_analysis_meal_breakdown_card_para	Esta análise mostra como suas calorias totais são distribuídas pelas refeições ao longo do dia.
+daily_analysis_overall_explanation_card_para	A análise global do seu dia fornece uma visão geral rápida de seu valor nutricional. Ela avalia como o seu dia se distribui em proteínas, lipídios, carboidratos e fibras, levando em consideração seu perfil.
+daily_calorie_budget_subtitle	Registre suas refeições e tente atingir essa meta! Consulte seu diário para mais informações.
+daily_calorie_budget_title	Este é o seu orçamento diário de calorias.
+daily_calories_subtitle	Sua média diária é de
+daily_calories_title	Calorias diárias
+daily_insight_carbs_card_para	São sua principal fonte de energia e melhoram funções cognitivas como a concentração. Costumam representar a maior parte das calorias diárias: consuma em quantidade moderada e na forma menos processada possível.
+daily_insight_fat_card_para	Fornecem energia duradoura e são necessários para a síntese de hormônios. Por serem o nutriente mais calórico, consuma em quantidades moderadas e escolha fontes de qualidade.
+daily_insight_fiber_card_para	Elas regulam o trânsito intestinal, reduzem o risco de doenças cardiovasculares e aumentam a saciedade da refeição. Varie ao máximo suas fontes de fibra.
+daily_insight_goal_card_para	Seu objetivo diário é calculado usando sua taxa metabólica basal (TMB), a energia que seu corpo precisa em repouso, e o nível de atividade que você selecionou nas configurações do aplicativo. Isso proporciona uma estimativa realista de suas necessidades totais de energia diária para seu estilo de vida usual.
+daily_insight_goal_card_title	Meta
+daily_insight_macro_explanation_card_para	Esta análise mostra a distribuição de nutrientes em suas refeiçãos, de acordo com nossas recomendações personalizadas.
+daily_insight_meal_breakdown_compare	Compare com sua meta atual
+daily_insight_meal_breakdown_description	Veja como suas calorias são distribuídas nas refeições.
+daily_insight_meal_breakdown_title	Detalhamento das refeições
+daily_insight_overall_analysis_calories_burned	Calorias queimadas (atividade)
+daily_insight_overall_analysis_calories_eaten	Calorias consumidas
+daily_insight_overall_analysis_calories_left	Calorias restantes
+daily_insight_overall_analysis_objective	Objetivo
+daily_insight_overall_analysis_total_goal	Meta total
+daily_insight_protein_card_para	São essenciais para a construção muscular e para o bom funcionamento do sistema imunológico. Distribua o consumo ao longo das refeições do dia para melhor absorção.
+daily_insight_steps	passos
+daily_insight_steps_card_para	Caminhar é uma das formas mais simples e eficazes de se manter ativo e cuidar da saúde cardiovascular.
+daily_insight_steps_current_count	/ %@ passos
+daily_insight_steps_percentage_message	Você alcançou %@ do seu objetivo, continue assim.
+daily_insight_steps_title	Passos
+daily_insight_weekly_steps_title	Tendência semanal de passos
+daily_insights.page.title	Visão diária
+daily_insights_macro_analysis_title	Análise de macros
+daily_insights_overall_analysis_number_meal_logged	**refeições** registradas até agora
+daily_meal_placeholder	Refeição diária
+daily_quest_description	Leia uma aula diária
+daily_quest_section_title	Missão diária
+daily_quest_timer	%@ horas
+daily_quest_timer_minute	%@ minutos
+daily_weekend_goals_label	Meta calórica personalizada
+daily_weekend_goals_subtitle	Defina uma meta calórica personalizada para cada dia
+dailyreport_asknutri_first_cta	Pedir ao meu nutricionista
+dailyreport_asknutri_first_para	Peça ao seu nutricionista uma análise das suas refeições do dia.
+dailyreport_asknutri_first_title	Obtenha uma análise nutricional detalhada do seu dia
+dailyreport_asknutri_second_cta	Pedir conselhos
+dailyreport_asknutri_second_para	Melhore sua alimentação e alcance seus objetivos nutricionais com a ajuda da Laura.
+dailyreport_asknutri_second_title	Peça ao seu nutricionista para analisar o seu dia.
+day.rating.description.classif.A	Seu dia está azul porque você consumiu a maioria dos alimentos azuis
+day.rating.description.classif.B	Seu dia está verde porque você consumiu a maioria dos alimentos verdes
+day.rating.description.classif.C	Atenção, seu dia está laranja, há muitos alimentos a moderar
+day.rating.description.classif.D	Atenção, seu dia está vermelho, há muitos alimentos a limitar
+day.rating.description.classif.U	Adicione mais refeições para descobrir sua nota
+day.rating.title.classif.A	Excelente
+day.rating.title.classif.B	Bom
+day.rating.title.classif.C	Correto
+day.rating.title.classif.D	A limitar
+day_track_season_pass	DIA
+deeplink.popup.mail.subject	Erro de autenticação Site web > App
+deeplink.web.popup.message	Contate o suporte para obter ajuda
+deeplink.web.popup.title	Ops! Erro de conexão
+default_error_message	Entrada inválida
+default_popup_window_title	Janela pop-up
+delete_custom_activity_button	Excluir esta atividade
+delete_custom_activity_popup_description	Isso excluirá todas as atividades registradas em todos os lugares!
+delete_custom_activity_popup_question	Tem certeza de que deseja excluir sua atividade personalizada?
+describe_food_placeholder	Descreva o que você comeu
+describe_meal_intro_checklist_item_1	Descreva sua refeição
+describe_meal_intro_checklist_item_1_new	Descreva, tire foto ou dite sua refeição
+describe_meal_intro_checklist_item_2	Ou cole um link de receita
+describe_meal_intro_checklist_item_3	Revise e registre com um clique
+describe_meal_intro_note_text	Nossa IA pode cometer erros. Em dúvida, revise novamente. Sua conversa desaparecerá depois de registrar sua refeição.
+describe_meal_intro_slide_title	Descreva o que você comeu para registrar toda a sua refeição
+diet.advices	Dicas
+diet.card.macro.carbs	carboidratos
+diet.card.macro.fats	gorduras
+diet.card.macro.fibers	fibras
+diet.card.macro.proteins	proteínas
+diet.description.change	Mudar de dieta
+diet.healthSheet	Fichas de saúde
+diet.popup.validate.explanationOne	Alteração do objetivo calórico
+diet.popup.validate.explanationThree	As receitas foram adaptadas à sua dieta
+diet.popup.validate.explanationTwo	Nova distribuição de macronutrientes
+diet.popup.validate.title	Seu objetivo diário agora está adaptado à sua dieta
+diet.practical	Dicas práticas
+diet.quizz.description	Realizando este teste, nossos nutricionistas
+diet.quizz.start	FAZER TESTE
+diet.quizz.title	Encontre minha dieta
+diet.recommended	sugerido
+diet.resume.title	Incluído
+diet.title	Meu programa personalizado
+discard_changes_confirmation_cancel_button	Cancelar
+discard_changes_confirmation_discard_button	Descartar
+discard_changes_confirmation_subtitle	Isso descartará todas as alterações que você fez
+discard_changes_confirmation_title	Tem certeza de que deseja descartar suas alterações?
+discard_pictures_popup_answer_cancel	Cancelar
+discard_pictures_popup_answer_go_back	Voltar
+discard_pictures_popup_question	Tem certeza de que deseja voltar?
+discard_pictures_popup_subtitle	Isso descartará as fotos que você acabou de tirar
+discard_popup_secondary_button	Voltar para editar
+dropdown_menu	Menu suspenso
+duration_info_activity	Duração
+duration_min_text	%@ min
+duration_picker	Duração
+duration_picker_description	Selecione a duração da sua atividade.
+eating_end_question	Quando você quer parar de comer?
+eating_end_subtitle	Defina a hora em que você quer começar seu jejum novamente
+eating_start_question	Quando você começou a comer?
+eating_start_subtitle	Defina a hora da sua primeira refeição do dia
+ecoscore_label	Eco-score
+edit.meal.search.food	Mais resultados
+edit_activity_page_title	Atualizar
+edit_calorie_goal_recalculate_cta	Recalcular meta de calorias
+edit_calorie_goal_recalculate_subtitle	Com base no seu perfil, serão %@.
+edit_calorie_goal_recalculate_title	Você tem certeza de que deseja recalcular sua meta de calorias?
+edit_calorie_goal_switch_off_cta	Desativar
+edit_calorie_goal_switch_off_title	Tem certeza de que deseja desativar as metas diárias?
+edit_email_address_title_page	Editar endereço de e-mail
+edit_email_description_my_profile	Se você deseja atualizar seu endereço de e-mail, clique no botão ao lado do seu e-mail.
+edit_email_invalid_error_text	O e-mail que você inseriu é inválido ou já está em uso
+edit_food_brand_placeholder	Nome da marca
+edit_food_brand_question	Qual é a marca?
+edit_food_form_crop_nutrition_label_subtitle	Coloque a tabela nutricional dentro do quadro para que fique legível
+edit_food_form_crop_nutrition_label_title	Corte sua foto
+edit_food_form_crop_photo_retake	Refazer
+edit_food_form_crop_photo_subtitle	Coloque o alimento dentro do quadro para que fique centralizado e claro
+edit_food_form_crop_photo_title	Corte sua foto
+edit_food_form_crop_photo_validate	Validar
+edit_food_form_food_photo_front_instruction	Centralize o alimento na imagem
+edit_food_form_food_photo_front_subtitle	Tire uma foto do alimento ou da frente do produto
+edit_food_form_food_photo_front_title	Foto do Alimento
+edit_food_form_nutrition_label_photo_instruction	Centralize a tabela na imagem
+edit_food_form_nutrition_label_photo_subtitle	Tire uma foto da tabela nutricional para validar as informações
+edit_food_form_nutrition_label_photo_title	Tabela Nutricional
+edit_food_liquid_toggle	Este alimento é um líquido
+edit_food_name_placeholder	Nome do alimento
+edit_food_name_question	Que comida é essa?
+edit_food_photo_instruction	Foto do alimento
+edit_food_photo_skip	Pular
+edit_food_photo_subtitle	Tire uma foto do alimento ou da frente do produto
+edit_food_scan_barcode_overlay_help	Centralize o código de barras no quadro
+edit_nutritional_table_instruction	Tabela nutricional
+edit_nutritional_table_skip	Pular
+edit_nutritional_table_subtitle	Tire uma foto da tabela nutricional para validar as informações.
+email_password_mismatch_connect_other_account	Conectar com outra conta
+email_password_mismatch_password_button	Redefinir minha senha
+email_password_mismatch_retry	Tentar novamente
+email_password_mismatch_subtitle	O que você deseja fazer?
+email_password_mismatch_title	O e-mail e a senha não coincidem.
+error.loading.page.text	Esta página não pôde ser carregada corretamente.
+error.loading.page.title	Ops!
+error.network.body	Preciso de internet ������
+error_a11y_label	Erro: inválido
+error_age_TEST	Sua idade não parece válida
+error_barcode_scan	Algo deu errado. Por favor, escaneie seu código de barras novamente
+error_no_results_voice_logging	Não encontramos resultados
+error_screen_cancel_button	Cancelar
+error_screen_message_body	Tente novamente para usar o alimento que você acabou de preencher.
+error_screen_message_title	Ocorreu um erro do nosso lado.
+error_screen_retry_button	Tentar novamente
+error_voice_logging	Tivemos um problema
+event_christmas_modal_description_rewards	Registre uma refeição todos os dias para desbloquear recompensas exclusivas para sua semente: roupas, itens para o jardim e gemas. Por tempo limitado!
+event_christmas_modal_title	A magia do Natal chegou
+evolve_seed_cta	Ótimo!
+evolve_seed_flavor_text_1	Continue registrando suas refeições para vê-lo crescer!
+evolve_seed_flavor_text_2	Registre suas refeições todos os dias para subir de nível!
+evolve_seed_flavor_text_3	Continue registrando suas refeições para subir de nível!
+evolve_seed_level_2_subtitle	%@ tem mais folhagem!
+evolve_seed_level_3_subtitle	%@ tem pernas!
+evolve_seed_level_4_subtitle	%@ tem braços!
+evolve_seed_level_5_subtitle	%@ está totalmente crescido!
+evolve_seed_level_6_subtitle	%@ tem bochechas!
+evolve_seed_level_7_subtitle	%@ tem boca!
+evolve_seed_level_header	Nível %@
+evolve_seed_level_title	Novo crescimento
+evolve_seed_subtitle	Faça %@ subir para o próximo nível
+evolve_seed_title_1	%@ vai crescer conforme você fica mais saudável
+evolve_seed_title_2	%@ vai crescer conforme você fica mais saudável
+evolve_seed_title_3	%@ vai crescer conforme você fica mais saudável
+evolve_seed_title_subtext	Volte amanhã para que %@ possa continuar crescendo!
+family_plan_members	2 - 6 membros
+family_plan_title	Plano familiar
+faq.contact.button	Enviar mensagem
+faq.contact.description	Se sua pergunta não estiver nas Perguntas frequentes, você sempre pode nos contatar por e-mail.
+fasting_12_12_description	O jejum 12:12 é uma ótima maneira de começar! Ele oferece uma abordagem equilibrada ao dividir seu dia igualmente entre comer e jejuar, tornando fácil incorporá-lo a qualquer estilo de vida.
+fasting_14_10_description	O jejum 14:10 é uma excelente escolha para começar a jejuar! Ele oferece uma janela de jejum manejável enquanto ainda fornece tempo suficiente para refeições equilibradas.
+fasting_17_7_description	O jejum 17:7 é benéfico para elevar sua prática de jejum! Ele prolonga o período de jejum enquanto ainda permite uma janela de alimentação suficiente, ajudando a maximizar os benefícios do jejum.
+fasting_17_9_description	O jejum 17:9 é benéfico para elevar sua prática de jejum! Ele prolonga o período de jejum enquanto ainda permite uma janela de alimentação suficiente, ajudando a maximizar os benefícios do jejum.
+fasting_18_6_description	O jejum 18:6 oferece um período de jejum prolongado para maximizar os benefícios do jejum, mas é importante garantir que você ainda esteja atendendo às suas necessidades nutricionais durante o período de alimentação.
+fasting_20_4_description	O jejum 20:4 é um plano de jejum rigoroso adequado para usuários experientes. Ele fornece um período de jejum prolongado, mas é crucial planejar cuidadosamente sua refeição para garantir que suas necessidades nutricionais sejam atendidas.
+fasting_beginners_12_12_description	Você provavelmente já jejua assim!
+fasting_beginners_12_12_title	12:12 Jejum circadiano
+fasting_beginners_14_10_description	Café da manhã tardio para acessar a fase de 'cetose' do jejum
+fasting_beginners_14_10_title	14:10 Jejum para iniciantes
+fasting_beginners_title	Iniciantes
+fasting_benefits_cta	Próximo
+fasting_benefits_para	Quando jejuamos, nosso corpo passa por diferentes estágios.
+fasting_benefits_title	Durante cada jejum, você queimará gordura
+fasting_blood_sugar_dropping	Nível de açúcar no sangue caindo
+fasting_blood_sugar_rising	Nível de açúcar no sangue subindo
+fasting_blood_sugar_stabilizing	Nível de açúcar no sangue estabilizando
+fasting_cancel_current_fast_cta	Cancelar o jejum atual
+fasting_cancel_current_fast_popup_cta	Cancelar
+fasting_currently_active_fasting_tracker	Você atualmente tem um rastreador de jejum ativo
+fasting_eating_phase	Fase de alimentação
+fasting_eating_window	Janela de alimentação
+fasting_edit_label	Editar
+fasting_end_fast_early_no	Não, obrigado
+fasting_end_fast_early_prompt	Tem certeza de que deseja terminar o jejum cedo?
+fasting_end_fast_early_subtitle	Isso iniciará o seu próximo período de alimentação.
+fasting_end_fast_early_yes	Sim
+fasting_end_fasting_button	Terminar jejum
+fasting_end_question	Quando você quer parar de jejuar?
+fasting_end_subtitle	Defina a hora em que você quer começar sua janela de alimentação
+fasting_expert_18_6_description	A janela de alimentação é pequena, faça isso apenas após atingir 16:8.
+fasting_expert_18_6_title	18:6 Jejum especializado
+fasting_expert_20_4_description	Uma refeição por dia, apenas para os mais experientes em jejum.
+fasting_expert_20_4_title	20:4 OMAD
+fasting_expert_title	Especialista
+fasting_explore_cta	Explorar agora
+fasting_explore_subtitle	Escolha o jejum intermitente que se adapta ao seu estilo de vida para se sentir mais energizado e impulsionar sua perda de peso
+fasting_explore_title	Quer começar o Jejum Intermitente?
+fasting_fasting_elapsed_time	Tempo decorrido
+fasting_fat_burn	Queima de gordura
+fasting_goal_label	Meta
+fasting_how_it_works_cta	Continuar
+fasting_how_it_works_day	24 horas
+fasting_how_it_works_eating_window	Período
+fasting_how_it_works_fasting_window	Janela
+fasting_how_it_works_para_eating	Durante a janela de alimentação, desfrute de refeições regulares e certifique-se de atingir sua meta de proteína.
+fasting_how_it_works_para_eating_color	Durante a janela de alimentação
+fasting_how_it_works_para_fasting	Durante o seu jejum, nenhum alimento é consumido para ajudar o corpo a mudar para a queima de gordura. Tente se manter com bebidas de zero calorias como água, café e chá.
+fasting_how_it_works_para_fasting_color	Durante o seu jejum
+fasting_how_it_works_title	Como funciona?
+fasting_intermediate_16_8_description	Passe por todas as etapas do jejum pulando uma refeição
+fasting_intermediate_16_8_title	16:8
+fasting_intermediate_17_7_description	Prolongue sua fase de cetose aumentando sua fase de jejum
+fasting_intermediate_17_7_title	17:7
+fasting_intermediate_17_9_description	Prolongue sua fase de cetose aumentando sua fase de jejum
+fasting_intermediate_17_9_title	17:9
+fasting_intermediate_title	Intermediário
+fasting_intermittent_fasting_title	Jejum Intermitente
+fasting_ketosis	Cetose
+fasting_notification_almost_done_subtitle	30 minutos restantes no seu jejum—ótimo trabalho!
+fasting_notification_almost_done_title	Continue, você está quase lá! ������
+fasting_notification_blood_sugar_declining_subtitle	Seus níveis de açúcar no sangue estão agora diminuindo. Esta é uma fase crítica; mantenha sua ingestão de água e permaneça estável.
+fasting_notification_blood_sugar_declining_title	Açúcar no sangue diminuindo
+fasting_notification_blood_sugar_rising_subtitle	Seus níveis de açúcar no sangue estão aumentando. Este é um começo natural para seu jejum.
+fasting_notification_blood_sugar_rising_title	Açúcar no sangue aumentando
+fasting_notification_blood_sugar_stabilizing_subtitle	Seus níveis de açúcar no sangue estão estabilizando agora. Ótimo trabalho mantendo seu jejum! Você está encontrando seu ritmo.
+fasting_notification_blood_sugar_stabilizing_title	Açúcar no sangue estabilizando
+fasting_notification_fast_end_subtitle	Trabalho incrível, hora de desfrutar uma refeição saudável!
+fasting_notification_fast_end_title	Parabéns, jejum completo! ✅
+fasting_notification_fast_start_subtitle	Mantenha o foco e hidrate-se.
+fasting_notification_fast_start_title	⏰ Seu jejum começa agora!
+fasting_notification_fast_starts_soon_subtitle	Certifique-se de fazer uma última refeição, se necessário.
+fasting_notification_fast_starts_soon_title	⏳ 30 min para começar o jejum!
+fasting_notification_fat_burning_mode_subtitle	Você entrou no estágio de queima de gordura. Seu corpo agora está usando gordura armazenada para energia. Continue em frente!
+fasting_notification_fat_burning_mode_title	Modo de Queima de Gordura
+fasting_notification_ketosis_subtitle	Você alcançou a cetose! Seu corpo está queimando gordura de forma eficiente para combustível. Excelente progresso!
+fasting_notification_ketosis_title	Bem-vindo à cetose
+fasting_option_12_12	Jejum 12:12
+fasting_option_14_10	Jejum 14:10
+fasting_option_16_8	Jejum 16:8
+fasting_option_17_7	Jejum 17:7
+fasting_option_18_6	Jejum 18:6
+fasting_option_20_4	Jejum 20:4
+fasting_pick_this_plan_change_current_fast_popup_subtitle	Seu novo plano começará agora.
+fasting_pick_this_plan_change_current_fast_popup_title	Tem certeza de que deseja mudar o seu plano de jejum atual?
+fasting_pick_this_plan_cta	Escolher este plano
+fasting_pick_this_plan_no_change_current_fast_popup_cta	Não
+fasting_pick_this_plan_yes_change_current_fast_popup_cta	Sim
+fasting_plan_cta	Continuar
+fasting_plan_end	Terminar Jejum %@
+fasting_plan_fast_left	Jejum
+fasting_plan_fast_right	Coma
+fasting_plan_picker_start_cta	Definir hora
+fasting_plan_picker_start_subtitle	Defina a hora em que você deseja parar de comer.
+fasting_plan_picker_start_title	Quando você quer começar a jejuar?
+fasting_plan_reassurance	Se achar que é muito difícil, você poderá mudar para um plano mais fácil posteriormente.
+fasting_plan_schedule	Iniciar jejum
+fasting_plan_schedule_calorie_goal_advice	Você pode ajustar sua meta de calorias para refeições nas configurações para refletir seu jejum
+fasting_plan_schedule_free_cta	Desbloquear com Premium
+fasting_plan_subtitle	O jejum 16:8 é perfeito para começar! Ele permite que você passe por todas as etapas do jejum enquanto muda o mínimo possível seu horário de alimentação.
+fasting_plan_title	Escolhemos este plano para você
+fasting_ready_cta	Não posso esperar
+fasting_ready_subtitle	O jejum intermitente está chegando muito em breve.
+fasting_ready_subtitle_2	Você pode encontrar seu plano de jejum intermitente no seu diário.
+fasting_ready_title	Você está pronto!
+fasting_reassurance_page_cta	Vamos lá
+fasting_remove_confirmation_cta_cancel	Cancelar
+fasting_remove_confirmation_cta_remove	Remover jejum do diário
+fasting_remove_confirmation_subtitle	Isso removerá o cartão do seu diário. Você pode ativá-lo novamente nas suas configurações
+fasting_remove_confirmation_title	Tem certeza de que deseja remover o jejum do seu diário?
+fasting_remove_current_fast_popup_cta	Remover o jejum atual
+fasting_remove_current_fast_popup_subtitle	Isso interromperá o seu programa de jejum atual. Você pode remover o widget de jejum nas configurações.
+fasting_remove_current_fast_popup_title	Tem certeza de que deseja cancelar o seu jejum atual?
+fasting_set_time_cta	Definir horário
+fasting_set_time_start_eating	Eu começo a comer às
+fasting_set_time_stop_eating	Eu paro de comer às
+fasting_set_time_subtitle	Usaremos isso para recomendar o melhor horário de jejum e definir os horários de início e término do seu jejum.
+fasting_set_time_title	Quando você costuma comer?
+fasting_start_fast_early_no	Não, obrigado
+fasting_start_fast_early_prompt	Tem certeza de que deseja iniciar o jejum cedo?
+fasting_start_fast_early_subtitle	Isso interromperá o seu período de alimentação.
+fasting_start_fast_early_yes	Sim
+fasting_start_fasting_button	Começar o jejum
+fasting_start_question	Quando você começou a jejuar?
+fasting_start_subtitle	Defina a hora da última vez que você comeu algo.
+fasting_started_label	Iniciado
+fasting_time_picker_cta	Definir horário
+fasting_time_picker_start_subtitle	Defina a hora da sua primeira refeição do dia.
+fasting_time_picker_start_title	Quando você costuma começar a comer?
+fasting_time_picker_stop_subtitle	Defina a hora em que você termina de comer para o dia (último lanche/refeição).
+fasting_time_picker_stop_title	Quando você costuma parar de comer?
+fasting_welcome_benefit_easy	Fácil de seguir
+fasting_welcome_benefit_food_diary	Ótimo com um diário alimentar
+fasting_welcome_benefit_health	Saúde melhorada e perda de peso
+fasting_welcome_benefits_title	É um caminho simples para perder peso e ganhar saúde:
+fasting_welcome_cta	Começar
+fasting_welcome_para	O jejum intermitente alterna entre períodos de alimentação e jejum. Ele se concentra em quando comer, não apenas o que comer.
+fasting_welcome_title	Bem-vindo ao Jejum!
+fasting_window	Você está jejuando!
+favorite.error.exists	Este nome já existe nos seus favoritos
+favoriteTab.emptyState.Message	Encontre seus favoritos aqui. Adicione-os clicando na
+feedback_search_results_popup_cta	Entendi
+feedback_search_results_popup_subtitle	Com seus comentários sobre cada resultado, você melhora a qualidade das suas buscas!
+feedback_search_results_popup_title	Melhore seus resultados de busca dando seu feedback!
+feedback_thank_you_done_button	Concluído
+feedback_thank_you_popup_cta	Dizer mais
+feedback_thank_you_popup_subtitle_1	Diga-nos o que estava errado com este resultado
+feedback_thank_you_popup_subtitle_2	Seus resultados de pesquisa melhoram graças a você.
+feedback_thank_you_popup_title_1	Obrigado pelo seu comentário!
+feedback_thank_you_popup_title_1_neutral	Obrigado pelo seu comentário
+feedback_thank_you_popup_title_2	Obrigado pelos seus comentários!
+feedback_thank_you_subtitle_1	Nossa equipe revisará seu relatório
+feedback_thank_you_subtitle_2	Cada relatório que você faz ajuda a comunidade Foodvisor
+feedback_thank_you_subtitle_3	Depois de aceitas, estas informações serão atualizadas em seu diário alimentar
+feedback_thank_you_title	Obrigado pelo seu feedback
+fillbarcode.addphoto	Adicionar uma foto
+fillbarcode.averageserving	Porção média (%@)
+fillbarcode.barcodetitle	Código de barras
+fillbarcode.brand	Marca
+fillbarcode.byserving	Por porção
+fillbarcode.calories	Calorias
+fillbarcode.cancel	Cancelar
+fillbarcode.changephoto	Editar foto
+fillbarcode.createtitle	Adicionar um código de barras
+fillbarcode.fat	Gorduras / Lipídios
+fillbarcode.fat_sat	dos quais gorduras saturadas
+fillbarcode.fibers	Fibras
+fillbarcode.for100	por 100%
+fillbarcode.fromlibrary	Rolo da câmera
+fillbarcode.glucid	Carboidratos
+fillbarcode.liquid	Líquido
+fillbarcode.name	Nome
+fillbarcode.opencamera	Câmera
+fillbarcode.proteins	Proteínas
+fillbarcode.salt	Sal
+fillbarcode.savebutton	Salvar produto
+fillbarcode.setp2	Passo
+fillbarcode.sugar	dos quais açúcares
+filter.switch.all	Todos
+filter.switch.food	Alimentos
+filter.switch.meal	Refeições
+filter.switch.recipe	Receitas
+first_quest_claim_reward_subtitle	Pegue sua recompensa!
+first_quest_completed_title	Primeira missão concluída!
+first_quest_continue_button	Continuar
+first_quest_health_quests_description	%@ são tarefas diárias que ajudarão você a adotar hábitos mais saudáveis e a alcançar seus objetivos!
+first_quest_health_quests_description_color	As Missões de Saúde
+first_quest_log_food_task	Registre pelo menos um alimento
+first_quest_log_meal	Primeira Missão
+first_quest_log_meal_instructions	Registre sua refeição mais recente para começar sua jornada!
+first_streak_created	Uma sequência começou! Registre suas refeições todos os dias para mantê-la.
+first_use_frame_barcodescan_cta	Comece agora!
+first_use_frame_barcodescan_description	Passe a câmera sobre um código de barras
+first_use_frame_barcodescan_feature	Reconhecimento Instantâneo
+first_use_frame_barcodescan_title	Escaneie códigos de barras instantaneamente para pesquisá-los!
+first_use_frame_live_reco_cta	Comece agora!
+first_use_frame_live_reco_description	Passe a câmera sobre um alimento
+first_use_frame_live_reco_feature	Reconhecimento Instantâneo
+first_use_frame_live_reco_title	Escaneie um alimento instantaneamente para pesquisá-lo!
+first_use_frame_photo_cta	Comece agora!
+first_use_frame_photo_description	Detecta vários alimentos de uma vez
+first_use_frame_photo_feature	Revise e registre sua refeição
+first_use_frame_photo_title	Analise sua refeição completa tirando uma foto!
+first_use_frame_voice_logging_cta	Comece agora!
+first_use_frame_voice_logging_description	Descreva sua refeição
+first_use_frame_voice_logging_feature	Revise os alimentos e registre-os
+first_use_frame_voice_logging_title	Registre sua refeição completa apenas falando!
+first_use_quick_add_cta	Comece agora!
+firststeps.calGoal.slide8.changeGoalButton.title	Modificar minha ingestão nutricional
+firststeps.gender.female.label	Mulher
+firststeps.gender.male.label	Homem
+firststeps.notif.helpLabel.label	Aceite notificações
+firststeps.slide1.gainWeight.title	Ganhar peso
+firststeps.slide1.looseWeight.title	Perder peso
+firststeps.slide1.maintainWeight.title	Comer de forma saudável
+firststeps.slide10.takePhoto.title	Vamos lá!
+firststeps.slide6.activeButton.subtitle	Trabalho em pé ou atividade física 3 vezes ou mais por semana
+firststeps.slide6.activeButton.title	Ativo
+firststeps.slide6.sedentaryButton.subtitle	Trabalho sedentário e atividade física menos de 2 vezes por semana
+firststeps.slide6.sedentaryButton.title	Sedentário
+firststeps.slide6.sportButton.subtitle	Trabalho físico, ou atividade física 5 vezes por semana ou mais
+firststeps.slide6.sportButton.title	Muito Ativo
+firststeps.suscribe.error.invalidMail	Este endereço de e-mail é inválido
+food.alert.success.content	Seu prato foi salvo ������ Você poderá encontrá-lo fazendo uma busca
+food.badges.freeUser.benefit	Ver benefícios
+food.badges.freeUser.subtitle	Descubra os benefícios e os riscos de cada alimento para a sua saúde
+food.badges.freeUser.title	Isso é bom para mim?
+food.change	Alterar alimento
+food.deleteAlert.title	Excluir minha conta
+food.description.label	Prato personalizado
+food.header.label	Criar meu alimento ou prato
+food.optionnel.label	opcional
+food.rating.title.classif.NEI	Não avaliado
+food.required.label	Necessário
+food.save.title	Salvar alimento
+food_already_exists_add_button	Adicionar este alimento
+food_already_exists_barcode_label	Número do código de barras
+food_already_exists_close_button	Fechar
+food_already_exists_subtitle	Você não pode usar um código de barras existente para criar um novo alimento
+food_already_exists_title	Este alimento já existe
+food_analysis_progress_subtitle	Isso pode levar alguns segundos
+food_analysis_progress_title	Analisando sua comida
+food_barcode_option_no	Não
+food_barcode_option_no_subtitle	Alimento comprado diretamente em restaurante
+food_barcode_option_yes	Sim
+food_barcode_option_yes_subtitle	Alimento comprado em lojas
+food_barcode_question_title	Seu alimento possui um código de barras?
+food_brand_no_option	Não
+food_brand_no_subtitle_option	Comida caseira, frutas, etc.
+food_brand_question	Sua comida tem uma marca?
+food_brand_yes_option	Sim
+food_brand_yes_subtitle_option	Comida comprada na loja, com uma marca
+food_corrected_status_message	Alimento corrigido
+food_created_status_message	Alimento criado
+food_discard_confirmation_button_cancel	Cancelar
+food_discard_confirmation_button_confirm	Estou certo
+food_discard_confirmation_subtitle	Isso ajuda a melhorar a experiência para todos os usuários do Foodvisor.
+food_discard_confirmation_title	Tem certeza de que não deseja adicionar este alimento?
+food_log_completed_continue_button	Salvar sem adicionar
+food_log_completed_log_button	Registrar este alimento
+food_log_completed_title	Tudo pronto!
+food_photo_prompt_skip_button	Pular e finalizar
+food_photo_prompt_take_button	Tirar uma foto
+food_photo_prompt_title	Gostaria de tirar uma foto da sua comida?
+food_report_brand_page_create_brand_cta	Criar marca
+food_report_brand_page_exact_match_tag	Correspondência exata
+food_report_brand_page_popular_tag	Popular
+food_report_brand_page_product_count	%@ produtos
+foodview.add.CTA	ADICIONAR ESTE ALIMENTO
+foodview.add.CTA.fv2	Adicionar este alimento
+foodview.change.CTA	Salvar
+foodview.change.CTA.fv2	Salvar
+foodvisor_max_unlock_prompt_breakfast	Me dê uma ideia de café da manhã rico em proteína.
+foodvisor_max_unlock_prompt_chicken	O que posso cozinhar com frango e arroz?
+foodvisor_max_unlock_prompt_day	O que você acha do meu dia?
+foodvisor_max_unlock_prompt_fibers	Como posso alcançar 30g de fibra?
+foodvisor_max_unlock_prompt_goal	Estou no caminho certo para minhas metas?
+foodvisor_max_unlock_prompt_meal_plan	Crie um plano alimentar saudável de 7 dias.
+foodvisor_max_unlock_screen_cta_unlock	Desbloquear Foodvisor Max
+foodvisor_max_unlock_screen_cta_upgrade	Atualizar para Foodvisor Max
+foodvisor_max_unlock_screen_description	Seu coach de nutrição com IA pessoal. Analise a fundo seus hábitos alimentares.
+foodvisor_max_unlock_screen_title	Desbloquear
+free.badge.new.rating.popup.title	Benefícios do Meu Alimento
+free.badge.rating.popup.button	Desbloquear
+free.badge.rating.popup.description	Descubra os benefícios e os riscos de cada alimento para a sua saúde
+free.badge.rating.popup.title	BENEFÍCIOS DO MEU ALIMENTO
+free.day.rating.popup.button	Desbloquear minhas notas
+free.day.rating.popup.description	Quer saber mais sobre suas notas?
+free.day.rating.popup.title	NOTA DO MEU DIA
+free.food.rating.new_popup.title	Avaliação do meus alimentos
+free.food.rating.popup.button	Desbloquear minhas notas
+free.food.rating.popup.description	Quer saber mais sobre suas notas?
+free.food.rating.popup.title	NOTA DO MEU ALIMENTO
+free.macro.rating.new_popup.title	Informações Nutricionais
+free.macro.rating.popup.button	DESBLOQUEAR
+free.macro.rating.popup.description	Descubra as informações nutricionais de cada alimento
+free.macro.rating.popup.title	INFORMAÇÕES NUTRICIONAIS
+free.meal.rating.popup.button	Desbloquear minhas notas
+free.meal.rating.popup.description	Quer saber mais sobre suas notas?
+free.meal.rating.popup.title	NOTA DA MINHA REFEIÇÃO
+free.nutrientGoal.rating.popup.button	Saiba mais
+free.nutrientGoal.rating.popup.description	Esta funcionalidade é exclusiva para nossos membros Premium!
+free.nutrientGoal.rating.popup.title	Versão Premium
+free_scale_screen_CTA	Continuar
+free_scale_screen_paragraph	Como presente de boas-vindas, incluímos uma balança conectada em seu programa. Acompanhe seu progresso com facilidade e alcance o sucesso duradouro!
+free_scale_screen_title	Uma balança conectada de presente com seu programa
+friends_add_friend_post_meal_xp_cta	Adicionar amigos
+friends_add_friend_post_meal_xp_secondary_button	Continuar sem amigos
+friends_add_friend_post_meal_xp_title	Alcance sua meta com seus amigos
+friends_decline_invite_modal_cta	Recusar convite
+friends_decline_invite_modal_subtitle	Este convite será removido da sua lista. Você precisará enviar um novo pedido para se tornar amigo.
+friends_decline_invite_modal_title	Tem certeza de que deseja recusar este convite?
+friends_friend_added_modal_cta	Entendi
+friends_friend_added_modal_subtitle	Agora você compartilha informações com %@, como sua meta e progresso.
+friends_friend_added_modal_title	%@ foi adicionado à sua lista de amigos.
+friends_invitation_accept_button	Aceitar
+friends_invitation_modal_cta	Aceitar convite
+friends_invitation_modal_subtitle	Ao aceitar, você compartilhará com %@ informações como sua meta e progresso.
+friends_invitation_modal_title	%@ quer ser seu amigo(a)
+friends_invitations_section_title	Novos convites
+friends_invite_card_cta	Convidar amigos
+friends_invite_card_description	Adicione seus amigos para acompanhar o progresso deles e incentivá-los!
+friends_invite_card_title	Convide seus amigos
+friends_invite_message	Vamos ser amigos no Foodvisor? Vamos alcançar nossas metas mais rápido juntos
+friends_invite_more_card_description	O perfil deles aparecerá aqui assim que entrarem.
+friends_invite_more_card_title	Convidar mais amigos
+friends_my_friends_section_title	Meus amigos
+friends_nudge_generic_notification_subtitle	Ei, não se esqueça de registrar suas refeições hoje. Você consegue ������
+friends_nudge_notification_title	%@
+friends_page_title	Amigos
+friends_profile_nudge_cta	Incentivar
+friends_profile_page_subtitle	Membro desde %@
+friends_profile_page_title	Perfil
+friends_profile_recap_title	Resumo
+friends_profile_remove_tertiary_button	Remover dos amigos
+friends_profile_seed_title	Semente
+friends_profile_weight_gain_goal_description	Meta de ganho de peso de %@: %@ concluído(a)
+friends_profile_weight_goal_title	Meta de peso
+friends_profile_weight_loss_goal_description	Meta de perda de peso de %@: %@ concluída
+friends_remove_friend_modal_cta	Remover dos amigos
+friends_remove_friend_modal_subtitle	Você não poderá mais ver o perfil de %@ nem enviar incentivos.
+friends_remove_friend_modal_title	Remover %@ dos seus amigos?
+game_cal_widget_subtitle_excess	kcal acima
+game_cal_widget_subtitle_remaining	restante hoje
+game_level	Nível %@
+garden_name_popin_input_placeholder	Jardim #%@
+gem_shop_modal_cta	Comprar gemas
+gem_shop_modal_item_description	%@ gemas
+gem_shop_modal_item_popular_description	Popular
+gem_shop_modal_title	Compre mais gemas para continuar
+gem_shop_page_empty_state_description	Algumas gemas podem fazer a diferença
+gems_earned_cta	Resgate mais %@ gemas
+gems_earned_title	+%@ gemas!
+gems_shop_daily_offers_title	Ofertas diárias
+gems_shop_daily_offers_tomorrow	Volte amanhã
+gems_shop_daily_offers_watch_ads	Assistir anúncios
+general.Carbs	Carboidratos
+general.Fibers	Fibras
+general.Lipids	Lipídios
+general.OK	Ok
+general.Proteins	Proteínas
+general.activity	Atividade
+general.alcohol	Álcool
+general.alert.internet.content	Preciso de internet ������������
+general.alert.nothingFound.content	Não encontramos nada no seu prato!
+general.alert.nothingFound.firstBtn	Tirar outra foto
+general.alert.nothingFound.title	Ops!
+general.and	e
+general.annualPremium	Premium Anual
+general.at	em
+general.back	Voltar
+general.barcode	Código de barras
+general.breakfast	Café da manhã
+general.calcium	cálcio
+general.calcium.cap	Cálcio
+general.calories	calorias
+general.camera.alert	Você precisa ativar a câmera para usar o Foodvisor
+general.cameraRoll	Rolo de câmera
+general.cancel	Cancelar
+general.carbs	carboidratos
+general.chloride	Cloreto
+general.cholesterol	colesterol
+general.cholesterol.cap	Colesterol
+general.classif.a.fv2	Excelente
+general.classif.b.fv2	Bom
+general.classif.c.fv2	Correto
+general.classif.d.fv2	A ser limitado
+general.close	Fechar
+general.coach_ai	Coach IA
+general.confirm	Confirmar
+general.continue	Continuar
+general.copper	Cobre
+general.custom_meal	Refeição Personalizada %@
+general.delete	Excluir
+general.diner	Jantar
+general.disconnect	Desconectar
+general.eaten	Consumidas
+general.error.unknown	Ocorreu um erro
+general.error_subtitle	Algo aconteceu do nosso lado.
+general.error_title	Parece que houve um erro
+general.event.birthday	seu aniversário
+general.event.holiday	feriados
+general.event.other	seu evento
+general.event.reunion	sua festa
+general.event.vacation	suas férias
+general.event.wedding	seu casamento
+general.fatsat	ácidos graxos saturados
+general.fatsat.cap	Ácidos graxos saturados
+general.favorite	Favoritos
+general.favorites	Favoritos
+general.feet	pés
+general.fibers	fibras
+general.first.name	Nome
+general.foodvisor_max	Foodvisor Max
+general.for	por
+general.free	Grátis
+general.from	por
+general.glycemic.index	Índice Glicêmico
+general.goPremium	FAZER PREMIUM
+general.goPremium.fv2	Torne-se Premium
+general.hide	Esconder
+general.inches	polegadas
+general.inexcess	em excesso
+general.iodine	Iodo
+general.iron	ferro
+general.iron.cap	Ferro
+general.kcal	kcal
+general.kcal_day	kcal / d
+general.left	restantes
+general.lipids	lipídios
+general.lunch	Almoço
+general.magnesium	magnésio
+general.magnesium.cap	Magnésio
+general.mail	E-mail
+general.manganese	Manganês
+general.micronutrients	Micronutrientes
+general.microphone.alert	É necessário ativar o microfone para usar o Foodvisor
+general.min	min
+general.minerals.cap	Minerais
+general.monofat	Ácido graxo monoinsaturado
+general.month	meses
+general.myfoods	Meus alimentos
+general.name	Nome
+general.next	Próximo
+general.no	Não
+general.noData	Nenhuma informação disponível ainda
+general.nutritionalFacts	Informações nutricionais
+general.of	de
+general.omega3	ômega 3
+general.omega3.cap	Ômega 3
+general.omega6	ômega 6
+general.omega6.cap	Ômega 6
+general.open	Abrir
+general.other	Outro
+general.others	Outros
+general.password	Senha
+general.phosphorus	Fósforo
+general.photo	Foto
+general.polyfat	Ácido graxo poliinsaturado
+general.polyol	Polióis
+general.potassium	potássio
+general.potassium.cap	Potássio
+general.proteins	proteínas
+general.quick_add	Adicionar Rápido
+general.remaining	restantes
+general.remove	Remover
+general.rename	Renomear
+general.retry	Tentar novamente
+general.salt	Sal
+general.save	Salvar
+general.save.changes.cta	Salvar
+general.search	Buscar
+general.selenium	Selênio
+general.send	Enviar
+general.show	Mostrar
+general.skip	Avançar
+general.smart_add	Adição IA
+general.sodium	sódio
+general.sodium.cap	Sódio
+general.spent	Gastos
+general.subscribe	Assinar
+general.sugar	açúcares
+general.sugar.cap	Açúcares
+general.title	Adicionar uma refeição
+general.to	em
+general.today	Hoje
+general.tomorrow	Amanhã
+general.tomorrow.fasting	Amanhã
+general.total.calories	Total de calorias
+general.unlock	Premium
+general.unlock_with_premium	Desbloquear com Premium
+general.used	Gastas
+general.userid	ID do Usuário
+general.validate	Confirmar
+general.vitamins	Vitaminas
+general.vitc	vitamina C
+general.vitc.cap	Vitamina C
+general.vocal	Vocal
+general.water	Água
+general.week	semana
+general.yes	Sim
+general.yesterday	Ontem
+general.zinc	Zinco
+general_calorie_goal	Objetivo calórico
+general_claim_now	Desbloquear oferta
+general_gems	Gemas
+general_got_it	Está anotado
+general_great	Ótimo!
+general_kg	kg
+general_lbs	lbs
+general_no_thanks	Não, obrigado(a)
+general_not_now	Mais tarde
+general_premium	Premium
+general_reset_changes	Redefinir modificações
+general_stone	st & lbs
+general_week_day1	Segunda-feira
+general_week_day2	Terça-feira
+general_week_day3	Quarta-feira
+general_week_day4	Quinta-feira
+general_week_day5	Sexta-feira
+general_week_day6	Sábado
+general_week_day7	Domingo
+goal_realistic_target_gain_page_description	Ganhar %@ é uma meta realista
+goal_realistic_target_loss_page_description	Perder %@ é uma meta realista
+goal_realistic_target_maintain_page_description	Manter seu peso é uma meta realista
+goal_realistic_target_page_cta	Receber meu plano
+goal_realistic_target_page_flag_number	%@
+gpt_photo_analyzing_loading_title	Analisando...
+gpt_photo_results_fix_results_card_cta	Atualizar
+gpt_photo_results_fix_results_card_description	Descreva o que precisa ser corrigido.
+gpt_photo_results_fix_results_cta	Corrigir resultados
+gpt_screen_updating_loading_title	Atualizando…
+health.activities.other	Outro
+health.management.duplicates.text	Lembre-se de verificar se você não selecionou a importação de passos e atividades em vários aplicativos parceiros.
+health.management.duplicates.title	Cuidado com duplicados!
+health.partners.alert.cancel	Cancelar
+health.partners.button.connect	Conectar
+health.partners.button.disconnect	Desconectar
+health.partners.button.settings	Configurações
+health.partners.connect	Conectar-se
+health.partners.fitbit.description	Conecte-se ao Fitbit para sincronizar automaticamente seus dados de atividade.
+health.partners.fitbit.walk.switch	Caminhada (Fitbit)
+health.partners.google.text	Conecte-se ao Google Fit para recuperar automaticamente seus dados de atividade.
+health.partners.samsung.text	Conecte-se ao Samsung Health para recuperar automaticamente seus dados de atividade.
+health.partners.samsung.title	Samsung Health
+health.partners.title	Aplicativos parceiros
+health_connect_issue_description	Existem algumas razões para seus dados não estarem sincronizando:
+health_connect_issue_question	Por que os dados não sincronizaram com o Foodvisor?
+health_connect_settings_access	Configurações do Conexão de Saúde
+health_connect_title	Conexão de Saúde
+health_connect_wearable_description	Você pode conectá-lo via Conexão de Saúde. A maioria dos marcas é compatível.
+health_connect_wearable_description_1	No app do seu relógio, certifique-se de que o compartilhamento de dados com Conexão de Saúde está habilitado.
+health_connect_wearable_description_2	Vá para o Conexão de Saúde e adicione permissões.
+health_connect_wearable_description_3	Certifique-se de que o app do seu relógio está adicionado.
+health_connect_wearable_question	Você possui um smart watch?
+health_partners_google_fit_deprecated_title	Google Fit (obsoleto)
+health_partners_google_fit_description	O Google em breve deixará de oferecer suporte ao Google Fit. Configure o Health Connect para continuar acessando seus dados.
+health_partners_google_title	Google Fit
+health_quest_add_custom_quest	Adicionar missão
+health_quest_claim_reward_text_0	Você reivindicou sua recompensa
+health_quest_claim_reward_text_1	Ótimo!
+health_quest_claim_reward_text_10	Você está arrasando!
+health_quest_claim_reward_text_11	Mantenha o ritmo!
+health_quest_claim_reward_text_12	Você é imparável!
+health_quest_claim_reward_text_13	Mais uma vitória!
+health_quest_claim_reward_text_14	Você está indo muito bem!
+health_quest_claim_reward_text_15	Excelente esforço!
+health_quest_claim_reward_text_16	Bravo!
+health_quest_claim_reward_text_2	Incrível!
+health_quest_claim_reward_text_3	Continue assim!
+health_quest_claim_reward_text_4	Trabalho fantástico!
+health_quest_claim_reward_text_5	Você está indo muito bem!
+health_quest_claim_reward_text_6	Bom trabalho!
+health_quest_claim_reward_text_7	Trabalho excelente!
+health_quest_claim_reward_text_8	Você está pegando fogo!
+health_quest_claim_reward_text_9	Parabéns!
+health_quest_custom_send_button	Criar missão
+health_quest_custom_text	Escreva o nome da sua missão de saúde aqui.
+health_quest_feedback_description	Conte-nos o que você acha desta nova experiência, tanto positiva quanto negativa.
+health_quest_feedback_no	Não
+health_quest_feedback_placeholder	Diga-nos por quê...
+health_quest_feedback_question	Você gosta das suas missões de saúde?
+health_quest_feedback_send_button	Enviar
+health_quest_feedback_yes	Sim
+health_quest_title	Missão de Saúde
+health_quests_reach_next_level_subtitle	Níveis mais altos significam que você está ficando mais saudável e se aproximando do seu objetivo!
+health_quests_reach_next_level_title	Alcance o próximo nível completando suas missões de saúde
+hide_numpad	Ocultar teclado numérico
+history.addActivity	Adicionar uma atividade física
+history.addActivity.addWith	Adicionado
+history.addActivity.addWith.fitbit	Sincronizado
+history.addActivity.advice	Para melhores resultados, conecte
+history.addActivity.connect.button	Conexão
+history.addActivity.connect.text	Conecte o Foodvisor aos seus aplicativos de saúde para rastrear automaticamente suas atividades
+history.addActivity.health	Saúde
+history.addActivity.lostSync.text	Clique aqui para reativar a sincronização com o seu aplicativo de rastreamento automático para importar suas atividades.
+history.addActivity.lostSync.title	Reativar o rastreamento automático
+history.addActivity.manuallyAdd	Adicionado
+history.addActivity.subtitle	Ande ou registre uma atividade física para calcular suas calorias gastas
+history.addActivity.title	ATIVIDADES
+history.addActivity.title.fv2	Atividades
+history.addMeal	Adicionar uma refeição
+history.calendar.showProgress.fv2	Ver meu progresso
+history.cell.day.calLeft	kcal restantes
+history.cell.day.calOver	kcal acima
+history.cell.day.carbs	carboidratos
+history.cell.day.fibers	fibras
+history.cell.day.lipids	lipídios
+history.cell.day.proteins	proteínas
+history.cell.sport.fitbit.walk	Caminhada (Fitbit)
+history.cell.sport.walkCell	Caminhada (iPhone)
+history.draft	Você tem %1$#@photo@ a corrigir
+history.goPremium.title	Desbloqueio total!
+history.idle.layer.takePhoto.label	Tirar uma foto
+history.nutrients.expanded.title	MACRONUTRIENTES
+history.nutrients.expanded.title.fv2	Macronutrientes
+history.premium.show	Ver meu balanço
+history.waterchallenge.settings.dailychallenge	Meta diária
+history.waterchallenge.settings.description	Acompanhe seu consumo diário
+history.waterchallenge.settings.glass	Copos
+history.waterchallenge.settings.liter	Litros
+history.waterchallenge.settings.title	Desafios
+history.waterchallenge.settings.water.notif	Ative um lembrete para água
+history.waterchallenge.subtitle.part1	Meta:
+history.waterchallenge.subtitle.title	Água
+history.waterchallenge.title	Desafio Água
+imagePicker.title	Escolher uma imagem
+imcwarning.content.label	Para sua altura, é altamente recomendado visar um peso entre %@ e %@
+imcwarning.title.label	Atenção!
+in_app_ads_delete_ads_cta	Remover anúncios
+in_app_ads_title	Esses anúncios ajudam a financiar a missão do Foodvisor
+in_app_ads_view_ad	Ver
+in_app_discount_countdown_modal_discount	-%@%%
+in_app_discount_countdown_modal_price	%@
+in_app_discount_countdown_modal_price_per_duration	por %@
+in_app_discount_countdown_modal_price_per_year	para %@
+in_app_discount_countdown_modal_title	Continue assim!
+in_app_discount_countdown_modal_title_para	Aproveite esta oferta por tempo limitado!
+in_app_discount_countdown_subtitle_days	dias
+in_app_discount_countdown_subtitle_hours	h
+in_app_discount_countdown_subtitle_minutes	min
+in_app_discount_countdown_subtitle_seconds	seg
+in_app_discount_countdown_title	Oferta Limitada
+in_progress	Em andamento
+inapp_update_body	Foodvisor acabou de baixar uma atualização
+inapp_update_cta	Atualizar
+inappdiscount_toast_toast_paragraph	Bem-vindo a bordo! ������ ...
+indeterminate	Parcialmente selecionada
+install_widget_card_cta	Instalar widget
+install_widget_card_subtitle	Adicione o widget do Foodvisor para aumentar suas chances de sucesso.
+install_widget_card_title	Incremente sua motivação!
+intermittent_fasting_harvard_health_card_description	A Harvard Health Publishing afirma que o jejum intermitente pode ajudar na perda de peso ao reduzir os níveis de insulina e melhorar a saúde metabólica.
+intermittent_fasting_health_journey_page_title	O jejum faz você alcançar sua meta mais rápido!
+intermittent_fasting_results_already_fasting_page_description	Ajustamos sua meta para acompanhar seu ritmo e ajudar a alcançar resultados mais rápidos.
+intermittent_fasting_results_already_fasting_page_title	Você já está em jejum há %@h
+intermittent_fasting_results_page_description	Recomendamos pelo menos 16 horas sem comer para ajudar na perda de peso e evitar lanches noturnos.
+intermittent_fasting_results_page_title	Você está em jejum há apenas %@h
+intermittent_fasting_results_recommended_duration_label	16h
+intermittent_fasting_results_recommended_label	Recomendado
+intermittent_fasting_setup_end_label	Fim
+intermittent_fasting_setup_page_title	Em que horário você come?
+intermittent_fasting_setup_phase_card_description	Manter-se em uma janela de 8 a 10 horas pode ser benéfico para a saúde em geral.
+intermittent_fasting_setup_phase_card_title	Período de alimentação: %@ horas
+intermittent_fasting_setup_start_label	Início
+intermittent_fasting_weight_loss_page_description	Durante o seu jejum, nenhum alimento é consumido para ajudar o corpo a entrar em modo de queima de gordura. No período de alimentação, faça refeições regulares e garanta que atinja sua meta de proteína.
+intermittent_fasting_weight_loss_page_percentage	+20%
+intermittent_fasting_weight_loss_page_title	O jejum faz você perder peso mais rápido!
+journal_customize_my_diary_cta	Personalizar meu diário
+journal_health_connect_cta	Conectar
+journal_health_connect_improve_syncing	Recentemente melhoramos a sincronização de calorias! Sincronize com o Health Connect para atingir sua meta mais rápido.
+journal_meal_insight_active	Ver a análise desta refeição
+journal_meal_insight_inactive	Adicione 2 alimentos para ver a análise
+journal_meal_insight_inactive_another	Mais um alimento para análise
+journal_note_card_cta	Adicionar nota
+journal_note_card_description	Adicione uma nota e descreva seu dia em detalhes aqui
+journal_note_card_edit_cta	Editar
+journal_note_card_title	Notas
+journal_note_error_modal_cta	Tentar novamente
+journal_note_error_modal_description	Não foi possível salvar sua nota. Tente novamente agora ou saia sem salvar.
+journal_note_error_modal_tertiary_button	Sair sem salvar
+journal_note_error_modal_title	Ocorreu um erro
+journal_note_page_description	Descreva seu dia, apetite, nível de energia, humor ou até a qualidade do seu sono.
+journal_note_page_title	Notas
+keep_current_weight_button	Pular esta etapa
+keyboard.done.button	Confirmar
+keyboard.next.button	Próximo
+landscape_follow_through_journey	Vamos embarcar em uma jornada %@
+landscape_follow_through_journey_color	para um você mais saudável!
+landscape_intro_popup_cta	Entendi
+landscape_intro_popup_step_1	Complete suas missões
+landscape_intro_popup_step_2	Desbloqueie níveis e recompensas
+landscape_intro_popup_step_3	Alcance suas metas de saúde!
+landscape_intro_popup_title	Como funcionam as Missões
+landscape_intro_slide_cta	Começar
+landscape_intro_slide_subtitle	Uma forma divertida de ter hábitos mais saudáveis e alcançar suas metas
+landscape_intro_slide_title	Missões de Saúde
+language	pt-br
+level_completed_message	%@ aumentam à medida que você se torna mais saudável e se aproxima do seu objetivo!
+level_completed_message_levels	Os níveis
+level_completed_title	Nível %@ concluído!
+level_indicator_title	NÍVEL
+level_up_progress_message	Cada missão leva você mais perto do sucesso
+link.facebook	https://m.facebook.com/groups/768791219888737?ref=content_filter
+live_reco_back_to_photo	Voltar para a foto
+loading_level_message	Carregando nível
+lockeddiet.amelieview.subtitle	Laura, nutricionista do Foodvisor
+lockeddiet.amelieview.title	O método mais eficaz para uma perda de peso duradoura é reequilibrar a alimentação; ou seja, comer de tudo em quantidades adequadas
+lockeddiet.button.premium	Desbloquear todas as receitas
+lockeddiet.header.recipes.title	Receitas adequadas à sua dieta
+lockeddiet.premiumview.first.title	Relatório do dia e recomendações
+lockeddiet.premiumview.second.title	Dicas nutricionais
+lockeddiet.premiumview.third.title	Nutricionistas reais disponíveis via Chat
+lockeddiet.stackView.first.subtitle	Filtrado por dieta
+lockeddiet.stackView.second.subtitle	Fonte de inspiração diária
+lockeddiet.stackView.third.subtitle	Selecionadas por
+lockeddiet.subtitle	As receitas foram selecionadas por nossos nutricionistas. Elas são adequadas à sua dieta e deliciosas!
+lockeddiet.title	Acesse as receitas
+lockeddiet.title.scroll	Acesse as receitas de nossos nutricionistas
+lockedrecipes.cell.diet.glutenfree	Dieta sem glúten
+lockedrecipes.cell.diet.lowcarbs	Baixo em Carboidratos
+lockedrecipes.cell.diet.masse	Ganho de massa
+lockedrecipes.cell.diet.mediteranneen	Dieta Mediterrânea
+lockedrecipes.cell.diet.seche	Cutting
+lockedrecipes.cell.diet.tradi	Reequilíbrio alimentar
+lockedrecipes.cell.diet.vege	Dieta vegetariana
+log_food_task	Registrar minha refeição
+log_meal_streak_subtitle	Começar uma sequência é uma das melhores maneiras de estabelecer um novo hábito.
+log_meal_streak_title	Registre uma refeição para começar uma sequência!
+log_next_day_presentation_subtitle_1	Escolha um dia futuro
+log_next_day_presentation_subtitle_2	**Desbloqueie o registro antecipado com o Premium**
+log_next_day_presentation_subtitle_3	Registre seus alimentos antes de comer
+log_next_day_presentation_subtitle_4	Mantenha a consistência e alcance suas metas
+log_next_day_presentation_title	Comece na frente com o Premium
+loggingMeal.remove.favorite.popup.remove	Remover dos favoritos
+loggingMeal.remove.favorite.popup.title	Tem certeza que deseja remover este alimento dos seus favoritos?
+loggingMeal_foodview_popup_lastIngredient_remove	Excluir
+loggingmeal.delete.cta	Apagar esta refeição
+loggingmeal.foodview.delete.popup.title	Suas alterações não foram salvas
+loggingmeal.recap.delete.popup.title	Tem certeza que deseja apagar esta refeição?
+loggingmeal.recap.discard.change.popup.mainCTA	Não salvar
+loggingmeal.recap.discard.changes.popup.text	Tem certeza que deseja fechar sem salvar?
+loggingmeal.recap.discard.changes.popup.title	Suas alterações não foram salvas
+loggingmeal.recap.discard.lastFood.popup.title	Sua refeição será definitivamente excluída se você apagar o último alimento
+loggingmeal.recap.discard.popup.mainCTA	Fechar sem salvar
+loggingmeal.recap.discard.popup.subtitle	Tem certeza que deseja fechar sem salvar?
+loggingmeal.recap.discard.popup.title	Ao voltar para a página inicial você perderá os alimentos adicionados
+login.connectBtn.title	Conectar
+login.title.label	Conectar
+lunch.cal.ratio.fasting	Jejum
+macro_analysis_carbs_description	**%@** é sua principal fonte de carboidratos hoje, representando %@ da sua ingestão total de carboidratos.
+macro_analysis_carbs_description_intake_exceeded	Tente substituir os alimentos mais ricos em carboidratos por alternativas mais saudáveis.
+macro_analysis_carbs_suggestions	Adicione mais alimentos ricos em carboidratos às suas refeições, como:
+macro_analysis_carbs_top_sources	Suas %@ principais fontes de carboidratos hoje:
+macro_analysis_fat_description	**%@** é sua principal fonte de gordura hoje, representando %@ da sua ingestão total de gordura.
+macro_analysis_fat_description_intake_exceeded	Tente substituir alimentos ricos em gordura por alternativas mais saudáveis.
+macro_analysis_fat_suggestions	Adicione mais alimentos ricos em gordura às suas refeições, como:
+macro_analysis_fat_top_sources	Suas %@ principais fontes de gordura hoje:
+macro_analysis_fibers_description	**%@** é sua principal fonte de fibra hoje, representando %@ da sua ingestão total de fibra.
+macro_analysis_fibers_suggestions	Adicione mais alimentos ricos em fibras às suas refeições, como:
+macro_analysis_fibers_top_sources	Suas %@ principais fontes de fibras hoje:
+macro_analysis_good_intake	Bom consumo
+macro_analysis_insufficient_intake	Consumo insuficiente
+macro_analysis_intake_exceeded	Consumo excedido
+macro_analysis_low_intake	Baixo consumo
+macro_analysis_moderate_intake	Consumo moderado
+macro_analysis_perfect_intake	Consumo ideal
+macro_analysis_protein_description	**%@** é sua principal fonte de proteína hoje, representando %@ da sua ingestão total de proteína.
+macro_analysis_protein_description_intake_exceeded	Tente substituir os alimentos mais ricos em proteínas por alternativas mais saudáveis.
+macro_analysis_protein_suggestions	Adicione mais alimentos ricos em proteínas às suas refeições, como:
+macro_analysis_protein_top_sources	Suas %@ principais fontes de proteína hoje:
+macro_breakdown_compare	Objetivo atual: "%@"
+mail.footer.noDelete	Por favor, não exclua as informações abaixo
+mail.support.title.label	Contato com o suporte Foodvisor
+manage_my_sub_feedback_skip	Pular
+mc2_snackbar_pane_title	Alerta
+meal.CameraUsage2.no	Cancelar
+meal.CameraUsage2.title	Precisamos da sua permissão
+meal.CameraUsage2.yes	Abrir configurações
+meal.a2.drop.body	seus alimentos no quadro
+meal.a2.drop.title	Arraste e solte
+meal.add.button	Adicionar
+meal.add.food	Adicione um alimento à sua refeição!
+meal.addFood	Adicionar alimentos
+meal.advice	Sua refeição está vazia,
+meal.barcode.overlay.add	Adicionar
+meal.cameraUsage.snackbar.cta	Configurações
+meal.cameraUsage.snackbar.text	Ative o acesso à câmera nas configurações para usar o Foodvisor
+meal.edit.advice	Ainda não há nada aqui,
+meal.error.unknown.barcode.button	Adicionar informações
+meal.error.unknown.barcode.text	Ops! Não conhecemos esse código de barras.
+meal.favorite	Sua refeição foi adicionada aos seus favoritos
+meal.favorite.add.tuto	Adicionar aos favoritos
+meal.favorite.cancel	Cancelar
+meal.favorite.create.empty	Enviar
+meal.favorite.create.favorite.save	Salvar como favorito
+meal.favorite.create.food.title	Criar meu alimento
+meal.favorite.create.name	Nome do alimento
+meal.favorite.create.new_food	Criar um alimento
+meal.favorite.create.new_item	Criar um novo item
+meal.favorite.create.new_recipe	Criar uma receita
+meal.favorite.create.recipe.add.ingredients	Adicionar ingredientes
+meal.favorite.create.recipe.name	Nome da receita
+meal.favorite.create.recipe.p1.error	Digite um nome
+meal.favorite.create.recipe.popin	foi adicionado aos favoritos
+meal.favorite.create.recipe.save	Salvar
+meal.favorite.create.recipe.serving	Número de porções
+meal.favorite.create.recipe.title	Criar uma receita
+meal.favorite.create.recipe.undo	Cancelar
+meal.favorite.create.title	Criar
+meal.favorite.edit.recipe.title	Editar minha receita
+meal.favorite.recipe.edit.button	Editar minha receita
+meal.favorite.recipe.foodview.delete	Excluir
+meal.favorite.remove.popin	foi removido dos favoritos
+meal.favorite.remove.tuto	Remover dos favoritos
+meal.favorite.sort.a_to_z	A a Z
+meal.favorite.sort.last_added	Último adicionado
+meal.favorite.sort.last_added.min	último adicionado
+meal.favorite.sort.title	Ordenar por:
+meal.favorite.sort.z_to_a	Z a A
+meal.first.title	Parabéns!
+meal.first.title.text	Você acabou de registrar sua primeira refeição.
+meal.food.customize	Personalizar
+meal.food.nutrition	Nutrição
+meal.foodview.customize.coming	Obrigado pela sua paciência,
+meal.foodview.ingredients	Ingredientes
+meal.foodview.serving	Para
+meal.name.example	Ex: Meu café da manhã habitual ������
+meal.photo.TakeAnotherPhoto	Tirar outra foto
+meal.photo.barcode	Código de barras
+meal.photo.camera	Foto
+meal.photo.cameraroll	Rolo de câmera
+meal.rating.0	Nada satisfeito(a)
+meal.rating.1	Pouco satisfeito(a)
+meal.rating.2	Um pouco insatisfeito(a)
+meal.rating.3	Um pouco satisfeito(a)
+meal.rating.4	Satisfeito(a)
+meal.rating.5	Muito satisfeito(a)
+meal.rating.description.NEI	Desculpe, não temos informações suficientes sobre os alimentos para exibir uma avaliação
+meal.rating.description.classif.A	Sua refeição está azul porque você consumiu a maioria dos alimentos azuis
+meal.rating.description.classif.B	Sua refeição está verde porque você consumiu a maioria dos alimentos verdes
+meal.rating.description.classif.Bbis	Sua refeição está verde claro pois contém a maioria dos alimentos verdes
+meal.rating.description.classif.C	Atenção, sua refeição está laranja, há muitos alimentos a moderar
+meal.rating.description.classif.D	Atenção, sua refeição está vermelha, há muitos alimentos a limitar
+meal.rating.title	Está satisfeito(a) com os resultados da foto?
+meal.rating.title.classif.A	Excelente
+meal.rating.title.classif.B	Bom
+meal.rating.title.classif.C	Correto
+meal.rating.title.classif.D	A limitar
+meal.recap.empty_state	Aqui ainda não tem nada! Tente adicionar alimentos
+meal.search.all.foods	Buscar todos os resultados para:
+meal.search_bar.favorite.text	Buscar favorito
+meal.search_bar.search.text	Buscar alimento
+meal_analysis_api_error_cta	Fechar
+meal_analysis_api_error_para	Algo inesperado aconteceu.
+meal_analysis_api_error_title	Parece que há um pequeno problema.
+meal_analysis_card_feedback	O que você acha desta análise?
+meal_analysis_card_macro_para	Descubra de onde vêm as calorias de sua refeição, com essa distribuição.
+meal_analysis_card_macro_plot_title	Calorias consumidas
+meal_analysis_card_meal_calories_grade_a	Refeição leve
+meal_analysis_card_meal_calories_grade_a_para	Você fez uma refeição leve, se isso for bom para você, é o que importa!
+meal_analysis_card_meal_calories_grade_b	Faixa recomendada
+meal_analysis_card_meal_calories_grade_b_para	Sua refeição forneceu energia e nutrientes suficientes, parabéns!
+meal_analysis_card_meal_calories_grade_c	Refeição farta
+meal_analysis_card_meal_calories_grade_c_para	Sua refeição parece mais calórica do que o necessário, você pode equilibrar suas próximas refeições!
+meal_analysis_card_meal_calories_sentence_1day	Você consumiu %@ kcal em %@. Volte amanhã para ver sua média!
+meal_analysis_card_meal_calories_sentence_ndays	Você consumiu em média %@ kcal em %@ nos últimos 7 dias.
+meal_analysis_card_meal_evolution_average	Média
+meal_analysis_card_meal_evolution_grade_a	Excelente
+meal_analysis_card_meal_evolution_grade_a_para	Seus alimentos são principalmente ricos em nutrientes e baixos em calorias. Parabéns!
+meal_analysis_card_meal_evolution_grade_b	Bom
+meal_analysis_card_meal_evolution_grade_b_para	Seus alimentos são geralmente ricos em nutrientes e baixos em calorias. Isso é bom!
+meal_analysis_card_meal_evolution_grade_c	Correto
+meal_analysis_card_meal_evolution_grade_c_para	Seus alimentos são razoavelmente ricos em nutrientes e calorias.
+meal_analysis_card_meal_evolution_grade_d	A limitar
+meal_analysis_card_meal_evolution_grade_d_para	Seus alimentos são principalmente pobres em nutrientes e ricos em calorias.
+meal_analysis_card_meal_evolution_grade_not_rated	Não avaliado
+meal_analysis_card_title_food_quality	Qualidade dos alimentos
+meal_analysis_card_title_good_food	Boa escolha alimentar
+meal_analysis_card_title_macro	Calorias
+meal_analysis_card_title_meal_calories	Macronutrientes
+meal_analysis_card_title_meal_evolution	Evolução ao longo da semana
+meal_analysis_card_title_next_meal	Dicas para a próxima refeição
+meal_analysis_card_title_overall	Análise geral
+meal_analysis_card_title_portion	Análise das porções
+meal_analysis_card_title_swap	Alternativas mais saudáveis
+meal_analysis_category_title_1	Análise da sua refeição
+meal_analysis_category_title_2	Análise dos seus alimentos
+meal_analysis_category_title_3	Nossas recomendações
+meal_analysis_food_quality_explanation_card_para	Nosso sistema de classificação atribui cores com base na **densidade calórica**, na **densidade nutricional** e no índice de transformação.*
+meal_analysis_footer_poweredby	Criado pelo Assistente de Saúde do Foodvisor✨
+meal_analysis_footer_warning	O Assistente de Saúde do Foodvisor pode cometer erros. Certifique-se de verificar as informações importantes.
+meal_analysis_good_food_explanation_card_para	Esta análise mostra a melhor escolha alimentar da sua refeição.
+meal_analysis_macro_explanation_card_para	Esta análise mostra a distribuição de nutrientes em sua refeição, de acordo com nossas recomendações personalizadas.
+meal_analysis_meal_calories_explanation_card_para	Esta análise ajuda a determinar se sua refeição está em conformidade com suas metas calóricas. Lembre-se de que o equilíbrio ao longo do dia é o mais importante.
+meal_analysis_meal_evolution_explanation_card_para	Esta análise representa a ingestão média de calorias desta refeição nos últimos 7 dias.
+meal_analysis_modification_popup_option_get_new	Atualizar análise
+meal_analysis_modification_popup_option_keep_current	Manter análise
+meal_analysis_modification_popup_subtitle	Você quer obter novos insights?
+meal_analysis_modification_popup_title	Sua refeição foi modificada
+meal_analysis_modification_reached_subtitle	Você atingiu o limite de três insights por refeição. Os próximos insights serão baseados na versão anterior da sua refeição.
+meal_analysis_modification_reached_title	Lembrete
+meal_analysis_next_meal_explanation_card_para	Esta análise fornece conselhos úteis e acionáveis para as próximas refeições.
+meal_analysis_overall_analysis_text_field_negative_para	Conte-nos por que você não está satisfeito(a) com os resultados da análise de sua refeição.
+meal_analysis_overall_analysis_text_field_positive_para	Conte-nos por que você está satisfeito(a) com os resultados da análise de sua refeição.
+meal_analysis_overall_explanation_card_para	A análise global da sua refeição fornece uma visão geral rápida de seu valor nutricional. Ela avalia como sua refeição se distribui em proteínas, lipídios, carboidratos e fibras, levando em consideração seu perfil.
+meal_analysis_portion_explanation_card_para	Esta análise o ajuda a entender e ajustar as porções dos seus alimentos, a fim de equilibrar melhor sua alimentação.
+meal_analysis_swap_explanation_card_para	Esta análise ajuda a encontrar boas alternativas para os alimentos que você deve limitar.
+meal_analysis_title_breakfast	Análise do Café da Manhã
+meal_analysis_title_dinner	Análise do Jantar
+meal_analysis_title_lunch	Análise do Almoço
+meal_analysis_title_shimmer	Análise em andamento
+meal_calorie_add_meal_label	Você pode alterar o número de refeições e renomeá-las em "Adicionar, Remover ou Renomear Refeições"
+meal_insights_description	Este almoço é um pouco alto em gordura e baixo em proteína, mas no geral é uma refeição nutricionalmente decente.
+meal_insights_locked_first_try_subtitle	Faça upgrade para premium para obter análises mais profundas, conselhos personalizados sobre sua refeição e mais!
+meal_insights_locked_first_try_title	Desbloquear insights das refeições
+meal_insights_locked_subtitle	Faça upgrade para Premium para desbloquear insights de refeições e muito mais!
+meal_insights_locked_title	Você já usou sua análise de refeição grátis
+meal_milestone_cta	Desbloquear agora
+meal_milestone_discount_title	Sua oferta
+meal_milestone_hero	refeições adicionadas!
+meal_milestone_para	É um grande passo! Continue registrando suas refeições.
+meal_milestone_title	Parabéns!
+meal_plan_tool_page_title	Meus menus
+meal_search_bar_search_ai_describe	Descreva o que você comeu
+meal_summary_duration_0	Rápido como um raio!
+meal_summary_duration_1	Super rápido!
+meal_summary_duration_2	Suavemente
+meal_summary_duration_3	Hora
+meal_summary_food_logged	Alimentos
+meal_summary_subtitle_0	Parabéns, continue assim!
+meal_summary_subtitle_1	Parabéns! Continue assim!
+meal_summary_subtitle_2	Parabéns! Continue assim!
+meal_summary_subtitle_3	Parabéns! Continue assim!
+meal_summary_subtitle_4	Parabéns! Continue assim!
+meal_summary_title_0	Aqui está o resumo da sua refeição!
+meal_summary_title_1	Refeição registrada!
+meal_summary_title_2	Aqui está o resumo da sua refeição!
+meal_summary_title_3	Refeição registrada!
+meal_summary_title_4	Aqui está o resumo da sua refeição!
+meal_xp_barcode_overlay_help	Coloque um código de barras no quadro para escaneá-lo.
+meal_xp_feedback_photo_question	Está satisfeito(a) com os resultados da análise?
+meal_xp_live_reco_overlay_help	Aponte sua câmera para um alimento para analisá-lo
+meal_xp_photo_overlay_help	Tire uma foto para identificar seus alimentos.
+meal_xp_recap_page_log_more_food	Adicionar alimentos
+meal_xp_search_warning_2char_cta	Rejeitar
+meal_xp_search_warning_2char_para	Digite pelo menos 3 caracteres para fazer uma pesquisa
+meal_xp_search_warning_2char_title	Pesquisa muito curta
+meal_xp_swipe_delete	Excluir
+meal_xp_swipe_favorite_remove	Remover
+meal_xp_swipe_report	Relatório
+meal_xp_swipe_serving	Servindo
+mealtype.breakfast	café da manhã
+mealtype.dinner	jantar
+mealtype.lunch	almoço
+mealtype.snack	lanche
+mealxp.custom_food_update.toaster_subtitle	Está anotado! Seu alimento será atualizado no próximo lançamento do aplicativo.
+mealxp.recipe_update.toaster_subtitle	foi modificado(a).
+mealxp_discard_changes_popup_title	Suas alterações não serão salvas
+mealxp_discard_popup_text	Tem certeza de que deseja fechar sem salvar?
+mealxp_favoriteMeal_discard_popup_title	Sua refeição favorita não será salva
+mealxp_favoriteMeal_discard_popup_title_copy	Sua refeição favorita não será salva
+mealxp_favoriteMeal_form_edit_header	Editar esta refeição
+mealxp_favoriteMeal_form_field_title	Nome da refeição
+mealxp_favoriteMeal_form_subheader	Refeição
+mealxp_favoriteMeal_remove_popup_title	Tem certeza de que deseja remover esta refeição dos favoritos?
+mealxp_favoriteRecipe_remove_popup_title	Tem certeza de que deseja remover esta receita dos seus favoritos?
+mealxp_favorite_form_header	Salvar em favoritos
+mealxp_foodview_customize_popup_remove_last_ingredient	Não é possível excluir o último ingrediente de um alimento
+mealxp_photoxp_packaged_popup_CTA	Escanear o código de barras
+mealxp_recipe_discard_popup_title	Sua receita não será salva
+mealxp_recipe_form_recipe_name_taken	Este nome já está sendo usado por outra receita
+mealxp_save_ingredient_cta	Salvar
+minerals_optional	Minerais (opcional)
+missing_food_type_barcode_option_subtitle	ex. Comprado na loja: comida embalada
+missing_food_type_barcode_option_title	Comida com código de barras
+missing_food_type_no_barcode_option_subtitle	ex. Comprado na feira: abobrinha
+missing_food_type_no_barcode_option_title	Comida sem código de barras
+missing_food_type_restaurant_option_subtitle	ex. Comprado no Starbucks
+missing_food_type_restaurant_option_title	Comida de marca de restaurante
+missing_food_type_title	Que tipo de comida está faltando?
+missing_food_type_title_favorite	O que você gostaria de criar?
+modify_food_created_cta	Corrigir
+modify_food_placeholder	Descreva o que você quer mudar
+multimodal_camera_tool	Câmera
+multimodal_error_vocal_title	Erro
+multimodal_gallery_photo_tool	Fotos
+multimodal_listening_vocal_title	Ouvindo
+multimodal_no_connection_vocal_title	Sem conexão
+multimodal_recipe_link_tool	Adicionar link da receita
+multimodal_result_feedback	O que você achou deste resultado?
+multimodal_transcribing_vocal_title	Transcrevendo
+my_activities_tab	Minhas atividades
+nameMeal.title.label	Nomeie sua refeição
+name_already_used_create_activity	Nome já está em uso em uma atividade personalizada
+name_info_activity	Nome
+name_input_error_minimum_char	Seu nome deve ter pelo menos 2 caracteres.
+native_body	Corpo
+native_headline	Título
+native_media_view	Visualização de mídia
+navigation_menu	Menu de navegação
+new_feature_garden_item_popup_subtitle	Agora você pode comprar itens para personalizar seu jardim. Vá até a loja para descobri-los.
+new_feature_garden_item_popup_title	NOVIDADE!
+new_feature_popup_subtitle	O seu diário tem muitas novas funcionalidades que você pode encontrar nas suas configurações:
+new_feature_popup_title	Nova funcionalidade disponível!
+new_header_meal_xp_done	Concluído
+new_price_cell_trial_cta	Começar meu teste gratuito
+no_activities_description	Você pode criar uma atividade personalizada ou buscar nas nossas atividades listadas.
+no_activities_title	Você ainda não criou nenhuma atividade
+no_recents_activity_description	Volte aqui quando registrar suas primeiras atividades.
+no_recents_activity_title	Você não tem atividades recentes
+no_results_found	Nenhum resultado encontrado
+not_selected	Não selecionado
+notification_acceptance_page_notification_subtitle	Não perca sua série!
+notification_acceptance_page_notification_title	Registre uma refeição para manter sua sequência
+notification_acceptance_page_now	agora
+notification_acceptance_page_title	Ative nossas notificações para manter sua sequência!
+notification_acceptance_popup_button_accept	Permitir
+notification_acceptance_popup_button_decline	Não permitir
+notification_acceptance_popup_description	As notificações podem incluir alertas, sons e ícones. Configure em Ajustes.
+notification_acceptance_popup_title	Aumente suas chances de sucesso ativando notificações
+notification_card_journal_activate	Ativar notificações
+notification_card_journal_not_now	Agora não
+notification_card_journal_subtitle	Ative as notificações para manter seu ritmo e atingir suas metas.
+notification_card_journal_title	Não perca os lembretes do Foodvisor!
+notification_popup_authorization_button	Ir para as configurações
+notification_popup_authorization_cancel_button	Cancelar
+notification_popup_authorization_text	Você precisa ativar as notificações para usar o Foodvisor
+notifications_permission_confirm	Permitir
+notifications_permission_decline	Não permitir
+notifications_permission_title	Permitir que o app envie notificações?
+nova_label	Nova
+number_meals_setup_page_title	Quantas refeições por dia você costuma fazer?
+nutriscore_label	Nutri-score
+nutrition_info_next_button	Próximo
+nutrition_info_quantity	Quantidade por %@
+nutrition_info_title	Informação Nutricional
+nutrition_info_trans_fat	Gordura trans
+nutrition_label_calories_energy	Energia
+nutrition_label_dietary_fiber	Fibras
+nutrition_label_energy	Energia
+nutrition_label_sel	Sal
+nutrition_label_sodium	Sódio
+nutrition_label_sugars	Açúcares
+nutrition_label_total_carbohydrate	Carboidratos
+nutrition_label_total_fat	Gordura Total
+nutrition_label_total_fat_mg	Gordura Total
+nutritionalGoal.header.label	Meu objetivo nutricional
+nutritionalSheet.badgeSection.title.label	Ingestão e benefícios
+obd_referral_page_code	Código
+obd_referral_page_cta_add	Adicionar este código
+obd_referral_page_cta_skip	Pular
+obd_referral_page_subtitle	Você pode pular esta etapa
+obd_referral_page_title	Insira o código de referência (opcional)
+onbarding.subscription2.trial.description	Aproveite nossos planos personalizados, os conselhos de nossos treinadores e nossas deliciosas receitas para alcançar seu objetivo.
+onboading.subscription2.pricing	Pagamento único. Renovação automática. Cancelamento a qualquer momento. Teste de %d dias renovável automaticamente em %@.
+onboarding2_privacy_policy_link	Política de Privacidade
+onboarding2_terms_and_privacy_label	Ao continuar, aceito os %@ e a %@.
+onboarding2_terms_link	Termos de Uso
+onboarding_2PriceScreen_pill	MELHOR
+onboarding_bmi_explainer_bmi_card_title	Seu IMC:
+onboarding_bmi_explainer_category_normal	Saudável
+onboarding_bmi_explainer_category_obese	Obeso
+onboarding_bmi_explainer_category_obesity	Obesidade
+onboarding_bmi_explainer_category_overweight	Sobrepeso
+onboarding_bmi_explainer_category_underweight	Abaixo do peso
+onboarding_bmi_explainer_healthy_card_description	Parabéns! Você está em uma faixa que favorece a saúde geral
+onboarding_bmi_explainer_healthy_card_title	IMC saudável
+onboarding_bmi_explainer_normal_card_description	Você está no lugar certo! É uma ótima base para tonificar o corpo e criar hábitos sustentáveis.
+onboarding_bmi_explainer_obesity_card_description	Vamos criar um plano personalizado para ajudar você a alcançar suas metas
+onboarding_bmi_explainer_overweight_card_description_almost	Quase lá! Pequenas mudanças podem te ajudar a se sentir melhor
+onboarding_bmi_explainer_page_title	Índice de Massa Corporal (IMC)
+onboarding_bmi_explainer_risk_card_title	Risco de IMC não saudável
+onboarding_bmi_explainer_severe_obesity_tag	Obesidade severa
+onboarding_bmi_explainer_underweight_card_description	Um IMC baixo pode afetar a força e a recuperação do seu corpo. Mas cada refeição e cada escolha consciente ajudam você a buscar um melhor equilíbrio.
+onboarding_bmi_explainer_underweight_card_description_almost	Quase lá! Foque em uma alimentação equilibrada para aumentar sua energia
+onboarding_bmi_explainer_underweight_tag	Abaixo do peso
+onboarding_bmi_explainer_unhealthy_card_description	Essa faixa pode estar ligada a riscos aumentados de doenças cardíacas, diabetes tipo 2 e desconforto nas articulações, mas pequenos passos levam a grandes mudanças!
+onboarding_eating_habits_page_cta	Vamos lá
+onboarding_eating_habits_page_title	Vamos falar sobre seus hábitos alimentares
+onboarding_followthrough_classheader	Minha primeira aula
+onboarding_followthrough_meal_xp_nottoday	Ainda não comi hoje
+onboarding_followthrough_meal_xp_subtitle	Selecione sua última refeição e obtenha sua primeira análise personalizada.
+onboarding_followthrough_meal_xp_title	Adicione sua última refeição!
+onboarding_followthrough_mealxp_page1_title	Aqui está o seu objetivo nutricional diário
+onboarding_followthrough_mealxp_page2_title	Registre seus alimentos para alcançar seu objetivo diário
+onboarding_followthrough_mealxp_page3_subtitle	Ótimo dia!
+onboarding_followthrough_mealxp_page3_title	É fácil e divertido! Preencha seu círculo
+onboarding_followthrough_mealxp_page4_title	Comece registrando sua última refeição
+onboarding_followthrough_title1	Descobrir
+onboarding_followthrough_title2	a primeira aula
+onboarding_followthrough_title3	do seu programa
+onboarding_goal_explainer_ambitious_tag	Ambicioso
+onboarding_goal_explainer_challenging_tag	Desafiador
+onboarding_goal_explainer_maintain_weight_card_description	Mantenha a consistência e continue fazendo escolhas conscientes para manter o peso
+onboarding_goal_explainer_maintain_weight_card_title	Manter peso
+onboarding_goal_explainer_realistic_tag	Realista
+onboarding_goal_explainer_weight_gain_challenging_card_description	Meta exigente, recomenda-se acompanhamento médico
+onboarding_goal_explainer_weight_gain_challenging_card_title	Ganho de peso: %@
+onboarding_goal_explainer_weight_gain_realistic_card_description	Esta é uma meta de ganho de peso segura e realista, com benefícios notáveis para a saúde
+onboarding_goal_explainer_weight_loss_ambitious_card_description	Requer esforço constante e funciona melhor com orientação
+onboarding_goal_explainer_weight_loss_challenging_card_title	Perda de peso: %@
+onboarding_goal_explainer_weight_loss_realistic_card_description	Esta é uma meta de perda de peso segura e realista, com benefícios notáveis para a saúde
+onboarding_loader_signup_jigsaw_loader_first	Calculando sua jornada
+onboarding_loader_signup_jigsaw_loader_second	Salvando seus dados
+onboarding_loader_signup_jigsaw_pretitle	Fazer dieta é difícil
+onboarding_loader_signup_jigsaw_title	Com o Foodvisor, é fácil
+onboarding_loader_signup_jigsaw_title2	porque é feito especialmente para você
+onboarding_loader_signup_profile_eligible	Elegível
+onboarding_loader_signup_testimony_loader_first	Verificando sua elegibilidade
+onboarding_moneyback_cta	Continuar
+onboarding_moneyback_para	Se você não perder peso após 30 dias e concluir o nível 4 do seu programa, nós reembolsaremos você!
+onboarding_moneyback_picture	moneyback_badge_fr
+onboarding_moneyback_title	Sucesso garantido,
+onboarding_motivation_title	Motivação
+onboarding_price_screen_moneyback_badge	GARANTIA
+onboarding_signup_para	Registre-se para ver quando você pode atingir seu peso ideal.
+onboarding_signup_title_with_name	%@, você é elegível para o nosso programa!
+onboarding_signup_title_without_name	Você é elegível para o nosso programa!
+onboarding_summary_page_age_value	%@ anos
+onboarding_summary_page_gender_value_female	Mulher
+onboarding_summary_page_gender_value_male	Homem
+onboarding_summary_page_height_cm_value	cm
+onboarding_summary_page_height_ft_value	ft
+onboarding_summary_page_title	Seu resumo pessoal
+onboarding_summary_page_weight_kg_value	kg
+onboarding_summary_page_weight_lbs_value	lbs
+onboarding_summary_page_weight_st_value	st
+onboarding_trialScreen_description	Experimente seu programa personalizado gratuitamente e cancele a qualquer momento!
+onboarding_water_page_description	A água ajuda seu corpo a funcionar melhor. Ela auxilia na digestão, aumenta a energia e mantém sua mente clara.
+onboarding_water_page_title	A água acelera a queima de gordura, aumenta a energia e o foco!
+onboarding_workout_planning_question	Com base em seu perfil, exercitar-se 3 dias por semana parece ser o mais eficaz! Em quais dias você está disposto(a) a fazer exercícios com o Foodvisor?
+open_app_seasonal_discount_cta	Aproveitar a oferta
+open_app_seasonal_discount_label	Esta oferta expira em
+open_app_seasonal_discount_text	Nossa melhor oferta do ano!
+open_app_seasonal_discount_title	Black Friday
+openappdiscount_presentation_popup_member_badge	- %@
+openappdiscount_presentation_popup_member_cancel	Não, obrigado
+openappdiscount_presentation_popup_member_content_para	Bem-vindo ao Foodvisor! Celebre esta primeira etapa com %@% de desconto em nossa assinatura Premium.
+openappdiscount_presentation_popup_member_content_title	%@% de desconto
+openappdiscount_presentation_popup_member_cta	Economize %@
+openappdiscount_presentation_popup_member_title	Oferta de Boas-Vindas!
+other_activities_health_connect_toggle_description	Permitir a importação de calorias queimadas em atividades não-exercício (ex.: caminhadas leves, subir escadas, passar aspirador, carregar roupa...).
+other_activities_health_connect_toggle_title	Outras atividades (incluindo passos)
+other_activity_journal_cell	Outra atividade
+others_optional	outros (opcional)
+paramaters.profilePhoto.title	Tire uma foto de você no quadro
+parameters.account.delete	Excluir minha conta e todos os meus dados
+parameters.account.delete.dialog.message	Tem certeza de que deseja excluir todos os seus dados?
+parameters.account.delete.dialog.title	Exclusão de conta
+parameters.account.email.tilte	E-mail da conta
+parameters.account.logout.dialog.message	Tem certeza de que deseja sair?
+parameters.account.logout.dialog.title	Sair
+parameters.account.name	Alterar nome
+parameters.account.photo.edit	Modificar foto de perfil
+parameters.account.save	Salvar alterações
+parameters.activity.sport.description	Quando o modo esportivo está ativo, as calorias gastas durante sua atividade física são contabilizadas no total de calorias restantes.
+parameters.activity.sport.off	DESATIVADO
+parameters.activity.sport.on	ATIVADO
+parameters.activity.sport.title	Modo Esportivo
+parameters.activity.title	SEU NÍVEL DE ATIVIDADE
+parameters.contactUs.success	Mensagem enviada!
+parameters.contactUs.warning	Por favor, não exclua as informações abaixo
+parameters.delete.popup.content	Tem certeza de que deseja excluir sua conta e todos os seus dados?
+parameters.delete.popup.title	Excluir minha conta e todos os meus dados
+parameters.health.calories.section	Cálculo de calorias queimadas
+parameters.health.data.section	Dados do aplicativo Saúde
+parameters.health.export.label	Exportar dados
+parameters.health.google.export.activities	Exportar atividades
+parameters.health.google.export.weight	Exportar peso
+parameters.health.google.import.activities	Importar atividades
+parameters.health.google.import.step	Importar passos
+parameters.health.google.import.weight	Importar peso
+parameters.health.import.label	Importar dados
+parameters.health.other.help	Ative a recuperação de calorias queimadas armazenadas no aplicativo de Saúde. Isso pode incluir os passos, bem como outras atividades se você tiver conectado outros aplicativos ao Saúde.
+parameters.health.other.label	Outras atividades (Saúde)
+parameters.health.walk.label	Caminhada (iPhone)
+parameters.main.title.label	Preferências
+parameters.navigation.account.title	Minha conta
+parameters.navigation.activity.title	Mudar meu nível de atividade
+parameters.navigation.delete.title	Excluir minha conta e todos os meus dados
+parameters.navigation.dev.title	Dev
+parameters.navigation.faq.title	Perguntas frequentes
+parameters.navigation.health.title	Conectar aos dados de saúde
+parameters.navigation.health.tracking.title	Apps de rastreamento automático
+parameters.navigation.help.title	Entre em contato conosco
+parameters.navigation.logout.title	Sair
+parameters.navigation.notif.title	Gerenciar minhas notificações
+parameters.navigation.nutrient.title	Mudar nutrientes
+parameters.navigation.privacypolicy.title	Política de Privacidade
+parameters.navigation.profile.diary	Configurações do diário
+parameters.navigation.profile.goals	Meus objetivos
+parameters.navigation.profile.title	Minhas informações
+parameters.navigation.rate.title	Nos avalie
+parameters.navigation.restorepurchase.title	Restaurar compras
+parameters.navigation.subscription	Minha inscrição
+parameters.navigation.system	Unidades e medidas
+parameters.navigation.terms.title	Termos de Uso
+parameters.navigation.weight.title	Editar meu objetivo de peso
+parameters.notification.set	Resolver
+parameters.notification.title	Lembretes de refeição
+parameters.notification.water	Lembrete de água
+parameters.notification.waterAfternoon.title	Lembrete da tarde
+parameters.notification.waterMorning.title	Lembrete da manhã
+parameters.notification.weight	Lembretes de peso
+parameters.profile.birthdate	Data de nascimento
+parameters.profile.data	Meus dados
+parameters.profile.gender	Gênero
+parameters.profile.height	Altura
+parameters.reminder.advice	Dicas personalizadas
+parameters.sections.account	Minha conta
+parameters.sections.community	Comunidade
+parameters.sections.dev	Dev
+parameters.sections.other	Outro
+parameters.sections.parameters	Configurações
+parameters.sections.profile	Meu perfil
+parameters.sections.program	Meu programa
+parameters.sportmode	Modo Esportivo
+parameters.sportmode.description	Quando o modo esportivo está ativado, as calorias gastas durante sua atividade física são contabilizadas no total de calorias restantes.
+parameters.sportmode.off	DESATIVADO
+parameters.sportmode.on	ATIVADO
+parameters.sportmode.title	MÉTODO DE CÁLCULO DE CALORIAS
+parameters.sportmode.title.fv2	Método de cálculo de calorias
+parameters.subscription.description	Veja como fazer em poucos passos simples:
+parameters.subscription.subscribe	Reativar inscrição
+parameters.subscription.title	Como cancelar a inscrição ou reativar?
+parameters.subscription.unsubscribe	Cancelar inscrição
+parameters.system.height	Unidade de altura
+parameters.system.height.choice	Escolha uma unidade de medida
+parameters.system.language	Idiomas
+parameters.system.language.choice	Escolha um idioma
+parameters.system.unit	Sistema de unidades
+parameters.system.unit.european	Europeu (mL, g)
+parameters.system.unit.us	Americano (oz, fl oz)
+parameters.system.weight	Unidade de massa
+parameters.system.weight.choice	Escolha uma unidade de peso
+parameters.unsubscribe.alert.body	Você perderá acesso a todos os recursos Premium
+parameters.unsubscribe.alert.title	Você está prestes a cancelar a inscrição
+parameters.unsubscribe.cancel	PERMANECER PREMIUM
+parameters.unsubscribe.reason	Ajude-nos a entender
+parameters.unsubscribe.reason.alternative	Encontrei outro app
+parameters.unsubscribe.reason.expensive	Está muito caro
+parameters.unsubscribe.reason.result	Não vejo resultados
+parameters.unsubscribe.reason.success	Atingi meus objetivos
+parameters.unsubscribe.title	SINTO MUITO EM TE PERDER
+parameters.weight.addWeight.title	Adicionar uma pesagem
+parameters.weight.goalWeight.label	Peso desejado
+parameters.weight.startWeight.label	Peso inicial
+parameters_navigation_diary_settings	Configurações do diário
+parameters_navigation_referral	Indique um amigo
+parameters_navigation_restartprogress	Reiniciar meus progressos
+parameters_navigation_workout_title	Meu programa esportivo
+parameters_referral_sent	Indicação enviada!!!
+paste_recipe_placeholder	Cole o link da receita aqui
+payment.cancel.popup.action.premium	Assinar
+payment.cancel.popup.body	Os usuários Premium têm 3 vezes mais chances de alcançar seus objetivos
+photo.crop.analyze	ANALISAR
+photo.crop.description	movendo-a conforme desejado
+photo.crop.title	Recorte sua foto
+photo.deleteAlert.content	Tem certeza que deseja excluir esta refeição?
+photo.deleteAlert.firstBtn	Excluir
+photo.deleteAlert.secondBtn	Cancelar
+photo.deleteAlert.title	Excluir essa refeição
+photo.firstEdit.validate	Confirmar minha refeição
+photo.food.edit.update.title	Modificar
+photo.food.viewPager.customize	Personalizar
+photo.titleLabel.label	Minha refeição
+photoAnalysis.MixedFood.pick.ingredients	Escolher os ingredientes
+photoAnalysis.QuickAdd	Adição rápida
+photoAnalysis.allDone.text	Concluído!
+photoAnalysis.cell.changeQuantity	Editar a quantidade
+photoAnalysis.customDish	Prato personalizado com:
+photoAnalysis.error.primaryButton.noInternet	TENTAR NOVAMENTE
+photoAnalysis.error.primaryButton.nothingFound	Tirar outra foto
+photoAnalysis.error.primaryButton.packagedFood	Escanear o código de barras
+photoAnalysis.error.primaryButton.packagedFood.fv2	Escanear código de barras
+photoAnalysis.error.secondaryButton.nothingFound	Buscar alimento
+photoAnalysis.error.secondaryButton.packagedFood	Continuar análise da foto
+photoAnalysis.errorMessage.API	Ops! Encontramos um problema
+photoAnalysis.errorMessage.noInternet	Ops! Preciso de uma conexão com a Internet
+photoAnalysis.errorMessage.nothingFound	Não reconhecemos esses alimentos
+photoAnalysis.errorMessage.overlay.button	Tentar novamente
+photoAnalysis.errorMessage.packagedFood	Parece ser um alimento embalado
+photoAnalysis.suggestion.add	Adicionar:
+photoAnalysis.suggestion.replace	Adicionar em vez disso:
+photoAnalysis.unknownBarcode.addInfo	Adicionar informações
+photoAnalysis.unknownBarcode.errorMessage	Ops, não conhecemos esse código de barras.
+photoAnalysis.with	com:
+photo_analysis_dish_description	Uma refeição composta por macarrão (150g)
+photo_analysis_dish_name	Macarrão com Frango
+photo_analysis_locked_first_try_subtitle	Faça upgrade para o Premium para registrar sua refeição com uma foto e muito mais!
+photo_analysis_locked_first_try_title	Descubra sua análise de fotos
+photo_analysis_locked_subtitle	Atualize para Premium para desbloquear a análise de fotos e muito mais!
+photo_analysis_locked_title	Você usou sua análise de fotos gratuita
+photo_analysis_progress	Analisando foto
+photo_analysis_unlock_button	Desbloquear com Premium
+photo_crop_confirm_button	Confirmar
+photo_crop_food_instruction	Coloque a comida no quadro para que fique centralizada e clara
+photo_crop_nutrition_label_instruction	Coloque o rótulo nutricional no quadro para que seja fácil de ler
+photo_crop_retake_button	Refazer
+photo_crop_title_page	Corte sua foto
+photo_premium_reassurance_screen_cta	Continuar
+photo_premium_reassurance_screen_subtitle	Registre toda a sua refeição usando a câmera e obtenha uma análise personalizada com o Foodvisor Premium
+photo_premium_reassurance_screen_title	Registre sua refeição em segundos com o Premium
+popup.daily.health.description	Você precisa autorizar a recuperação de seus passos pelo aplicativo de Saúde.
+popup.health.settings.button	Entendi
+popup.health.settings.text	O app Saúde precisa acessar o Foodvisor. Ative as categorias nas configurações do iPhone > Saúde > Acessar dados e dispositivos > Foodvisor
+popup.health.settings.title	Saúde precisa da sua autorização
+popup.healthKit.content	Conecte-se ao Health Connect para obter automaticamente as calorias queimadas com seus passos
+popup.notification.body	Os usuários que ativam as notificações alcançam seus objetivos mais rapidamente!
+popup.notification.bodyB	Aceite todas as notificações personalizadas para aumentar suas chances de sucesso
+popup.notification.enablebutton	Ativar
+popup.notification.notnowbutton	Mais tarde
+popup.notification.title	Notificações
+popup.objective_5_photos.firstBtn	Obrigado!
+popup.objective_photos.title	Parabéns!
+popup.rate_us.body	Deixe-nos saber avaliando-nos na Play Store!
+popup.rate_us.buttons.cancel	Não
+popup.rate_us.buttons.ok	Dar 5������
+popup.rate_us.title	Você gosta do Foodvisor?
+popup.version.body	Acabamos de lançar uma nova versão com muitos recursos incríveis! Deseja baixá-la?
+popup.version.latterbutton	Mais tarde
+popup.version.title	Nova versão!
+popup.version.yesbutton	Sim, sem demora!
+popup.versionforcee.body	Esta versão do aplicativo não está mais funcionando. No entanto, a última possui muitas funcionalidades incríveis!
+popup.versionforcee.title	Nova versão
+popup.versionforcee.updatebutton	Atualizar
+popup_choose_a_plan_title	Escolha um plano
+post_obd_discount_countdown_payment_screen_title	Um impulso para o sucesso
+post_obd_discount_countdown_payment_screen_title_para	Ótimo! Aqui está uma oferta por tempo limitado, só para você.
+post_obd_discount_countdown_presentation_page_para	Sempre é o mais difícil, deixe agora o Foodvisor te ajudar em sua jornada para criar hábitos mais saudáveis e alcançar seus objetivos.
+post_obd_discount_countdown_presentation_page_title	Parabéns por dar o primeiro passo!
+postobddiscount_presentation_popup_member_badge	- %@
+postobddiscount_presentation_popup_member_cancel	Não, obrigado
+postobddiscount_presentation_popup_member_content_para	Bem-vindo ao Foodvisor! Celebre esta primeira etapa com %@% de desconto em nossa assinatura Premium.
+postobddiscount_presentation_popup_member_content_title	%@% de desconto
+postobddiscount_presentation_popup_member_cta	Economize %@
+postobddiscount_presentation_popup_member_title	Oferta de Boas-Vindas!
+postobddiscount_pricescreen_list_banner	-%%@
+postobddiscount_pricescreen_list_bullet_1	Acesso ilimitado ao seu programa personalizado
+postobddiscount_pricescreen_list_bullet_2	Receitas saudáveis, um coach dedicado, um acompanhamento simplificado e mais de 20 funcionalidades Premium
+postobddiscount_pricescreen_list_bullet_3	Atinga seus objetivos de peso e saúde
+postobddiscount_pricescreen_list_bullet_4	**Os membros Premium perdem em média 3X mais peso**
+postobddiscount_pricescreen_list_cta	Continuar
+postobddiscount_pricescreen_list_price_per_month	%@/ %@
+postobddiscount_pricescreen_list_price_reassurance	Apenas %@/%@. Cancele a qualquer momento.
+postobddiscount_pricescreen_list_price_striken	%@
+postobddiscount_pricescreen_list_title	Desbloqueie tudo!
+premium.activity.empty.title	Esta seção será visível quando você tiver registrado pelo menos uma atividade física durante o dia.
+premium.activity.title	Parabéns, você se exercitou hoje!
+premium.calories.activity.label	Atividades
+premium.calories.aliment.label	Alimentos
+premium.calories.goal.label	Objetivo
+premium.calories.left.label	Restante
+premium.calories.sum.label	Total
+premium.calories.total.goal.label	Total Objetivo
+premium.conversion.better.chat.title	Foodvisor é o único app com nutricionistas reais.
+premium.conversion.better.header.title	Você sabia?
+premium.conversion.chat.feedback.1	Pelo preço de 1h de consulta com um nutricionista, tenho acesso ilimitado por um ano a Laura e Yann da Foodvisor!
+premium.conversion.chat.feedback.2	Obrigado a Laura, sem quem minha transformação nunca teria sido possível!
+premium.conversion.chat.title2	Único aplicativo que permite consultar um VERDADEIRO dietista
+premium.conversion.chat.title3	Rápido e FÁCIL de obter a resposta de um ESPECIALISTA
+premium.conversion.discount.title	OFERTA POR TEMPO LIMITADO ESPECIALMENTE PARA VOCÊ
+premium.conversion.discount.title1	Aqui está uma oferta para te encorajar :
+premium.conversion.discount.title2	no premium
+premium.conversion.expensive.chat.title	Explorou todas as funcionalidades do premium?
+premium.conversion.expensive.header.title	Uma nova vida
+premium.conversion.feedback.1.content	Comecei a usar este aplicativo porque estava em um período de estagnação e não conseguia perder o excesso de gordura que restava.
+premium.conversion.feedback.1.title	Perdeu 3 kg em 1 mês
+premium.conversion.feedback.1.user	Cindy, 30 anos
+premium.conversion.feedback.2.content	O Foodvisor me permitiu através do  programa de reequilíbrio alimentar perder peso como eu queria . Posso acompanhar minha ingestão de macro nutrientes e cuidar da minha saúde sem estressar meu corpo, o que é uma grande vantagem!
+premium.conversion.feedback.2.title	Perdeu 15 kg em 8 semanas
+premium.conversion.feedback.2.user	Audrey, 26 anos
+premium.conversion.feedback.3.content	O aplicativo me ajuda a controlar o que como, me motiva a evitar petiscar.
+premium.conversion.feedback.3.title	Perdeu 3,8 kg em 2 semanas
+premium.conversion.feedback.3.user	Sandrine, 49 anos
+premium.conversion.feedback.4.content	Graças ao app, estou atenta à minha ingestão de carboidratos (Não sabia que havia tanto açúcar em alimentos que pareciam inofensivos).
+premium.conversion.feedback.4.title	Perdeu 2,5 kg em 1 mês
+premium.conversion.feedback.4.user	Livia, 31 anos
+premium.conversion.feedback.5.content	O aplicativo Foodvisor é muito bom. Além disso, a equipe Foodvisor é muito ágil ao identificar problemas.
+premium.conversion.feedback.5.title	Perdeu 25 kg em 1 ano
+premium.conversion.feedback.5.user	Eric, 63 anos
+premium.conversion.feedback.6.content	Comecei meu reequilíbrio em maio de 2018, pesava 119.7 quilos. Perdi 35 quilos em poucos meses!
+premium.conversion.feedback.6.title	Perdeu 34 kg em 1 ano certinho
+premium.conversion.feedback.6.user	Ocêane, 24 anos
+premium.conversion.feedback.7.content	Tenho um histórico de sobrepeso/obesidade. Gostaria de agradecer ao aplicativo Foodvisor porque  mudou minha vida completamente. Não poderei agradecer o suficiente ao amigo que me apresentou a este suporte que é o máximo com alimentos muito bem informados sobre meus aportes e benefícios além dos valores energéticos.
+premium.conversion.feedback.7.title	Perdeu 46 kg em 5 meses
+premium.conversion.feedback.7.user	Brahim, 39 anos
+premium.conversion.feedback.8.content	Ao longo da vida, realizei diversos regimes, perdia peso durante esses períodos mas assim que terminava recuperava.
+premium.conversion.feedback.8.title	Perdeu 3 kg em 2 meses
+premium.conversion.feedback.8.user	Frederico, 47 anos
+premium.conversion.feedback.title	Histórias de sucesso
+premium.conversion.goal.chat.subtitle	Pergunte aos nossos nutricionistas como manter seus resultados!
+premium.conversion.goal.chat.title	Para manter seu peso-alvo, nós te ajudamos no seu controle: 1 mês por quilo perdido ou ganho!
+premium.conversion.goal.community	Junte-se à nossa comunidade de apoio
+premium.conversion.goal.diet.subtitle	Encontre uma dieta para manter seus resultados!
+premium.conversion.goal.header.title.1	Parabéns!
+premium.conversion.goal.header.title.2	Estamos muito felizes pelo seu sucesso!
+premium.conversion.goal.share.story.button	Compartilhar minha história
+premium.conversion.goal.share.story.title	Compartilhe sua história de sucesso conosco!
+premium.conversion.leaving.discount.button	APROVEITE -40%
+premium.conversion.leaving.goodbye	
+premium.conversion.leaving.title	Sempre querendo sair?
+premium.conversion.leaving.unsubscribe.button	Cancelar inscrição
+premium.conversion.nutritionist.chat.message1	Olá Laura, Você pode analisar minhas refeições da semana por favor?
+premium.conversion.nutritionist.chat.message2	Olá Lucy, Eu analisei as fotos das suas refeições durante a semana. Em relação ao seu perfil e objetivo, você não está consumindo fibra suficiente diariamente. As fibras são fornecidas principalmente por frutas e legumes. Elas ajudam a reduzir a absorção de gorduras, açúcares e a manter a flora intestinal. Aumente sua ingestão para 3 frutas por dia e 2 porções de legumes para suprir suas deficiências ������
+premium.conversion.nutritionist.chat.message3	Olá Yann, minhas refeições são adequadas para ganhar massa?
+premium.conversion.nutritionist.chat.message4	Olá Julien, Ao analisar seu diário, percebi que você consome pouca proteína, seria bom aumentar um pouco suas quantidades, é fundamental para reparar suas fibras musculares pós-treino e manter as diferentes estruturas e funções metabólicas do seu organismo.
+premium.conversion.nutritionist.elsa.desc	Laura é dietista-nutricionista especializada em micronutrição. Formada desde 2011, ela trabalhou na França e no exterior como coach online. Ela é uma das especialistas em nutrição no Foodvisor.
+premium.conversion.nutritionist.elsa.subtitle	Dietista-nutricionista da Foodvisor
+premium.conversion.nutritionist.yann.desc	Yann possui Mestrado em Ciências do Esporte. Seus conhecimentos e experiência permitem um acompanhamento personalizado para alcançar seus objetivos físicos.
+premium.conversion.nutritionist.yann.subtitle	Nutricionista esportivo da Foodvisor
+premium.conversion.presentation.diet.subtitle	Encontre o programa que funcionará para você e tenha resultados duradouros
+premium.conversion.presentation.diet.title	Dietas adaptadas às suas necessidades.
+premium.conversion.presentation.faq.answer1	Sim, nossa nutricionista Laura tem mais de 8 anos de experiência. Ela é acompanhada por Yann, especialista em nutrição esportiva.
+premium.conversion.presentation.faq.answer2	O Premium te dá acesso a novas funcionalidades que te ajudarão a alcançar seus objetivos:
+premium.conversion.presentation.faq.question1	As consultas são feitas com verdadeiros nutricionistas?
+premium.conversion.presentation.faq.question2	O que está incluso no Premium?
+premium.conversion.presentation.faq.question3	Posso obter reembolso ou cancelar a qualquer momento?
+premium.conversion.presentation.faq.title	Perguntas frequentes
+premium.conversion.presentation.feedbacks.featuring	Destacado e App do Dia pela Apple em mais de 20 países
+premium.conversion.presentation.feedbacks.rating	4,5/5 em +20.000 avaliações
+premium.conversion.presentation.feedbacks.title	Junte-se a milhões de usuários felizes
+premium.conversion.presentation.nutritionist.subtitle	Acesso ilimitado a Laura e Yann que respondem às suas perguntas para alcançar seus objetivos.
+premium.conversion.presentation.nutritionist.title	Consultas personalizadas com nossos nutricionistas
+premium.conversion.presentation.recipe.subtitle	Nós recomendamos receitas deliciosas e simples para cada programa
+premium.conversion.presentation.recipe.title	Centenas de receitas equilibradas
+premium.conversion.presentation.summary.card.substitute	Substitutos com baixas calorias
+premium.conversion.presentation.summary.card.subtitle	Descubra o melhor e pior alimento do seu dia
+premium.conversion.presentation.summary.card.title	Seu relatório do dia está pronto!
+premium.conversion.presentation.summary.subtitle	Receba diariamente um relatório que analisa seu dia, com ideias de melhoria
+premium.conversion.presentation.summary.title	Relatórios diários e dicas.
+premium.conversion.presentation.title	AUMENTE SUAS CHANCES COM O PREMIUM
+premium.conversion.result.community	Você não está sozinho(a)! Junte-se à nossa comunidade de apoio
+premium.conversion.result.community.join	Juntar-se
+premium.conversion.result.header.title	O sucesso não está longe, continue firme!
+premium.conversion.result.motivation.title	Você superou a primeira etapa, o sucesso não está longe!
+premium.conversion.result.nutritionist.consultation	OBTER MINHA CONSULTA
+premium.conversion.result.story.title	Aqui estão nossas histórias de sucesso
+premium.conversion.result.title	Os resultados nem sempre são imediatos,
+premium.conversion.seeOffers	Ver ofertas
+premium.conversion.summary.breadedFish	Peixe empanado
+premium.conversion.summary.spinach	Espinafre
+premium.conversion.summary.steamedCod	Bacalhau cozido a vapor
+premium.conversion.summary.sweetPotato	Batata doce
+premium.conversion.summary.watermelon	Melancia
+premium.countdown.validate	Tornar-se Premium
+premium.daily.dem.title	Relatório do dia
+premium.daily.flop	Fracasso
+premium.daily.nutrient.excess	O alimento mais rico em %@ do seu dia
+premium.daily.nutrient.perfect	Seu consumo de %@ está excelente
+premium.daily.nutrient.recommendation	Nossas recomendações de alimentos ricos em %@
+premium.daily.nutrient.taken	Este alimento forneceu a você %@s
+premium.daily.top	Top
+premium.daily.topflop.img	imgTopFlopEmpty
+premium.day.rating.popup.title	NOTA DO MEU DIA
+premium.discount.title	OFERTA
+premium.food.rating.popup.title	Cor dos seus alimentos
+premium.freeVersion	Versão Gratuita
+premium.history.description	Sem mais limites.
+premium.history.title	Veja o histórico completo
+premium.lastday.resubscribe	OK, vamos lá!
+premium.lastday.stacktitle1	Seu balanço diário com recomendações
+premium.lastday.stacktitle2	Dicas nutricionais dos nossos dietéticos
+premium.lastday.stacktitle3	Receitas adaptadas à sua dieta
+premium.lastday.stacktitle4	Chat ilimitado com nossos nutricionistas
+premium.lastday.subtitle	Este é seu último dia como Premium.
+premium.lastday.title	ÚLTIMO DIA!
+premium.meal.rating.popup.title	NOTA DA MINHA REFEIÇÃO
+premium.objective.breakfast.A	Atenção, você já ultrapassou suas calorias do dia ������
+premium.objective.breakfast.A_	Você se adiantou um pouco no dia ������
+premium.objective.breakfast.B	Atenção, você já ultrapassou suas calorias do dia ������
+premium.objective.breakfast.B_	Deixe espaço para as outras refeições ������
+premium.objective.breakfast.C	Atenção, você já ultrapassou suas calorias do dia ������
+premium.objective.breakfast.C_	Ótimo, continue completando suas outras refeições do dia! ������
+premium.objective.breakfast.D	Atenção, você já ultrapassou suas calorias do dia ������
+premium.objective.breakfast.D_	Ótimo, continue completando suas outras refeições do dia! ������
+premium.objective.breakfast.E_	Ótimo, você está começando bem o dia! ������
+premium.objective.breakfast.F_	O dia está começando devagar ������
+premium.objective.dinner.A	Foi um bom dia, talvez um pouco indulgente demais ������
+premium.objective.dinner.A_	Parabéns! Você alcançou seu objetivo hoje! ������
+premium.objective.dinner.B	Atenção para não ultrapassar seu objetivo calórico ������
+premium.objective.dinner.B_	Está tudo bem, ainda dá para comer mais alguma coisa para completar seu dia ������
+premium.objective.dinner.C	Cuidado para não ultrapassar seu objetivo calórico ������
+premium.objective.dinner.C_	Está tudo bem, você foi sensato hoje ������
+premium.objective.dinner.D	Cuidado para não ultrapassar seu objetivo calórico ������
+premium.objective.dinner.D_	Você não consumiu calorias o suficiente hoje ������
+premium.objective.dinner.E_	Você não consumiu calorias o suficiente hoje ������
+premium.objective.dinner.F_	Você não consumiu calorias o suficiente hoje ������
+premium.objective.lunch.A	Atenção para jantar leve, você tem muitas calorias até agora ������
+premium.objective.lunch.A_	Atenção, você atingiu seu limite de calorias do dia ������
+premium.objective.lunch.B	Atenção para jantar leve, você tem muitas calorias até agora
+premium.objective.lunch.B_	Atenção, você está se adiantando um pouco ������
+premium.objective.lunch.C	Cuidado com um jantar leve, você está com muitas calorias nessa etapa
+premium.objective.lunch.C_	Atenção, você está se adiantando um pouco ������
+premium.objective.lunch.D	Cuidado com um jantar leve, você está com muitas calorias nessa etapa
+premium.objective.lunch.D_	Ótimo, você está no caminho certo ������
+premium.objective.lunch.E_	Está ok, mas você poderia ter comido mais no almoço ������
+premium.objective.lunch.F_	Está ok, mas poderia ter comido mais no almoço
+premium.objective.snack.A	Atenção para jantar leve, você tem muitas calorias até agora ������
+premium.objective.snack.A_	Atenção, você já atingiu o seu limite de calorias do dia ������
+premium.objective.snack.B	Atenção para jantar leve, você tem muitas calorias até agora ������
+premium.objective.snack.B_	Atenção, esse lanche está um tanto indulgente ������
+premium.objective.snack.C	Cuidado com um jantar leve, você está com muitas calorias nessa etapa ������
+premium.objective.snack.C_	Está muito bom, esse lanche foi uma ótima escolha ������
+premium.objective.snack.D	Cuidado com um jantar leve, você está com muitas calorias nessa etapa ������
+premium.objective.snack.D_	Está bem, mas poderia ter escolhido um lanche mais calórico ������
+premium.objective.snack.E_	Está ok, mas poderia ter escolhido um lanche mais calórico
+premium.objective.snack.F_	Está ok, mas poderia ter escolhido um lanche mais calórico
+premium.plan.annual	%@ anual (%@ /mês)
+premium.plan.bimonthly	%@ a cada dois meses
+premium.plan.month	Mês
+premium.plan.monthly	%@ (%@ /mês)
+premium.plan.monthly.discount	%@ /mês
+premium.plan.price.description	Pagamento de %1$#@price@ a cada %2$#@month@
+premium.plan.price.peryear	por ano
+premium.plan.quaterly	%@ trimestral (%@ /mês)
+premium.plan.semiannual	%@ semestral
+premium.prices.error.body	Não foi possível conectar ao Play Store
+premium.prices.error.title	Erro de conexão
+premium.prices.free.title.label	Triplica suas chances de sucesso com o Premium
+premium.prices.later.label	Mais tarde
+premium.promotion.amount	%@
+premium.reminder.description	Não pudemos renovar sua assinatura Foodvisor.
+premium.reminder.header	Atualizar meu método de pagamento
+premium.reminder.periode	Sem problemas, você ainda pode aproveitar seu acesso premium por mais
+premium.reminder.update	Atualizar agora
+premium.section.activities	Atividades esportivas
+premium.section.nutrient	Dicas de macronutrientes
+premium.special.duration	Sobre a assinatura Premium anual
+premium.special.offer.footer	no Premium
+premium.special.offer.title	Oferta especial:
+premium.topflop.empty.title	Esta seção ficará visível quando você consumir mais de 3 alimentos
+premium.topflop.flop.description	Este alimento deve ser evitado pois: %@
+premium.topflop.flop.description.noBadge	Este alimento é o pior que você consumiu hoje
+premium.topflop.flop.recommendation	Nossas recomendações com menos calorias
+premium.topflop.title	Top & Flop
+premium.topflop.top.description	Este alimento é bom porque: %@
+premium.topflop.top.description.noBadge	Este alimento é o melhor que você consumiu hoje
+premium.unlock.all	DESBLOQUEAR TUDO
+premium.unlockReminder	Bem-vindo(a)!
+premium_program_reward_screen_20	R$20
+premium_program_reward_screen_banner	R$20 ao conseguir
+premium_program_reward_screen_cta	Continuar
+premium_program_reward_screen_step_1	Instalar o aplicativo
+premium_program_reward_screen_step_2	Tornar-se membro Premium
+premium_program_reward_screen_step_3	Concluir o nível 4 do programa
+premium_program_reward_screen_step_4	Receba sua recompensa
+premium_program_reward_screen_step_title	Como fazer?
+premium_program_reward_screen_title	Ganhe $20 se concluir seu programa Premium
+premium_program_reward_screen_to_win	PARA GANHAR
+premium_screen_coach_free_mode_cta	Desbloquear minha oferta
+premium_screen_coach_free_mode_title	Desbloqueie seu programa personalizado
+premium_screen_promo_pill	-%@ só para você!
+premium_screen_trial_cta	Comece meu teste gratuito
+premium_screen_trial_pill	Teste gratuito de %@ dias
+premium_upgrade_feature_custom_meal_plan	Plano de refeições personalizado
+present_early_weekend_title	Fim de semana antecipado
+present_long_weekend_title	Fim de semana prolongado
+present_weekend_title	Fim de Semana
+presentation_screen_comparisons_other_title	Alcance seus objetivos mais rapidamente!
+presentation_screen_comparisons_row1	Diário alimentar
+presentation_screen_comparisons_row2	Avaliação de alimentos
+presentation_screen_comparisons_row3	Rastreadores de atividade
+presentation_screen_comparisons_row4	Metas personalizadas
+presentation_screen_comparisons_row5	Receitas personalizadas
+presentation_screen_comparisons_row6	Sem anúncios
+presentation_screen_comparisons_weightloss_title	Progrida mais rapidamente na perda de peso!
+presentation_screen_more_chance_bullet1_subtitle	Alimentos a serem favorecidos ou limitados, e análises das refeições.
+presentation_screen_more_chance_bullet1_title	Faça escolhas inteligentes
+presentation_screen_more_chance_bullet2_subtitle	Integre suas despesas com atividades e passos ao longo do dia.
+presentation_screen_more_chance_bullet2_title	Acompanhe suas atividades esportivas
+presentation_screen_more_chance_bullet3_subtitle	Receitas saudáveis e aulas para entender melhor seus pontos fracos.
+presentation_screen_more_chance_bullet3_title	Progrida mais rapidamente
+presentation_screen_more_chance_bullet4_subtitle	Use o aplicativo sem interrupções
+presentation_screen_more_chance_bullet4_title	Sem anúncios
+presentation_screen_more_chance_reassurance_subtitle	Você pode cancelar sem custo
+presentation_screen_more_chance_reassurance_title	Cancelável a qualquer momento
+presentation_screen_more_chance_title	Os membros do Foodvisor Premium têm 3,8 vezes mais chances de alcançar seus objetivos!
+presentation_screen_more_chance_title_color	3,8 vezes
+preset_option_custom	Personalizado
+preset_option_day_distribution	Distribuição diária
+preset_option_early_weekend	+%@ na sexta e sábado
+preset_option_early_weekend_title	Adicionar %@ na sexta e sábado
+preset_option_long_weekend	+%@ na sexta, sábado e domingo
+preset_option_long_weekend_title	Adicionar %@ na sexta, sábado e domingo
+preset_option_same_everyday	Igual todos os dias
+preset_option_subtitle	Média diária inalterada
+preset_option_weekend	+%@ no sábado e domingo
+preset_option_weekend_title	Adicionar %@ no sábado e domingo
+preset_popup_subtitle	Aumente suas calorias nos fins de semana e diminua nos outros dias da semana para manter sua meta diária
+preset_popup_subtitle_same_everyday	Mantenha a mesma meta calórica diária ao longo da semana para atingir seus objetivos
+price_screen_dark_title	Escolha sua oferta Foodvisor Premium
+price_screen_free_scale_tip	Incluído: uma balança conectada DE GRAÇA
+price_screen_per_month_price_cell_duration_shorten_month	%@ mês
+price_screen_per_month_price_cell_highlight_text	O mais popular
+price_screen_per_month_price_cell_highlight_text_free_trial	TESTE GRATUITO DE 3 DIAS
+price_screen_per_month_price_cell_highlight_text_money_back	Resultado garantido
+price_screen_per_month_price_cell_monthly	/ mês
+price_screen_per_month_price_cell_monthly_price	%@ / mês
+price_screen_per_month_trial_badge	Teste gratuito de %@ dias
+price_screen_per_month_trial_toggle_off	Não tem certeza? Ative o teste gratuito
+price_screen_per_month_trial_toggle_on	Teste gratuito ativado.
+price_screen_promo_pill	-%@ só para você!
+price_screen_testimony_1_name	Lynn
+price_screen_testimony_1_text	Já experimentei outros apps para gerenciar meu peso, mas o Foodvisor foi o melhor de todos!
+price_screen_testimony_2_name	Peter
+price_screen_testimony_2_text	Após 60 dias, perdi 10 lbs. A detecção de alimentos por IA funciona muito bem, e o acompanhamento é fácil e rápido.
+price_screen_testimony_3_name	Melissa
+price_screen_testimony_3_text	De maio até meados de setembro, perdi 17 libras. Aprendi a me alimentar de forma mais saudável para a minha idade.
+price_screen_testimony_4_name	Catarina
+price_screen_testimony_4_text	Como um bom amigo, o Foodvisor me ajudou a não me estressar com a perda de peso, mantendo o foco na minha motivação.
+price_screen_testimony_5_name	Martin
+price_screen_testimony_5_text	Ótimo não apenas para perder peso, mas também para entender do que seu corpo precisa e como gerenciar seus hábitos. Eu perdi 22 lbs em 30 dias.
+price_screen_testimony_6_name	Elisabeth
+price_screen_testimony_6_text	O Foodvisor tem sido revolucionário para mim. Eu realmente gosto dos visuais positivos e das informações curtas.
+price_screen_trial_pill	Teste gratuito de %@ dias
+price_screen_weight_curve_subtitle	Alcance %@
+price_screen_weight_curve_title	Seu programa personalizado
+privacy_policy_update_modal_subtitle	Nossa %@ foi atualizada para fornecer mais detalhes sobre como usamos e protegemos seus dados.
+privacy_policy_update_modal_title	Atualizamos recentemente nossa Política de Privacidade
+proceed_to_cancel_button	Continuar para cancelar
+progress.adspremium.button	Saiba mais
+progress.adspremium.title	Alcance suas metas com o Premium
+progress.nutritional.calories.title	Objetivo (kcal)
+progress.nutritional.classif.title	Avaliação das refeições
+progress.nutritional.label	Nutrição
+progress.nutritional.nutrientBreakdown.actual.legend	Minha ingestão
+progress.nutritional.nutrientBreakdown.goal.legend	Meu objetivo
+progress.nutritional.nutrientBreakdown.title	Distribuição de macros (%)
+progress.nutritional.nutrientQuantity.title	Média de macronutrientes (g)
+progress.premiumband.button	Saiba mais
+progress.premiumband.title	O Foodvisor Premium te ajuda a atingir seu objetivo
+progress.rgpdband.button	Abrir configurações
+progress.rgpdband.title	Você perderá seu histórico se não alterar suas configurações de compartilhamento
+progress.segmentedControl.1month	1 mês
+progress.segmentedControl.1year	1 ano
+progress.segmentedControl.30days	30 dias
+progress.segmentedControl.6month	6 meses
+progress.segmentedControl.7days	7 dias
+progress.segmentedControl.90days	90 dias
+progress.weight.addButton.title	Adicionar
+progress.weight.addWeight.alert.button	Sim
+progress.weight.addWeight.alert.content	Você já inseriu um peso para esta data. Deseja modificar esse peso?
+progress.weight.addWeight.alert.title	Tem certeza de que deseja excluir esse peso?
+progress.weight.addWeight.title	Adicionar uma pesagem
+progress.weight.currentWeight.label	Peso atual
+progress.weight.goal.label	Parabéns! Você atingiu seu objetivo!
+progress.weight.goalWeight.label	Peso desejado
+progress.weight.helpLabel.gain	ganhou
+progress.weight.helpLabel.label	Você eliminou %@ %@ desde o início
+progress.weight.helpLabel.lose	perdeu
+progress.weight.label	Peso
+progress.weight.savedWeight.label	Pesagens registradas
+progress.weight.startWeight.label	Peso inicial
+progress.weight.textField.placeholder	Peso
+progress.weight.weightChart.label	Meta de peso
+quest_tab_daily_quests_section_title	MISSÕES DIÁRIAS
+quest_tab_daily_quests_time_left	%@ H
+quest_tab_dismiss_chest_animation	Toque em qualquer lugar para fechar
+quest_tab_error_toast_body	Algo aconteceu do nosso lado.
+quest_tab_error_toast_title	Parece que houve um erro
+quest_tab_monthly_quest_title_1	Missão de Janeiro
+quest_tab_monthly_quest_title_10	Missão de Outubro
+quest_tab_monthly_quest_title_11	Missão de Novembro
+quest_tab_monthly_quest_title_12	Missão de Dezembro
+quest_tab_monthly_quest_title_2	Missão de Fevereiro
+quest_tab_monthly_quest_title_3	Missão de Março
+quest_tab_monthly_quest_title_4	Missão de Abril
+quest_tab_monthly_quest_title_5	Missão de Maio
+quest_tab_monthly_quest_title_6	Missão de Junho
+quest_tab_monthly_quest_title_7	Missão de Julho
+quest_tab_monthly_quest_title_8	Missão de Agosto
+quest_tab_monthly_quest_title_9	Missão de Setembro
+quest_tab_monthly_quests_time_claim	Receber sua recompensa
+quest_tab_monthly_quests_time_claimed	Missão concluída!
+quest_tab_my_quests_subtitle	Conclua missões para ganhar recompensas!
+quest_tab_my_quests_title	Minhas missões
+quest_tab_quest_hint_popup_reward	Recompensa
+quest_tab_special_quests_section_title	MISSÕES ESPECIAIS
+quest_tab_tabbar_title	Missões
+quest_tab_tap_anywhere_to_dismiss	Toque em qualquer lugar para fechar
+quick_add_locked_subtitle	Faça upgrade para Premium para desbloquear a Adição Rápida e muito mais!
+quick_add_locked_title	Desbloqueie a função de Adição Rápida
+quick_add_unlock_button	Desbloquear com Premium
+range_end	Fim do intervalo
+range_start	Início do intervalo
+rating.info.free.button	Ver minha nota
+rating.info.free.button.caps	VER MINHA AVALIAÇÃO
+rating.info.free.description	Quer saber mais sobre a qualidade do seu dia?
+rating.info.free.title	NOTA DO MEU DIA
+rating.info.free.title.fv2	Avaliação do meu dia
+rating.info.premium.title	NOTA DO MEU DIA
+rating.info.premium.title.fv2	Avaliação do meu dia
+reassurance_notification_message	Registre uma refeição para prolongar sua sequência.
+reassurance_notification_now_label	agora
+reassurance_price_flow_1_cta	Continuar
+reassurance_price_flow_1_subtitle_1	Resultados visíveis nas primeiras semanas
+reassurance_price_flow_1_subtitle_2	Adote hábitos saudáveis de forma duradoura
+reassurance_price_flow_1_subtitle_3	Um programa simples que se adapta ao seu dia a dia!
+reassurance_price_flow_1_title	Com seu programa, nada te para!
+reassurance_price_flow_2_cta	Continuar
+reassurance_price_flow_2_subtitle_calories	Metas de calorias flexíveis no fim de semana
+reassurance_price_flow_2_subtitle_classes	Saiba mais sobre nutrição com nossos cursos diários
+reassurance_price_flow_2_subtitle_recipes	Desbloqueie mais de 40 funcionalidades, incluindo suas receitas personalizadas
+reassurance_price_flow_2_subtitle_scan	Escaneie seus alimentos para adicioná-los rapidamente às refeições
+reassurance_price_flow_2_title	Alguns benefícios do seu programa são recursos Premium.
+reassurance_price_flow_3_cancel_subtitle	É fácil! Vá até a Google Play Store, clique em “Minha assinatura”, selecione Foodvisor, “Cancelar assinatura” e confirme.
+reassurance_price_flow_3_cancel_title	Como posso cancelar?
+reassurance_price_flow_3_cta	Continuar
+reassurance_price_flow_3_subtitle_1a	Instale o Foodvisor
+reassurance_price_flow_3_subtitle_1b	Crie seu programa personalizado
+reassurance_price_flow_3_subtitle_2a	Hoje
+reassurance_price_flow_3_subtitle_2b	Escolha uma assinatura para atingir seu objetivo mais facilmente!
+reassurance_price_flow_3_subtitle_3a	7 dias antes da data
+reassurance_price_flow_3_subtitle_3b	Você receberá um e-mail avisando sobre o fim da sua assinatura
+reassurance_price_flow_3_subtitle_4a	No dia da renovação
+reassurance_price_flow_3_subtitle_4b	Sua assinatura continua, e você pode continuar usando o Foodvisor.
+reassurance_price_flow_3_title	Foodvisor Premium: como funciona?
+recalculate_calorie_goal_button	Recalcular meta de calorias
+recap.change.cta	Salvar
+recap.delete.cta	Apagar esta refeição
+recap.meal.rating.title	Avaliação da refeição
+recap.other	Outros
+recent_search_unlock_button	Desbloquear com Premium
+recent_search_unlock_subtitle	Você atingiu o limite do histórico gratuito. Torne-se Premium para ter histórico ilimitado e muito mais!
+recent_search_unlock_title	Seu histórico está cheio
+recents_tab	Recentes
+recipe.addMeal	Este prato foi adicionado com sucesso ao seu dia
+recipe.ingredients.nutrients	Info nutricional
+recipe.ingredients.title	Receita
+recipe.intake.percent	%@ da sua ingestão diária
+recipe.search	Procurar uma receita
+recipe.search.empty.help.fv2	Não encontramos nenhuma receita com este ingrediente...
+recipe.search.empty.title	Ops... não há nada por aqui...
+recipe.search.empty.title.fv2	Ops...
+recipe.search.unlock.description	Todas as nossas receitas são selecionadas por nossos nutricionistas,
+recipe.section.favorites	Meus Favoritos
+recipe.section.ingredients	Ingredientes
+recipe.section.nutrients	Info nutricional
+recipe.section.preparations	Preparo
+recipe.summary.cooking	Cozimento
+recipe.summary.difficulty	Dificuldade
+recipe.summary.ofpreparation	de preparo
+recipe.summary.preparation	Preparo
+recipe.summary.serving	por pessoa
+recipe.time.breakfast	Café da manhã
+recipe.time.dinner	Jantar
+recipe.time.lunch	Almoço
+recipe.time.snack	Lanche
+recipe.title	Nossas receitas
+recipe.unitName	porção(s)
+recipe.validate	Adicionar à minha dia
+recipeList.header.diet	Descubra as receitas adaptadas ao seu programa
+recipeList.header.dietCompliant	Adaptado ao seu programa
+recipe_myown_subtitle	por exemplo, sua receita favorita de pão de banana
+recipe_myown_title	Minha própria receita
+reminder.description	Os lembretes irão ajudar você a se manter motivado(a) e criar o hábito de registrar suas refeições nos primeiros dias. É um passo importante para alcançar seus objetivos.
+reminder.nextMeal	Lembre-me
+reminder.notification.next.configure	Acesse o centro de lembretes
+reminder.notification.next.date	Seu próximo lembrete é:
+reminder.notification.next.objectif.subTitle	Para adicionar ou modificar lembretes, acesse o centro de lembretes
+reminder.notification.next.objectif.title	A distribuição das refeições ao longo do dia é importante.
+reminder.notification.next.subtitle	É sua vez agora
+reminder.subtitle	Última etapa para o sucesso !
+reminder.title	Defina um lembrete
+reminder.validate	Definir esse lembrete
+report.title.label	Reportar um erro
+report_food_continue_button	Continuar
+report_food_issue_brand	Marca
+report_food_issue_duplicate	Duplicata de outro alimento
+report_food_issue_name	Nome
+report_food_issue_nutritional_info	Informações nutricionais
+report_food_issue_photo	Foto
+report_food_issue_rating	Avaliação do alimento (sorriso)
+report_food_issue_serving_size	Nome ou tamanho da porção
+report_food_issues_question	Quais são os problemas com este alimento?
+report_food_issues_subtitle	Você pode selecionar vários problemas
+report_food_question_foodview	Estas informações estão incorretas?
+report_food_reviewed_cta	Obrigado
+report_food_reviewed_message	Os dados foram atualizados. Obrigado por sua contribuição!
+report_food_reviewed_title	Os alimentos que você reportou foram revisados por nossa equipe
+report_food_screen_bullet_point_1	Garanta a precisão das informações
+report_food_screen_bullet_point_2	Você contribui para ajudar milhões de usuários
+report_food_screen_button_start	Iniciar
+report_food_screen_title	Vamos relatar este alimento juntos
+report_food_title	Relatar alimento
+report_issue_foodview	Relatar problemas
+report_scan_barcode_frame_hint	Centralize o código de barras no quadro
+report_scan_barcode_instruction	Escaneie o código de barras do alimento para começar
+report_scan_barcode_title	Código de barras do alimento
+required_placeholder_create_activity	Obrigatório
+rive_reassurance_foodvisor_approach_page_cta	Vamos lá
+rive_reassurance_foodvisor_approach_page_step1_description	Basta tirar uma foto do seu alimento
+rive_reassurance_foodvisor_approach_page_step2_cal	740
+rive_reassurance_foodvisor_approach_page_step2_description	Acompanhe seu progresso diário
+rive_reassurance_foodvisor_approach_page_step3_description	Receba suporte na sua jornada
+rive_reassurance_foodvisor_approach_page_title	Por que a abordagem única do Foodvisor funciona
+rive_reassurance_notification_cta	Configurar lembretes
+rive_reassurance_notification_title	Vamos te ajudar a continuar registrando seus alimentos
+rive_reassurance_reach_goal_description	Entendido! Vamos te ajudar a alcançar suas metas
+rive_reassurance_reach_goal_page_cta	Definir minha meta
+salameche_seed_setup_title_1	Aqui está um presente para ajudar na sua jornada!
+salameche_seed_setup_title_3	É sua para cultivar! Escolha a cor da sua semente
+same_everyday_preset_selected	Mesma meta calórica para cada dia
+save.changes.popup	foi modificado
+scan.description.label	Tire uma foto da embalagem ������
+scan_barcode_instruction	Certifique-se de que o código de barras está dentro da moldura
+scan_barcode_skip	Pular
+scan_barcode_title	Escaneie o seu código de barras
+score_section_title	Pontuaçãos (opcional)
+search.missingFood.title	Informar alimento ausente
+search.recentSearches.header.label	Pesquisas recentes
+search.research.placeholder	Pesquisar alimento...
+searchTab.emptyState.Message	Não se esqueça, você sempre pode tirar uma foto, nós reconheceremos os alimentos!
+search_all_activities_for_search	Pesquisar todas as atividades para:
+search_all_activity_cta	Pesquisar todas as atividades
+search_end_of_results_missing_food_barcode	Escanear código de barras
+search_end_of_results_missing_food_report	Reporte
+search_end_of_results_missing_food_title	Não encontrou sua comida?
+search_for_an_activity_placeholder	Procurar uma atividade
+season_pass_christmas_title	NATAL
+season_pass_column_free	Grátis
+season_pass_column_premium	Premium
+season_pass_column_premium_activate	Ativar
+season_pass_countdown_header	TERMINA EM %dD %dH
+season_pass_halloween_intro_modal_title	É temporada de Halloween
+season_pass_halloween_title_header	HALLOWEEN
+season_pass_header_timer_over	Passe de temporada encerrado
+season_pass_intro_modal_description	Registre uma refeição todos os dias para desbloquear recompensas exclusivas para sua semente. Disponível por tempo limitado!
+season_pass_item_claim_button	Resgatar
+season_pass_item_unlocked_animation	Este item aparecerá no seu inventário quando você atingir o Nível %d.
+season_pass_item_unlocked_animation_cta	Resgatar
+season_pass_items_modal_cta_got_it	Entendi
+season_pass_items_modal_cta_unlock_premium	Desbloquear com Premium
+season_pass_items_modal_description_keep_logging	Continue registrando suas refeições todos os dias para desbloquear esta recompensa.
+season_pass_items_modal_description_log_meal	Registre uma refeição para desbloquear sua recompensa diária
+season_pass_items_modal_description_unlocked	O que você desbloqueou
+season_pass_items_modal_reward_label	Recompensa
+season_pass_items_modal_title	Itens sazonais
+season_pass_poe_ended	Encerrado
+seed_gems_subtitle	Ótimo trabalho, continue registrando para ganhar mais!
+seed_gems_title	Você ganhou pedras preciosas!
+seed_gift_gamification_page_description	A gamificação faz com que novos hábitos durem até 5x mais tempo
+seed_gift_grow_stronger_page_description	Ela ficará mais forte conforme seu hábito cresce
+seed_name_cta	Alterar por 500
+seed_name_input_placeholder	Nome
+seed_name_page_title	Dê um nome à sua semente
+seed_shop_error_screen_message_body	Volte mais tarde para receber seus itens diários
+seed_shop_error_screen_message_title	Ocorreu um erro do nosso lado.
+seed_shop_item_card_also_equip	e equipar
+seed_shop_quest_popup_subtitle	Ótimo trabalho, continue voltando para ganhar mais!
+seed_shop_quest_popup_title	+%@ gemas
+seed_tab_level	Nível
+seed_tab_locked_subtitle	Volte amanhã e registre uma refeição para desbloqueá-lo.
+seed_tab_locked_title	Desbloquear recurso misterioso
+seed_tab_myitems_entry_point	Meus itens
+seed_tab_no_internet_description	Conecte-se à internet para ver sua semente e seu jardim.
+seed_tab_no_internet_title	Não foi possível conectar
+seed_tab_shop_entry_point	Loja
+selected	Selecionado
+servings_add_new_serving_button	Adicionar nova porção
+servings_available_servings	Porções disponíveis
+servings_choose_subtitle	Para qual porção você gostaria de preencher as informações nutricionais?
+servings_choose_title	Escolha uma porção
+servings_done_button	Concluído
+servings_edit_button	Editar
+servings_edit_example	Número de porções: 1, 0.27, ou 1.5
+servings_edit_example_title	Exemplo:
+servings_edit_name	Nome da porção
+servings_edit_number	Número de porções
+servings_edit_save_button	Salvar
+servings_edit_size	Tamanho da porção
+servings_edit_title	Tamanho da porção: %@ porção (%@)
+servings_edit_title_serving_name	Tamanho da porção: %@
+servings_fill_info_100g_toggle	Preencher informações para 100 g
+servings_fill_info_100ml_toggle	Preencher informações para 100 mL
+servings_name_exists_error	O nome da porção já existe. Volte para editá-lo ou escolha outro nome.
+servings_next_button	Próximo
+servings_report_edit_instructions	Você pode editar, excluir ou adicionar porções tocando em “Editar”
+servings_report_edit_title	Relatar ou editar porções
+servings_report_or_edit_subtitle	Você pode editar, excluir ou adicionar porções tocando em 'Editar'
+servings_report_or_edit_title	Relatar ou editar porções
+set_duration_picker	Definir duração
+set_type_picker	Definir tipo
+set_up_health_connect_cta	Configurar o Conexão de Saúde
+settings_calorie_goal_choose_preset_title	Escolher um predefinido
+settings_discard_changes_popup_cta	Descartar alterações
+settings_discard_changes_popup_subtitle	Você pode salvar suas alterações se todas as suas refeições somarem 100%.
+settings_discard_changes_popup_title	Tem certeza de que deseja descartar suas alterações?
+settings_export_csv_file_confirmation_subtitle	Seus dados serão enviados por e-mail nas próximas horas.
+settings_export_csv_file_confirmation_title	O e-mail será enviado
+settings_export_csv_file_cta	Exportar meus dados
+settings_export_csv_file_subtitle	Receba seus dados completos de nutrição por e-mail em formato CSV.
+settings_export_csv_file_title	Exportar meus dados nutricionais
+settings_height_error_popup	Editar meu objetivo de peso
+settings_log_out_popin_confirmation	Sim, sair
+settings_log_out_popin_title	Tem certeza de que deseja sair?
+settings_meal_calories_hide_meal	Ocultar refeições com 0 Cal no seu diário
+settings_my_diary_add_meal_subtitle	Customize suas refeições para se adaptar à sua rotina
+settings_my_diary_add_meal_title	Adicionar, remover ou renomear refeições
+settings_my_diary_category_1	Configurações das refeições
+settings_my_diary_page_intermittent_fasting_remove_cta	Remover jejum
+settings_my_diary_page_intermittent_fasting_remove_subtitle	Esta ação removerá qualquer plano de jejum e suas configurações relacionadas do seu diário.
+settings_my_diary_page_intermittent_fasting_remove_title	Você tem certeza de que deseja remover o Jejum Intermitente?
+settings_my_diary_page_intermittent_fasting_subtitle	Siga seu programa de jejum intermitente diretamente no seu diário com o Foodvisor.
+settings_my_diary_page_intermittent_fasting_title	Jejum Intermitente
+settings_my_diary_page_link_to_goal	Você pode alterar seus macronutrientes, metas calóricas diárias e mais na página "Meus objetivos".
+settings_my_diary_page_title	Configurações do diário
+settings_my_diary_rename_meal_page_title	Renomear minhas refeições
+settings_my_diary_rename_meal_subtitle	Renomeie suas refeições para que correspondam ao seu cotidiano
+settings_my_diary_rename_meal_title	Renomear minhas refeições
+settings_my_diary_reorder_meal_page_title	Reorganizar minhas refeições
+settings_my_diary_reorder_meal_subtitle	Mude a ordem das suas refeições de acordo com suas preferências
+settings_my_diary_reorder_meal_title	Reorganizar minhas refeições
+settings_my_goals_activity_page_title	Editar meu nível de atividade
+settings_my_goals_activity_subtitle	Ajuste seu nível de atividade diária
+settings_my_goals_activity_title	Editar meu nível de atividade
+settings_my_goals_calorie_daily_goal_subtitle	Meta personalizada para diferentes dias
+settings_my_goals_calorie_daily_goal_title	Editar metas diárias de calorias
+settings_my_goals_calorie_goal_page_title	Objetivo calórico
+settings_my_goals_calorie_goal_subtitle	Modifique sua meta diária de calorias
+settings_my_goals_calorie_goal_title	Alterar minha meta de calorias
+settings_my_goals_calories_micronutrients	Calorias e macronutrientes
+settings_my_goals_category_title_1	Objetivo nutricional
+settings_my_goals_category_title_2	Peso e atividade
+settings_my_goals_diet_balanced_diet_definition	Fornecer os nutrientes essenciais de todos os grupos alimentares.
+settings_my_goals_diet_balanced_diet_title	Dieta equilibrada
+settings_my_goals_diet_bulk_diet_definition	Adote esta dieta para desempenho ótimo.
+settings_my_goals_diet_bulk_diet_title	Dieta para ganho de massa
+settings_my_goals_diet_category_current	Regime atual
+settings_my_goals_diet_category_high_protein	Dietas ricas em proteínas
+settings_my_goals_diet_category_lose_weight	Dietas para perder peso
+settings_my_goals_diet_category_stabilization	Dietas de estabilização
+settings_my_goals_diet_choose_diet_current	Regime atual : %@
+settings_my_goals_diet_choose_diet_page_title	Escolha uma dieta
+settings_my_goals_diet_choose_diet_popup	Bem-vindo ao nosso aplicativo de nutrição!
+settings_my_goals_diet_choose_diet_title	Escolha uma dieta específica
+settings_my_goals_diet_feed_muscle_definition	Otimize o ganho de massa muscular enquanto perde gordura.
+settings_my_goals_diet_feed_muscle_title	Alimentar seus músculos
+settings_my_goals_diet_fibers_description	*O Foodvisor recomenda uma ingestão de 25 a 30g de fibras em sua dieta, de acordo com as diretrizes da OMS.
+settings_my_goals_diet_fibers_page_title	Meta de fibras
+settings_my_goals_diet_fibers_recommendation	O Foodvisor adiciona 27g de fibras ao seu objetivo. Recomendado pela OMS.
+settings_my_goals_diet_foodvisor_definition	Nossa distribuição equilibrada e ótima para perda de peso.
+settings_my_goals_diet_foodvisor_title	Dieta Foodvisor
+settings_my_goals_diet_low_carb_definition	Aprenda a escolher ótimas fontes e quantidades de carboidratos.
+settings_my_goals_diet_low_carb_title	Baixo teor de carboidratos
+settings_my_goals_diet_mediterranean_diet_definition	Prefira alimentos integrais e equilibre seus macronutrientes.
+settings_my_goals_diet_mediterranean_diet_title	Dieta Mediterrânea
+settings_my_goals_diet_page_title	Seus macronutrientes
+settings_my_goals_diet_subtitle	Modificar seus objetivos de macronutrientes
+settings_my_goals_diet_title	Escolher minha dieta
+settings_my_goals_diet_weight_maintainer_definition	Um equilíbrio ótimo de macronutrientes para estabilizar seu peso.
+settings_my_goals_diet_weight_maintainer_title	Mantenedor de peso
+settings_my_goals_error_percentage	O total deve ser de 100%
+settings_my_goals_meal_calorie_page_title	Meta calórica por refeição
+settings_my_goals_meal_calorie_subtitle	Modificar suas calorias para cada refeição
+settings_my_goals_meal_calorie_title	Alterar o objetivo calórico das minhas refeições
+settings_my_goals_page_title	Meus objetivos
+settings_my_goals_sport_mode_subtitle	Quando esta funcionalidade está ativada, as calorias gastas durante sua atividade física são consideradas no total de calorias restantes.
+settings_my_goals_sport_mode_title	Incluir atividade no objetivo calórico
+settings_my_goals_weight_goal_page_title	Editar meu objetivo de peso
+settings_my_goals_weight_goal_subtitle	Edite seu peso inicial e peso desejado.
+settings_my_goals_weight_goal_title	Editar meu objetivo de peso
+settings_myaccount_api_error_cta	Tentar novamente
+settings_myaccount_api_error_para	Algo inesperado aconteceu.
+settings_myaccount_api_error_title	Parece que há um pequeno problema.
+settings_myaccount_delete_CTA	Excluir minha conta
+settings_myaccount_delete_para_nosubactive	Esta ação não pode ser desfeita e você perderá todo o seu histórico e dados.
+settings_myaccount_delete_para_stripesubactive	Para excluir sua conta, cancele primeiro sua assinatura clicando em "Gerenciar minha assinatura".
+settings_myaccount_delete_para_subactive	Esta ação não pode ser desfeita e você perderá seu histórico e todos os seus dados.
+settings_myaccount_delete_title	Excluir minha conta
+settings_myaccount_language_cta	Modificar unidades
+settings_myaccount_language_go_to_setting	Mudar idioma
+settings_myaccount_language_subtitle	Gerir a altura, a massa e as unidades do sistema
+settings_myaccount_language_title	Unidades e medidas
+settings_myaccount_managesub_cta1	Alterar assinatura
+settings_myaccount_managesub_cta2	Cancelar minha assinatura
+settings_myaccount_managesub_popin_cta1	Manter Premium
+settings_myaccount_managesub_popin_cta2	Cancelar premium
+settings_myaccount_managesub_popin_para	Você perderá o acesso a todos os recursos Premium, incluindo aulas diárias, avaliação nutricional, receitas e muitos mais…
+settings_myaccount_managesub_popin_title	Tem certeza de que deseja cancelar?
+settings_myaccount_myprofile_paragraph	Se você gostaria de modificar seu endereço de e-mail, entre em contato conosco através do botão de Contato. Podemos pedir seu ID de usuário abaixo.
+settings_myaccount_mysub_androidPara	Para gerenciar sua assinatura, seu plano e suas informações de pagamento, você deve ir para a Google Play Store > Perfil > Pagamentos e assinaturas > Assinaturas
+settings_myaccount_mysub_input	Assinatura
+settings_myaccount_mysub_iospara	Gerenciar minha assinatura
+settings_myaccount_mysub_managesub	Gerenciar minha assinatura
+settings_myaccount_mysub_stripepara	Gerencie sua assinatura e detalhes de pagamento na página da sua conta.
+settings_myaccount_page_title	Minha Conta
+settings_myprofile_subtitle	Usamos esses dados para fornecer recomendações personalizadas e calcular seus objetivos diários.
+settings_new_calorie_goal_para_activity_popup	Seu nível de atividade tem impacto em sua meta calórica. Acesse as configurações de sua meta calórica para receber suas novas recomendações.
+settings_new_calorie_goal_para_my_profile_popup	Sua idade, sexo e altura têm impacto no seu objetivo de calorias. Acesse as configurações do seu objetivo de calorias para obter suas novas recomendações.
+settings_new_calorie_goal_para_weight_goal_popup	Seu objetivo de peso afeta suas calorias diárias. Acesse as configurações do seu objetivo calórico para obter suas novas recomendações.
+settings_new_calorie_goal_title_popup	Novo objetivo de calorias disponível
+settings_notifications_nudges_friends_title	Incentivos dos seus amigos
+settings_rename_meal_breakfast_name	Nome do café da manhã
+settings_rename_meal_custom_name	Nome da Refeição Personalizada %@
+settings_rename_meal_dinner_name	Nome do jantar
+settings_rename_meal_lunch_name	Nome do almoço
+settings_rename_meal_snacks_name	Nome do lanche
+settings_reset_changes_popup_cta	Redefinir modificações
+settings_reset_changes_popup_secondary_button	Cancelar
+settings_reset_changes_popup_subtitle	As alterações feitas nesta página não serão salvas
+settings_reset_changes_popup_title	Tem certeza de que deseja redefinir todas as alterações feitas?
+settings_restartprogress_classes	Minhas aulas
+settings_restartprogress_classes_confirmation_CTA	Tenho certeza de que deseja recomeçar
+settings_restartprogress_classes_confirmation_cancel	Cancelar
+settings_restartprogress_classes_confirmation_par	Você recomeçará suas aulas do início. Você não perderá seu outros progressos (diário alimentar, esporte, etc.)
+settings_restartprogress_classes_confirmation_popup	A progressão das suas aulas foi reiniciada
+settings_restartprogress_classes_confirmation_title	Tem certeza de que deseja recomeçar suas aulas?
+settings_restartprogress_page_par	Recomeçar meu programa desde o início:
+settings_restartprogress_page_title	Reiniciar meu progresso
+settings_restartprogress_startoverbtn	Recomeçar
+settings_restartprogress_workout	Meu esporte
+settings_restartprogress_workout_confirmation_par	Você reiniciará seus exercícios desde o início. Você não vai perder seus outros progressos (diário alimentar, aulas, etc.).
+settings_restartprogress_workout_confirmation_popup	A progressão do seu treino foi reiniciada.
+settings_restartprogress_workout_confirmation_title	Tem certeza de que deseja recomeçar suas sessões de esporte?
+settings_subscription_status_not_subscribed	Não assinante
+settings_subscription_status_subscription_active	Assinante, renove em %@
+settings_subscription_status_subscription_expired	Expirado em %@
+settings_subscription_status_subscription_expires	A assinatura expira em %@
+settings_subscription_status_trial_active	Teste, renove em %@
+settings_subscription_status_trial_expired	Expirado em %@
+settings_subscription_status_trial_expires	O teste expira em %@
+settings_workout_edition_cancelButton	Cancelar
+settings_workout_edition_saveButton	Confirmar minhas alterações
+settings_workout_edition_subtitle	Para seguir seu programa, recomendamos fazer entre 3 e 5 sessões por semana.
+settings_workout_edition_title	Você vai modificar seu programa esportivo
+settings_workout_reminderButton	Definir meus lembretes esportivos
+settings_workout_resetButton	Voltar às configurações iniciais
+settings_workout_subtitle_activated	Você possui %@ dias de treino e %@ dias de descanso.
+settings_workout_subtitle_activated_fullRest	Você não possui nenhum dia de esporte. Você não receberá mais sessões.
+settings_workout_subtitle_activated_fullWorkout	Você possui 7 dias de esporte.
+settings_workout_subtitle_deactivated	Ative o esporte para ter sessões personalizadas.
+settings_workout_title	Minhas sessões de esporte
+settings_workout_toggle	Esporte
+share.alert.save.content	Você pode ver na sua galeria!
+share.alert.save.title	Imagem salva
+share.cell.infos	Saiba mais sobre o premium
+share_button	Compartilhar
+shop_page_title	Loja
+show_numpad	Mostrar teclado numérico
+sign_contract_hint_0	Mantenha pressionado para se comprometer!
+sign_contract_hint_3	Perfeito!
+signin.password.forgot	Esqueceu sua senha?
+signin.provider.facebook	Continuar com o Facebook
+signin.provider.google	Continuar com o Google
+signin.provider.mail	Continuar com meu E-mail
+snackbar_pane_title	Alerta
+special_quest_description	Comece uma sequência
+special_quest_section_title	Missão especial
+splash_screen_loading_message	Está demorando um pouco mais que o normal...
+state_empty	Vazio
+state_off	Desativado
+state_on	Ativado
+steps_health_connect_toggle	Passos
+steps_health_connect_toggle_description	Ative para importar dados de passos. Eles aparecerão apenas no seu relatório diário.
+streak_goal_cta_validate	Confirmo meu objetivo
+streak_goal_option_14_days	Meta de 14 dias
+streak_goal_option_14_days_description	Ótimo
+streak_goal_option_30_days	Meta de 30 dias
+streak_goal_option_30_days_description	Incrível
+streak_goal_option_50_days	Meta de 50 dias
+streak_goal_option_50_days_description	Imparável
+streak_goal_option_7_days	Meta de 7 dias
+streak_goal_option_7_days_description	Bom
+streak_goal_subtitle_selected	Você tem %@x mais chances de sucesso
+streak_goal_subtitle_unselected	A Meta de Dias Consecutivos ajuda você a se manter motivado por mais tempo!
+streak_goal_title	Vamos assumir seu objetivo com uma Meta de Dias Consecutivos!
+streak_lost_message_subtitle	Todo mundo perde um dia! Conserte sua sequência registrando 1 refeição.
+streak_lost_message_title	%@ dias de sequência perdidos!
+streak_milestone_card_title	dias seguidos!
+streak_not_repair_link_text	Não reparar sequência
+streak_recovery_continue_button	Continuar
+streak_recovery_message_label	Você recuperou sua sequência!
+streak_repair_button_text	Conserte série com refeição
+streak_widget_lost_number_1	sem ver você
+streak_widget_lost_number_2	desde que você saiu
+streak_widget_lost_sentence_1	Sentimos sua falta
+streak_widget_lost_sentence_2	Reviva seus hábitos saudáveis!
+streak_widget_lost_sentence_3	Pronto para voltar?
+streak_widget_lost_sentence_4	Onde você está?
+streaks_earn_freeze_back_description	Isso ajudará caso você perca um dia.
+streaks_earn_freeze_back_title	Você recuperou seu gelo
+streaks_earn_freezes_back_title	Você recuperou seus gelos
+streaks_freeze_equipped_description	Eles permitem proteger sua sequência por um dia.
+streaks_freeze_equipped_title	Você tem %@ de 2 gelos equipados
+streaks_freeze_missing_subtitle	Ganhe um gelo de volta registrando uma refeição.
+streaks_freeze_missing_title	Você protegeu sua sequência de %@ dias com um gelo!
+streaks_out_of_freeze_CTA	Recarregue registrando uma refeição
+streaks_out_of_freeze_subtitle	Recupere seus congelamentos registrando uma refeição.
+streaks_out_of_freeze_title	Você está sem gelos para proteger sua sequência!������
+streaks_protected_cta	Ótimo!
+streaks_protected_title	Você protegeu sua sequência com um gelo!
+swipe.favorite	Favorito
+switch_role	Chave
+sync_all_your_app_health_connect_description	Com o Conexão de Saúde, você pode gerenciar todas as conexões dos seus aplicativos de saúde e fitness em um só lugar.
+sync_all_your_app_health_connect_title	Sincronize todos os seus apps com Health Connect
+tab	Guia
+tabbar.home	Diário
+tabbar_game_home	Início
+tama_first_gems_subtitle	Ótimo trabalho, continue registrando para ganhar mais.
+tama_first_gems_title	Você ganhou suas primeiras gemas!
+tama_my_items_clothes_empty_slot_cta	Ir para a loja
+tama_my_items_clothes_empty_slot_subtitle	Continue registrando suas refeições para fazer %@ crescer, ganhar gemas e comprar novos itens!
+tama_my_items_clothes_empty_slot_title	Compre roupas novas na loja!
+tama_my_items_color_not_picked	%@ não pode ficar sem cor. Escolha outra cor ou item!
+tama_my_items_garden_empty_slot_cta	Ir para a loja
+tama_my_items_garden_empty_slot_subtitle	Continue registrando suas refeições para fazer %@ crescer, ganhar gemas e comprar novos itens!
+tama_my_items_garden_empty_slot_title	Compre novos itens na loja!
+tama_shop_category_clothes	Roupas
+tama_shop_category_cta	Ver tudo
+tama_shop_category_garden	Jardim
+tama_shop_category_today	Hoje
+tama_shop_clothes_slot_locked_subtitle	Continue registrando suas refeições para desbloquear novas roupas.
+tama_shop_clothes_slot_locked_title	Faça %@ subir de nível para desbloquear novas roupas!
+tama_shop_garden_slot_locked_subtitle	Continue registrando suas refeições para desbloquear novos itens de jardim!
+tama_shop_garden_slot_locked_title	Faça %@ subir de nível para desbloquear novos itens!
+tama_shop_item_card_cta	Comprar %@
+tama_shop_item_card_title	Comprar este item
+tama_shop_item_purchased	Comprado
+tama_shop_item_unlock	Desbloquear
+tama_shop_slot_bottomwear	Parte de baixo
+tama_shop_slot_cheeks	Bochechas
+tama_shop_slot_eyewear	Óculos
+tama_shop_slot_fence	Cercas
+tama_shop_slot_flower	Flores
+tama_shop_slot_foliage	Folhagem
+tama_shop_slot_footwear	Calçados
+tama_shop_slot_furniture	Móveis
+tama_shop_slot_ground	Chão
+tama_shop_slot_handwear	Itens de mão
+tama_shop_slot_headwear	Acessórios de cabeça
+tama_shop_slot_landscape	Paisagem
+tama_shop_slot_mouth	Boca
+tama_shop_slot_seedColor	Cor
+tama_shop_slot_tool	Ferramentas
+tama_shop_slot_topwear	Parte de cima
+tama_shop_slot_tree	Árvores
+tama_shop_title	Loja
+tama_shop_unknown_item_modal_subtitle	Registre suas refeições todos os dias para ajudar sua semente a subir de nível e liberar espaços diários extras.
+tama_shop_unknown_item_modal_title	Desbloqueie mais itens diários à medida que sua semente cresce!
+tamagotchi_101_title	Ohhh... %@ está evoluindo!
+tamagotchi_10_banner	Nível 2
+tamagotchi_10_growth_cta	Volte amanhã para que %@ possa continuar crescendo
+tamagotchi_10_new_growth_description	%@ tem mais folhagem!
+tamagotchi_10_new_growth_header	Novo crescimento
+tamagotchi_10_progress_bar_title	Muito bem!
+tamagotchi_111_title	%@ está crescendo, graças a você!
+tamagotchi_11_progress	Registre refeições por mais 9 dias
+tamagotchi_11_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_11_title	Você ganhou um presente!
+tamagotchi_121_title	%@ está crescendo, graças a você!
+tamagotchi_12_progress	Registre refeições por mais 8 dias
+tamagotchi_12_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_12_title	É uma semente misteriosa
+tamagotchi_131_title	%@ está crescendo, graças a você!
+tamagotchi_132_title	Você desbloqueou um novo item para %@!
+tamagotchi_13_item_header	Escolha um item
+tamagotchi_13_progress	Registre refeições por mais 7 dias
+tamagotchi_13_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_13_title	Escolha a cor da sua semente
+tamagotchi_141_title	%@ está crescendo, graças a você!
+tamagotchi_14_placeholder	%@
+tamagotchi_14_progress	Registre refeições por mais 6 dias
+tamagotchi_14_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_151_title	%@ está crescendo, graças a você!
+tamagotchi_15_progress	Registre refeições por mais 5 dias
+tamagotchi_15_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_15_title	%@ vai crescer conforme você fica mais saudável
+tamagotchi_161_title	%@ está crescendo, graças a você!
+tamagotchi_162_title	%@ descobriu algo novo!
+tamagotchi_16_progress	Registre refeições por mais 4 dias
+tamagotchi_16_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_16_skills_description	%@ agora consegue pular!
+tamagotchi_16_skills_header	Habilidades e emoções
+tamagotchi_171_title	%@ está crescendo, graças a você!
+tamagotchi_17_progress	Registre refeições por mais 3 dias
+tamagotchi_17_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_181_title	%@ está crescendo, graças a você!
+tamagotchi_18_progress	Registre refeições por mais 2 dias
+tamagotchi_18_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_191_title	%@ está crescendo, graças a você!
+tamagotchi_19_progress	Registre refeições por mais 1 dia
+tamagotchi_19_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_1_intro	Registre uma refeição amanhã para ajudar %@ a crescer
+tamagotchi_1_progress_bar_title	Faça %@ subir para o próximo nível!
+tamagotchi_1_question	Como você quer chamar a sua semente?
+tamagotchi_1_skip	Não, obrigado
+tamagotchi_cta_open_chest	Abrir baú
+tamagotchi_cta_open_gift	Abrir presente
+template_percent	%1$d%%
+terms_update_modal_cta	Aceitar e continuar
+terms_update_modal_subtitle	Nossos %@ e %@ foram atualizados. Leia e aceite os novos termos para continuar usando o Foodvisor.
+terms_update_modal_terms	Termos de Uso
+terms_update_modal_title	Atualizamos nossos Termos e Condições
+test_lokalise_tool	Convidar amigos 2
+this_activity_will_burn_create_activity	Esta atividade queimará: %@ %@
+toaster_settings_email_updated	Seu e-mail foi atualizado
+today_section_tama_shop_cta	Comprar
+today_section_tama_shop_discount	50% OFF
+today_section_tama_shop_item_of_the_day	Item do dia
+today_section_tama_shop_sold	Vendido
+today_section_tama_shop_todays_items	Itens de hoje
+today_section_tama_shop_unlock	Desbloquear
+toppings.alert.title	Precisamos da sua permissão
+treasure_box_popin_cta	Tentar novamente
+treasure_box_popin_subtitle	10% de desconto já é ótimo, mas quem sabe? Sua próxima rodada pode trazer ainda mais sorte!
+treasure_box_popin_title	������ Ainda não acabou!
+treasure_box_screen_discount	%@%
+treasure_box_screen_first_choice_text	Toque em um baú para descobrir sua oferta
+treasure_box_screen_second_choice_text	Toque em um baú para receber uma nova oferta
+treasure_box_screen_subtitle_color	economize até %@
+treasure_box_screen_title	Obtenha uma oferta melhor
+trialscreen_timeline_basicheader_dot1_title	0€ hoje
+trialscreen_timeline_basicheader_highlight	Teste gratuito de 14 dias
+trialscreen_timeline_basicheader_title	Oferta válida apenas
+trialscreen_timeline_cancelexplainer_answer	É fácil! Vá para a Google Play Store, clique em "Minhas assinaturas", selecione o Foodvisor, e então clique em "Cancelar teste".
+trialscreen_timeline_cancelexplainer_question	Como cancelar?
+trialscreen_timeline_dot1_par	Seu teste **gratuito** começou!
+trialscreen_timeline_dot2_par	Você receberá um lembrete informando que seu teste está chegando ao fim.
+trialscreen_timeline_dot2_title	Em %@ dias
+trialscreen_timeline_dot3_par	Você será cobrado %@ por um programa de %@, a menos que cancele durante o período de teste.
+trialscreen_timeline_dot3_title	Em %@ dias
+trialscreen_timeline_newheader_dot1_title	Hoje
+trialscreen_timeline_newheader_highlight	%@ dias de teste gratuito
+trialscreen_timeline_newheader_subtitle	Oferta válida durante a inscrição
+trialscreen_timeline_newheader_title	0€ hoje
+trialscreen_timeline_newheader_title_variable_currency	%@ hoje
+trialscreen_timeline_separator	Incluído em seu teste gratuito
+trialscreen_timeline_timeline_question	Como funciona o teste gratuito?
+tuto_meal_xp_empty_search_button	Está anotado
+tuto_meal_xp_empty_search_para	Descreva seu alimento com palavras como "grelhado" ou sua marca.
+tuto_meal_xp_empty_search_title	Pesquise seus alimentos aqui
+tuto_meal_xp_food_in_basket_button	Está anotado
+tuto_meal_xp_food_in_basket_para	Continue adicionando seus alimentos! Você também pode usar a foto da câmera ������ ou o scanner de código de barras.|||||.
+tuto_meal_xp_food_in_basket_title	Parabéns, você adicionou seu primeiro alimento! ������
+tuto_meal_xp_food_view_log_button	Está anotado
+tuto_meal_xp_food_view_log_para	Se tudo estiver correto, clique neste botão para adicionar este alimento!
+tuto_meal_xp_food_view_log_title	Pronto(a) para salvar?
+tuto_meal_xp_food_view_serving_button	Próximo
+tuto_meal_xp_food_view_serving_para	Registrar corretamente seus alimentos ajuda a atingir seus objetivos!
+tuto_meal_xp_food_view_serving_title	Altere a quantidade ou o tipo de porção
+tuto_meal_xp_meal_recap_bottom_view_button	Está anotado
+tuto_meal_xp_meal_recap_bottom_view_para	Adicione alimentos com pesquisa, código de barras, foto e favoritos.
+tuto_meal_xp_meal_recap_bottom_view_title	Clique aqui para adicionar mais alimentos
+tuto_meal_xp_search_results_food_view_button	Próximo
+tuto_meal_xp_search_results_food_view_para	Escolha o alimento mais próximo do que você comeu (e sua quantidade). Você pode modificar a quantidade antes de salvar.
+tuto_meal_xp_search_results_food_view_title	Clique no alimento para alterar a quantidade
+tuto_meal_xp_search_results_quick_add_button	Está anotado
+tuto_meal_xp_search_results_quick_add_discover_para	Toque no + para salvar seu alimento instantaneamente. Continue o tutorial tocando no nome do alimento.
+tuto_meal_xp_search_results_quick_add_discover_title	Você encontrou a adição rápida!
+tutorial.firstMeal.customMeal	Ao buscar um alimento
+tutorial.firstMeal.go	Comece adicionando sua última refeição
+tutorial.firstMeal.photo	Ao tirar uma FOTO
+tutorial.firstMeal.skip	Avançar
+tutorial.firstMeal.title	Por exemplo, seu café da manhã ou o que você vai comer.
+type_picker	Tipo
+type_picker_description	Selecione o tipo da sua atividade.
+uncancel_renewal_card_cta	Manter minha assinatura
+uncancel_renewal_card_title	Sua assinatura Premium expira em %@
+unitPickerTextField.title.label	Mudar unidade
+units_fluid_ounce	Onça líquida (fl oz)
+units_fluid_ounce_short	fl oz
+units_gram	Grama (g)
+units_gram_short	g
+units_milliliter	Mililitro (mL)
+units_milliliter_short	mL
+units_ounce	Onça (oz)
+units_ounce_short	oz
+update_edit_activity_page_cta	Editar atividade
+usHeightPickerTextField.title.label	Selecione sua altura
+user.profile.placeholder.email	Seu e-mail
+user.profile.placeholder.name	Seu nome
+user.stats.ask.name	Informe seu nome
+view_all_plans	Ver todos os planos
+view_less_nutritionnal_info	Ver menos
+view_more_nutritionnal_info	Ver mais
+vit.K1	Vitamina K1
+vit.e	Vitamina E
+vita	Vitamina A
+vita.betak	Vitamina A - Betacaroteno
+vita.retinol	Vitamina A - Retinol
+vitamins_optional	Vitaminas (opcional)
+vitb1.thiamin	Vitamina B1 - Tiamina
+vitb12	Vitamina B12
+vitb2.riboflavin	Vitamina B2 - Riboflavina
+vitb3.niacin	Vitamina B3 - Niacina
+vitb5.pantothenic	Vitamina B5 - Ácido pantotênico
+vitb6	Vitamina B6
+vitb9.folat	Vitamina B9 - Ácido fólico
+vitd	Vitamina D
+voice_logging_analyzing_loading_title	Analisando...
+voice_logging_analyzing_placeholder_text	Analisando...
+voice_logging_back_to_recent_search_button	Voltar às pesquisas recentes
+voice_logging_card_cta	Experimentar agora!
+voice_logging_card_example_subtitle	Experimente "Hoje eu comi salmão com arroz e uma limonada"
+voice_logging_card_no	Não, obrigado(a)
+voice_logging_card_title	Registre sua refeição com sua voz
+voice_logging_card_tuto_description	Agora você pode registrar sua refeição em segundos apenas dizendo o que ela contém!
+voice_logging_card_tuto_subtitle	Gravação por voz
+voice_logging_card_tuto_title	Dite sua refeição para registrá-la!
+voice_logging_error_toast	Ocorreu um erro com o seu registro, tente novamente.
+voice_logging_microphone_authorization_button	Ir para as configurações
+voice_logging_microphone_authorization_title	Foodvisor precisa acessar seu microfone para realizar a gravação por voz
+voice_logging_recording_stop_button	Parar gravação
+voice_logging_recording_title	Gravando...
+voice_logging_results	Resultados
+voice_logging_start_over	Recomeçar
+warning_permission_required	Permissão necessária para esta funcionalidade
+watch.add.meal.help	Adicione uma refeição em seu telefone para ver o resumo.
+watch.summary.title	Resumo
+water.challenge.complete.subtitle	Você alcançou seu objetivo diário! Você pode beber mais se estiver com sede ou se estiver se exercitando.
+weekly_insight_steps_objective	**Objetivo:** %@ passos
+weekly_insight_weekly_steps_decrease_message	Você caminhou uma média de %@ passos nos últimos 7 dias. Isso representa uma redução de %@ em relação ao período anterior.
+weekly_insight_weekly_steps_message	Você caminhou em média %@ passos nos últimos 7 dias. Isso é um aumento de %@ em relação ao período anterior.
+weight_goal_premium_presentation_cta	Desbloquear a oferta
+weight_goal_premium_presentation_para	Sempre é o mais difícil, agora deixe o Foodvisor te ajudar em sua jornada para criar hábitos mais saudáveis e alcançar seus objetivos.
+weight_goal_premium_presentation_title	Ótimo!
+weight_goal_price_screen_subtitle	Oferta limitada
+weight_health_connect_toggle	Peso
+weight_health_connect_toggle_description	Ative para importar e exportar seus dados de peso para o Health Connect.
+welcome_level_message	Bem-vindo ao Nível %@
+welcome_to_foodvisor_title	Bem-vindo ao
+wheel_countdown_screen_subtitle	Você desbloqueou %@ de desconto! Não perca essa oportunidade.
+wheel_countdown_screen_title	Parabéns!
+wheel_popin_cta	Girar novamente
+wheel_popin_subtitle	10% de desconto já é ótimo, mas quem sabe? Sua próxima rodada pode trazer ainda mais sorte!
+wheel_popin_title	������ Ainda não acabou!
+wheel_screen_cta	Gire a roleta
+wheel_screen_subtitle	Tente a sorte %@ para sempre!
+wheel_screen_subtitle_color	economize até %@
+wheel_screen_title	Obtenha uma oferta melhor
+widget.calories.off	Abra seu aplicativo para ver suas calorias
+widget.calories.over	Calorias extras
+widget.calories.remaining	Calorias restantes
+widget_homescreen_calories_subtitle_goal	Acompanhe sua meta de calorias ao longo do dia!
+widget_homescreen_calories_subtitle_remaining	Acompanhe suas calorias restantes ao longo do dia!
+widget_homescreen_calories_title	Widget de Calorias
+widget_homescreen_macronutrient_subtitle	Acompanhe seu macro ao longo do dia!
+widget_homescreen_macronutrient_title	Widget de Macronutrientes
+widget_homescreen_streak_subtitle	Acompanhe sua sequência ao longo do dia e nunca esqueça de registrar uma refeição!
+widget_homescreen_streak_title	Widget de Sequência
+widget_streak_group_A_1	Sua vez!
+widget_streak_group_B_1	Vamos lá?
+widget_streak_group_C_1	Salve sua sequência
+widget_streak_group_D_1	Última chance
+widget_streak_log_out	Você saiu da conta
+widget_tuto_cta_thanks	Obrigado!
+widget_tuto_page_1_button	Adicionar widget
+widget_tuto_page_1_not_now	Agora não
+widget_tuto_page_1_title	Os usuários que utilizam nosso widget têm %@ mais chances de manter sua sequência por um mês!
+widget_tuto_page_1_title_color	60%
+widget_tuto_page_4_subtitle	Deslize para cima ou pressione início para sair do app
+widget_tuto_second_display_page_1_title	Parabéns pela sua sequência! Os usuários que utilizam nosso widget têm %@ mais chances de manter sua sequência por um mês!
+workout_cta_session_load	Carregando...
+workout_difficulty_change_easier_popup_question	Você quer que suas próximas sessões de esporte sejam mais fáceis?
+workout_difficulty_change_easier_popup_subtitle	Você iniciará um novo programa mais fácil do que seu programa atual.
+workout_difficulty_change_harder_popup_question	Você quer que suas próximas sessões de esporte sejam mais difíceis?
+workout_difficulty_change_harder_popup_subtitle	Você iniciará um novo programa mais difícil do que seu programa atual.
+workout_difficulty_change_new_popup_question	Lançamos um programa de treinamento mais difícil!
+workout_difficulty_change_new_popup_subtitle	Este deve ser mais adequado às suas necessidades, você deseja mudar?
+workout_difficulty_change_popup_answer_no	Não, obrigado
+workout_difficulty_change_popup_answer_yes	Sim
+workout_exercises_number	exercícios
+workout_feedback_boxPlaceholder	Nos diga por que você não gostou desta sessão.
+workout_feedback_boxTitle	Nos diga por quê
+workout_feedback_cta	Enviar meu feedback
+workout_feedback_pill_difficulty_1	Muito difícil
+workout_feedback_pill_difficulty_2	Muito fácil
+workout_feedback_pill_difficulty_3	Muito longo
+workout_feedback_pill_difficulty_4	Ótimo
+workout_feedback_text	Selecione os exercícios com os quais teve dificuldade
+workout_feedback_title	Dê-nos sua opinião
+workout_nextExercise	Próximo Exercício
+workout_reminder_editButton	Mudar os dias das minhas sessões
+workout_reminder_firstSet_laterButton	Mais tarde
+workout_reminder_set_leftButton	Aplicar a todos
+workout_reminder_set_rightButton	Aplicar
+workout_reminder_title	Lembretes de esporte
+workout_restDay_catchUp_cta	Recuperar minha última sessão
+workout_restDay_catchUp_subtitle	Aproveite para recuperar sua última sessão.
+workout_restDay_title	Hoje é dia de descanso!
+workout_rest_cta	Começar
+workout_rest_day_subtitle_1	Próxima sessão, próxima segunda-feira.
+workout_rest_day_subtitle_2	Próxima sessão, próxima terça-feira.
+workout_rest_day_subtitle_3	Próxima sessão, próxima quarta-feira.
+workout_rest_day_subtitle_4	Próxima sessão, próxima quinta-feira.
+workout_rest_day_subtitle_5	Próxima sessão, próxima sexta-feira.
+workout_rest_day_subtitle_6	Próxima sessão, próximo sábado.
+workout_rest_day_subtitle_7	Próxima sessão, próximo domingo.
+workout_rest_day_subtitle_tomorrow	Próxima sessão, amanhã.
+workout_rest_start_workout_title	Prepare-se
+workout_rest_title	Descanso
+workout_sessionNumber	Sessão
+workout_session_cta_start	Começar
+workout_session_error_internet_text	Tente se conectar à internet para acessar seus exercícios do dia
+workout_session_error_internet_title	Parece que você está offline
+workout_session_error_storage_text	Tente excluir um aplicativo, vídeos ou imagens do seu telefone.
+workout_session_error_storage_title	Parece que você está sem memória suficiente
+workout_session_title	Minha sessão de exercícios
+workout_step_done_button	Concluído
+workout_step_pause_CTA	Continuar
+workout_step_pause_feedback_answer1	Muito difícil
+workout_step_pause_feedback_answer2	Muito fácil
+workout_step_pause_feedback_answer3	Não tenho tempo
+workout_step_pause_feedback_answer4	Não sei como fazer
+workout_step_pause_feedback_answer5	Outro motivo
+workout_step_pause_feedback_subtitle	Isso nos ajudará a conhecê-lo melhor e a oferecer um treino mais adequado.
+workout_step_pause_feedback_title	Por que você saiu?
+workout_step_pause_leave	Sair
+workout_step_pause_resume	Recomeçar o exercício desde o início
+workout_step_pause_title	O que você gostaria de fazer?
+workout_summary_cta	Concluir
+workout_summary_feedback	Dê seu feedback sobre os exercícios!
+workout_summary_feedback_given	Seu feedback foi levado em consideração
+workout_summary_header_title_a	Parabéns!
+workout_summary_header_title_b	Parabéns!
+workout_summary_header_title_c	Ótimo!
+workout_summary_header_title_d	Bem jogado!
+workout_summary_question1	Como foi esta sessão?
+workout_summary_question2	Como você se sente?
+workout_summary_title	Sessão %@ concluída
+workout_time_min	min
+workout_time_sec	s
+yearly_plan_title	Plano anual
+your_fasting_plan_button	Seu plano de jejum
