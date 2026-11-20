@@ -7,7 +7,7 @@ with sync_playwright() as p:
     pg=ctx.new_page();errs=[];pg.on('pageerror',lambda e:errs.append(str(e)))
     pg.goto('http://localhost:8765/index.html?tour=0');pg.wait_for_timeout(1200)
     done=set()
-    for i in range(80):
+    for i in range(130):
         pg.wait_for_timeout(700);k=pg.evaluate("window.__k")
         if k in want and k not in done:
             pg.wait_for_timeout({'proj':3500,'magic':5200,'done':2500,'pact':800}.get(k,1200));pg.screenshot(path='n7_%s_%d.png'%(k,W));done.add(k)
@@ -33,8 +33,8 @@ with sync_playwright() as p:
         if k=='done':break
         if pg.locator('.shov').count():pg.tap('.shov #go');continue
         if pg.locator('.opt').count() and k!='plans':
-            pg.tap('.opt >> nth=0');pg.wait_for_timeout(1000)
-            if k in('restr','cond') and pg.locator('#go').count() and not pg.locator('#go').is_disabled():pg.tap('#go')
+            pg.tap('.opt >> nth=%d'%(1 if k=='q5' else 0));pg.wait_for_timeout(1000)
+            if (k in('restr','cond') or pg.locator('.opt.multi').count()) and pg.locator('#go').count() and not pg.locator('#go').is_disabled():pg.tap('#go')
             continue
         if pg.locator('#go').count() and not pg.locator('#go').is_disabled():pg.tap('#go')
     print(done,errs);b.close()

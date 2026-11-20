@@ -8,7 +8,7 @@ with sync_playwright() as p:
     pg=ctx.new_page();errs=[];pg.on('pageerror',lambda e:errs.append(str(e)))
     pg.goto('http://localhost:8765/index.html');pg.wait_for_timeout(600)
     out={};bad=[]
-    for step in range(90):
+    for step in range(130):
         pg.wait_for_timeout(750);k=pg.evaluate("window.__k")
         if k in('proj','prog'):pg.wait_for_timeout(2600)
         if k=='analysis':
