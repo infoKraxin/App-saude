@@ -12,6 +12,7 @@ import { useRouter } from 'expo-router';
 import { font, hit, radius, space, type as ts, type Palette } from '../theme/tokens';
 import { useTheme } from '../theme/useTheme';
 import { getState } from '../data/store';
+import { ScreenIn } from './motion';
 
 type Variant = keyof typeof ts | 'label';
 type Tone = keyof Palette;
@@ -48,6 +49,7 @@ export function Screen({
   const router = useRouter();
   const body = <View style={{ padding: pad ? space(5) : 0, paddingBottom: space(10), gap: space(4), maxWidth: 560, width: '100%', alignSelf: 'center' }}>{children}</View>;
   return (
+    <ScreenIn kind={header ? 'up' : back ? 'push' : 'fade'} style={{ backgroundColor: c.bg }}>
     <SafeAreaView style={{ flex: 1, backgroundColor: c.bg }} edges={header ? ['left', 'right'] : ['top', 'left', 'right']}>
       {header}
       {!header && (title || back) && (
@@ -64,6 +66,7 @@ export function Screen({
       {scroll ? <ScrollView contentContainerStyle={{ flexGrow: 1 }} keyboardShouldPersistTaps="handled">{body}</ScrollView> : <View style={{ flex: 1 }}>{body}</View>}
       {footer && <View style={{ padding: space(5), paddingTop: space(3), borderTopWidth: 1, borderTopColor: c.line, backgroundColor: c.bg }}><View style={{ maxWidth: 560, width: '100%', alignSelf: 'center' }}>{footer}</View></View>}
     </SafeAreaView>
+    </ScreenIn>
   );
 }
 

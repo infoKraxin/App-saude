@@ -10,7 +10,7 @@ import { dayKey } from './dates';
 const KEY = 'evura:v1';
 
 export const defaultPrefs: Prefs = {
-  theme: 'system',
+  theme: 'light',
   textScale: 1,
   reduceMotion: 'system',
   hideWeight: false,
@@ -67,6 +67,9 @@ export async function loadState() {
     if (raw) {
       const parsed = JSON.parse(raw) as AppState;
       state = { ...initial, ...parsed, prefs: { ...defaultPrefs, ...parsed.prefs, notif: { ...defaultPrefs.notif, ...parsed.prefs?.notif } } };
+      // v2: tema claro por padrão; quem estava em "do sistema" sem ter escolhido volta para o claro.
+      if (!(parsed as { themeV2?: boolean }).themeV2) { state = { ...state, prefs: { ...state.prefs, theme: state.prefs.theme === 'dark' ? 'dark' : 'light' } }; }
+      (state as { themeV2?: boolean }).themeV2 = true;
     }
   } catch {
     // arquivo corrompido: começa limpo, sem travar o app

@@ -78,8 +78,8 @@ export default function Plano() {
     body = (
       <>
         <Illus name="tela-relatorio" width="100%" style={{ borderRadius: 20, overflow: 'hidden' }} />
-        <T v="h1" accessibilityRole="header">{p.name ? `${p.name}, seu plano já está aqui.` : 'Seu plano já está aqui.'}</T>
-        <T tone="mut">Trouxemos o que você respondeu no quiz. Confira antes de começar.</T>
+        <T v="h1" accessibilityRole="header" center>{p.name ? `${p.name}, seu plano já está aqui.` : 'Seu plano já está aqui.'}</T>
+        <T tone="mut" center>Trouxemos o que você respondeu no quiz. Confira antes de começar.</T>
         <Group>
           <Row2 k="Foco" v={areaById(p.area).name} />
           {p.motive ? <Row2 k="O que te move" v={p.motive} /> : null}
@@ -93,7 +93,7 @@ export default function Plano() {
   if (step === 'name') {
     body = (
       <>
-        <T v="h1" accessibilityRole="header">Como podemos chamar você?</T>
+        <T v="h1" accessibilityRole="header" center>Como podemos chamar você?</T>
         <Field label="Nome ou apelido" value={p.name} onChangeText={(t) => setProfile({ name: t.slice(0, 40) })} autoCapitalize="words" autoComplete="given-name" error={err} />
       </>
     );
@@ -102,8 +102,8 @@ export default function Plano() {
   if (step === 'area') {
     body = (
       <>
-        <T v="h1" accessibilityRole="header">Qual é o seu foco agora?</T>
-        <T tone="mut">O app inteiro se ajusta a essa escolha. Dá para somar outros focos depois.</T>
+        <T v="h1" accessibilityRole="header" center>Qual é o seu foco agora?</T>
+        <T tone="mut" center>O app inteiro se ajusta a essa escolha. Dá para somar outros focos depois.</T>
         <View style={{ gap: space(2) }}>
           {AREAS.map((a) => (
             <Pressy key={a.id} accessibilityRole="radio" accessibilityState={{ checked: p.area === a.id }} accessibilityLabel={`${a.name}. ${a.short}`}
@@ -125,8 +125,8 @@ export default function Plano() {
   if (step === 'motive') {
     body = (
       <>
-        <T v="h1" accessibilityRole="header">O que te move?</T>
-        <T tone="mut">Ele aparece na sua tela Hoje e volta nos dias difíceis.</T>
+        <T v="h1" accessibilityRole="header" center>O que te move?</T>
+        <T tone="mut" center>Ele aparece na sua tela Hoje e volta nos dias difíceis.</T>
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space(2) }}>
           {MOTIVES.map((m) => <Chip key={m} label={m} selected={p.motive === m} onPress={() => setProfile({ motive: m })} />)}
         </View>
@@ -138,8 +138,8 @@ export default function Plano() {
   if (step === 'event') {
     body = (
       <>
-        <T v="h1" accessibilityRole="header">Tem uma data especial chegando?</T>
-        <T tone="mut">Opcional. Com uma data, o plano mostra a contagem e foca nela.</T>
+        <T v="h1" accessibilityRole="header" center>Tem uma data especial chegando?</T>
+        <T tone="mut" center>Opcional. Com uma data, o plano mostra a contagem e foca nela.</T>
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space(2) }}>
           {EVENTS.map((m) => <Chip key={m} label={m} selected={p.eventName === m} onPress={() => setProfile({ eventName: p.eventName === m ? undefined : m })} />)}
         </View>
@@ -163,8 +163,8 @@ export default function Plano() {
   if (step === 'age') {
     body = (
       <>
-        <T v="h1" accessibilityRole="header">Qual é a sua idade?</T>
-        <T tone="mut">O Evura é para maiores de 18 anos e ajusta as referências pela idade.</T>
+        <T v="h1" accessibilityRole="header" center>Qual é a sua idade?</T>
+        <T tone="mut" center>O Evura é para maiores de 18 anos e ajusta as referências pela idade.</T>
         <Field label="Idade em anos" value={age} onChangeText={(t) => { setAge(t.replace(/\D/g, '').slice(0, 3)); setErr(undefined); }} keyboardType="number-pad" error={err} />
       </>
     );
@@ -180,8 +180,8 @@ export default function Plano() {
     body = (
       <>
         <Evu mood="calm" size={88} />
-        <T v="h1" accessibilityRole="header">O Evura ainda não é para menores de 18 anos.</T>
-        <T tone="mut">Cuidar da saúde nessa fase pede acompanhamento de um adulto e de um profissional. Converse com a sua família ou procure uma unidade de saúde.</T>
+        <T v="h1" accessibilityRole="header" center>O Evura ainda não é para menores de 18 anos.</T>
+        <T tone="mut" center>Cuidar da saúde nessa fase pede acompanhamento de um adulto e de um profissional. Converse com a sua família ou procure uma unidade de saúde.</T>
       </>
     );
     cta = null;
@@ -191,8 +191,8 @@ export default function Plano() {
     body = (
       <>
         <Evu mood="calm" size={72} />
-        <T v="h1" accessibilityRole="header">Para deixar o seu plano seguro</T>
-        <T tone="mut">Nesses casos o app esconde metas de peso e mostra orientações mais cuidadosas. Você pode mudar depois.</T>
+        <T v="h1" accessibilityRole="header" center>Para deixar o seu plano seguro</T>
+        <T tone="mut" center>Nesses casos o app esconde metas de peso e mostra orientações mais cuidadosas. Você pode mudar depois.</T>
         <Group>
           <ToggleRow label="Estou grávida" value={s.pregnant} onChange={(v) => setProfile({ safety: { ...s, pregnant: v } })} />
           <ToggleRow label="Estou amamentando" value={s.breastfeeding} onChange={(v) => setProfile({ safety: { ...s, breastfeeding: v } })} />
@@ -206,8 +206,8 @@ export default function Plano() {
   if (step === 'sens' && i < steps.length) {
     body = (
       <>
-        <T v="h1" accessibilityRole="header">Do seu jeito</T>
-        <T tone="mut">Algumas pessoas preferem não ver números. Você escolhe.</T>
+        <T v="h1" accessibilityRole="header" center>Do seu jeito</T>
+        <T tone="mut" center>Algumas pessoas preferem não ver números. Você escolhe.</T>
         <Group>
           <ToggleRow label="Esconder o peso" desc="Mostra só a tendência, sem o número." value={prefs.hideWeight} onChange={(v) => setPrefs({ hideWeight: v })} />
           <ToggleRow label="Esconder calorias" value={prefs.hideCalories} onChange={(v) => setPrefs({ hideCalories: v })} />
@@ -222,8 +222,8 @@ export default function Plano() {
     body = (
       <>
         <Illus name="tela-privacidade" width="100%" style={{ borderRadius: 20, overflow: 'hidden', backgroundColor: ILLUS['tela-privacidade'].bg }} />
-        <T v="h1" accessibilityRole="header">Seus dados, suas escolhas</T>
-        <T tone="mut">Cada item é separado e pode ser desligado em Perfil, em Privacidade e dados.</T>
+        <T v="h1" accessibilityRole="header" center>Seus dados, suas escolhas</T>
+        <T tone="mut" center>Cada item é separado e pode ser desligado em Perfil, em Privacidade e dados.</T>
         <Group>
           <ToggleRow label="Usar meus dados de saúde para gerar meus relatórios" desc="Necessário para o app funcionar. Seus dados não são vendidos nem usados em anúncios." value={consent.health} onChange={(v) => setConsent({ ...consent, health: v })} />
           <ToggleRow label="Enviar um resumo sem nome e sem e-mail para a IA escrever os textos" desc="Opcional. Sem isso, você recebe a versão simples dos relatórios." value={consent.ai} onChange={(v) => setConsent({ ...consent, ai: v })} />

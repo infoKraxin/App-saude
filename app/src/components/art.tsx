@@ -14,7 +14,7 @@ export function Evu({ mood = 'hi', size = 96 }: { mood?: 'hi' | 'calm' | 'think'
   const ink = '#0F4244';
   const think = mood === 'think';
   return (
-    <View accessible accessibilityRole="image" accessibilityLabel="Evu, mascote do Evura" style={{ width: size * 0.92, height: size }}>
+    <View accessible accessibilityRole="image" accessibilityLabel="Evu, mascote do Evura" style={{ width: size * 0.92, height: size, alignSelf: 'center' }}>
       <Svg viewBox="0 0 120 130" width="100%" height="100%">
         <Defs>
           <LinearGradient id="mgd" x1="0" y1="0" x2="0" y2="1">

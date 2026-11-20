@@ -8,7 +8,7 @@ import Animated, { FadeInUp, FadeOutDown } from 'react-native-reanimated';
 import { Check, ChevronLeft, X } from 'lucide-react-native';
 import { ILLUS, type IllusName } from './illus';
 import { T, tap } from './ui';
-import { Enter, EASE } from './motion';
+import { Enter, EASE, ScreenIn } from './motion';
 import { useReduceMotion, useTheme } from '../theme/useTheme';
 import { hit, radius, space } from '../theme/tokens';
 
@@ -48,7 +48,7 @@ export function HeroScreen({
   const it = ILLUS[img];
   const goBack = () => (router.canGoBack() ? router.back() : router.replace('/'));
   return (
-    <View style={{ flex: 1, backgroundColor: it.bg }}>
+    <ScreenIn kind={back || close ? 'push' : 'fade'} style={{ backgroundColor: it.bg }}>
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} keyboardShouldPersistTaps="handled">
         <View style={{ paddingTop: insets.top, backgroundColor: it.bg }}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: space(4), minHeight: 52, alignItems: 'center' }}>
@@ -74,7 +74,7 @@ export function HeroScreen({
           <View style={{ maxWidth: 560, width: '100%', alignSelf: 'center' }}>{footer}</View>
         </View>
       ) : null}
-    </View>
+    </ScreenIn>
   );
 }
 

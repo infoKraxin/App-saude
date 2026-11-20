@@ -27,7 +27,7 @@ export default function RegistroHub() {
   ];
   return (
     <Screen back title="Registrar">
-      <Enter><T v="h1">O que você quer registrar?</T></Enter>
+      <Enter><T v="h1" center>O que você quer registrar?</T></Enter>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginHorizontal: -space(1.5) }}>
         {items.map(({ k, label }, i) => {
           const it = ILLUS[KIND_ICON[k]];

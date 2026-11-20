@@ -26,8 +26,8 @@ export default function Welcome() {
           <Enter i={2}><T v="h3" weight="med" tone="mut" center>Um minuto por dia de registro. Em 7 dias, o que pesa no seu caso e por quê.</T></Enter>
         </View>
         <Enter i={3} style={{ gap: space(3), maxWidth: 560, width: '100%', alignSelf: 'center', marginTop: space(5) }}>
-          <Button label="Começar" onPress={() => router.push('/entrar')} />
-          <Button label="Já fiz o quiz, quero meu plano" kind="ghost" onPress={() => router.push('/entrar')} hint="Entre com o mesmo e-mail que você usou no quiz" />
+          <Button label="Começar" onPress={() => router.push('/quiz')} hint="Abre o quiz para montar o seu plano" />
+          <Button label="Já fiz o quiz ou já tenho conta" kind="ghost" onPress={() => router.push('/entrar')} hint="Entre com o mesmo e-mail que você usou no quiz" />
           <T v="micro" tone="mut" center>Para maiores de 18 anos. O Evura informa; não substitui médicos e nutricionistas.</T>
         </Enter>
       </View>

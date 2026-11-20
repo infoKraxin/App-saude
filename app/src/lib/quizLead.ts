@@ -1,3 +1,21 @@
+import { Platform } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+// Endereço do quiz (o mesmo do site). No app nativo ele abre numa WebView.
+export const QUIZ_URL = process.env.EXPO_PUBLIC_QUIZ_URL ?? 'https://appaurasaude.vercel.app/?from=app';
+
+// Resultado do quiz guardado no aparelho: na web o quiz grava em localStorage (mesmo domínio);
+// no app nativo a WebView envia por mensagem e o app guarda aqui.
+export async function readLocalQuiz(): Promise<{ email?: string; area?: string; answers?: Record<string, unknown>; hypotheses?: string[] } | null> {
+  try {
+    const raw = Platform.OS === 'web' ? globalThis.localStorage?.getItem('evura_quiz') : await AsyncStorage.getItem('evura_quiz');
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+export const saveLocalQuiz = (p: unknown) => AsyncStorage.setItem('evura_quiz', JSON.stringify(p)).catch(() => {});
+
 // Converte o lead do quiz (tabela quiz_leads) no perfil do app.
 import type { Profile } from '../data/types';
 import { areaById, type AreaId } from '../data/areas';

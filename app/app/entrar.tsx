@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import { Screen, T, Field, Button, Card } from '@/components/ui';
 import { fetchQuizLead, isLocalMode, sendCode, verifyCode } from '@/lib/supabase';
 import { setState } from '@/data/store';
-import { leadToProfile } from '@/lib/quizLead';
+import { leadToProfile, readLocalQuiz } from '@/lib/quizLead';
 import { space } from '@/theme/tokens';
 
 const okEmail = (e: string) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e.trim());
@@ -19,6 +19,9 @@ export default function Entrar() {
   const [wait, setWait] = useState(0);
   const local = isLocalMode();
 
+  // Quem acabou de fazer o quiz já chega com o e-mail preenchido.
+  useEffect(() => { readLocalQuiz().then((q) => q?.email && setEmail((e) => e || String(q.email))); }, []);
+
   useEffect(() => {
     if (!wait) return;
     const t = setTimeout(() => setWait(wait - 1), 1000);
@@ -26,7 +29,7 @@ export default function Entrar() {
   }, [wait]);
 
   const finish = async () => {
-    const lead = await fetchQuizLead().catch(() => null);
+    const lead = (await fetchQuizLead().catch(() => null)) ?? (await readLocalQuiz());
     const base = leadToProfile(lead, email.trim().toLowerCase());
     setState((s) => ({ ...s, profile: { ...base, ...(s.profile ?? {}), email: email.trim().toLowerCase(), onboarded: false } }));
     router.replace('/plano');
@@ -60,8 +63,8 @@ export default function Entrar() {
     <Screen back title={step === 'email' ? 'Entrar' : 'Digite o código'}>
       {step === 'email' ? (
         <>
-          <T v="h1" accessibilityRole="header">Qual é o seu e-mail?</T>
-          <T tone="mut">Use o mesmo do quiz e o seu plano já aparece pronto. Você recebe um código, sem senha para lembrar.</T>
+          <T v="h1" accessibilityRole="header" center>Qual é o seu e-mail?</T>
+          <T tone="mut" center>Use o mesmo do quiz e o seu plano já aparece pronto. Você recebe um código, sem senha para lembrar.</T>
           <Field label="E-mail" value={email} onChangeText={(t) => { setEmail(t); setError(undefined); }} keyboardType="email-address" autoCapitalize="none" autoComplete="email" textContentType="emailAddress" placeholder="nome@email.com" error={error} onSubmitEditing={send} returnKeyType="send" />
           <Button label={busy ? 'Enviando...' : local ? 'Continuar' : 'Enviar código'} onPress={send} disabled={busy} />
           {local && (
@@ -73,8 +76,8 @@ export default function Entrar() {
         </>
       ) : (
         <>
-          <T v="h1" accessibilityRole="header">Enviamos um código</T>
-          <T tone="mut">Para {email.trim()}. Confira também a caixa de spam.</T>
+          <T v="h1" accessibilityRole="header" center>Enviamos um código</T>
+          <T tone="mut" center>Para {email.trim()}. Confira também a caixa de spam.</T>
           <Field label="Código de 6 números" value={code} onChangeText={(t) => { setCode(t.replace(/\D/g, '').slice(0, 6)); setError(undefined); }} keyboardType="number-pad" autoComplete="one-time-code" textContentType="oneTimeCode" error={error} onSubmitEditing={verify} />
           <Button label={busy ? 'Conferindo...' : 'Entrar'} onPress={verify} disabled={busy} />
           <View style={{ gap: space(2) }}>

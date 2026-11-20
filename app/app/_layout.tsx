@@ -21,7 +21,7 @@ function Gate() {
   const router = useRouter();
   useEffect(() => {
     const first = segments[0] as string | undefined;
-    const inOnboarding = first === 'boas-vindas' || first === 'entrar' || first === 'plano' || first === 'legal';
+    const inOnboarding = first === 'boas-vindas' || first === 'entrar' || first === 'plano' || first === 'legal' || first === 'quiz';
     if (!onboarded && !inOnboarding) router.replace('/boas-vindas');
     if (onboarded && (first === 'boas-vindas' || first === 'entrar' || first === 'plano')) router.replace('/');
   }, [onboarded, segments, router]);

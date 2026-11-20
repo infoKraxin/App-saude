@@ -300,9 +300,14 @@ function sel(pos){return S.q[pos]||null}
 function condList(){return (S.cond||[]).filter(function(x){return x!=='Nenhuma'})}
 function restrList(){return (S.restr||[]).filter(function(x){return x!=='Nenhuma restrição'})}
 
-function sendLead(){if(!CFG.lead||!S.ok||!S.email)return;var u={};try{new URLSearchParams(location.search).forEach(function(v,k){if(/^(utm_|fbclid|gclid)/.test(k))u[k]=v.slice(0,200)})}catch(e){}
- var body={email:S.email,area:S.area,consent:true,consentVersion:'quiz-v1',utm:u,hypotheses:[],answers:{name:S.name,sex:S.sex,age:S.age,h:S.h,w:S.w,wg:S.wg,motiv:S.motiv,event:S.event,edate:S.edate,restr:S.restr,cond:S.cond,pace:S.pace,remind:S.remind,q:S.q,qx:S.qx}};
- try{fetch(CFG.lead,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body),keepalive:true}).catch(function(){})}catch(e){}}
+var FROM_APP=(function(){try{if(/[?&]from=app\b/.test(location.search))sessionStorage.setItem('evura_from_app','1');return sessionStorage.getItem('evura_from_app')==='1'}catch(e){return /[?&]from=app\b/.test(location.search)}})();
+function quizPayload(){var u={};try{new URLSearchParams(location.search).forEach(function(v,k){if(/^(utm_|fbclid|gclid)/.test(k))u[k]=v.slice(0,200)})}catch(e){}
+ return {email:S.email,area:S.area,consent:!!S.ok,consentVersion:'quiz-v1',utm:u,hypotheses:[],answers:{name:S.name,sex:S.sex,age:S.age,h:S.h,w:S.w,wg:S.wg,motiv:S.motiv,event:S.event,edate:S.edate,restr:S.restr,cond:S.cond,pace:S.pace,remind:S.remind,q:S.q,qx:S.qx}}}
+function sendLead(){if(!CFG.lead||!S.ok||!S.email)return;
+ try{fetch(CFG.lead,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(quizPayload()),keepalive:true}).catch(function(){})}catch(e){}}
+/* Entrega o plano ao app: mesmo domínio (web) ou WebView (app nativo). */
+function handOff(){var p=quizPayload();try{localStorage.setItem('evura_quiz',JSON.stringify(p))}catch(e){}
+ try{if(window.ReactNativeWebView)window.ReactNativeWebView.postMessage(JSON.stringify({type:'evura_quiz',payload:p}))}catch(e){}}
 function mas(m,h){h=h||120;m=m||'hi';var w=Math.round(h*.92);
  var eyes=m==='calm'?'<path d="M39 70q8-8 16 0M65 70q8-8 16 0" fill="none" stroke="#0F4244" stroke-width="3.4" stroke-linecap="round"/>':
   '<g class="eyes"><ellipse cx="47" cy="70" rx="8.5" ry="10.5" fill="#fff"/><ellipse cx="73" cy="70" rx="8.5" ry="10.5" fill="#fff"/><circle cx="'+(m==='think'?50:48)+'" cy="'+(m==='think'?66:72)+'" r="5" fill="#0F4244"/><circle cx="'+(m==='think'?76:74)+'" cy="'+(m==='think'?66:72)+'" r="5" fill="#0F4244"/><circle cx="'+(m==='think'?52:50)+'" cy="'+(m==='think'?64:70)+'" r="1.7" fill="#fff"/><circle cx="'+(m==='think'?78:76)+'" cy="'+(m==='think'?64:70)+'" r="1.7" fill="#fff"/></g>';
@@ -636,16 +641,16 @@ done:function(){
   +'<div class="mring"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="none" stroke="#E3E7E8" stroke-width="5"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--acc)" stroke-width="5" stroke-linecap="round" stroke-dasharray="'+C+'" stroke-dashoffset="'+(C*.75)+'" transform="rotate(-90 22 22)"/></svg><div><b>Seu plano de '+esc(a.n.toLowerCase())+'</b><small>1 minuto por dia</small></div></div>'
   +tasks.map(function(t,i){return '<div class="mtk'+(i===0?' dn':'')+'" style="animation-delay:'+(1+i*.25)+'s"><img src="'+aurl(t[0])+'" alt=""><span>'+esc(t[1])+'</span><i></i></div>'}).join('')
   +'<div class="mrep"><img src="'+aurl('sparkles')+'" alt="">Relatório do dia 7</div></div></div>';
- var road=[['mobile-phone','Hoje','Baixe o app e entre com '+esc(S.email||'o seu e-mail')+'. O seu plano já está lá.'],['memo','Dias 1 a 6','Registre em cerca de 1 minuto por dia. O Evura cruza tudo.'],['sparkles','Dia 7','Você recebe o relatório com o que pesa no seu caso e o porquê.']];
- setCta('<button class="btn" id="go">Baixar o app</button><p class="fine">7 dias grátis para testar o app. Cancele quando quiser.</p>');
+ var road=[['mobile-phone','Hoje',(FROM_APP?'Entre':'Baixe o app e entre')+' com '+esc(S.email||'o seu e-mail')+'. O seu plano já está lá.'],['memo','Dias 1 a 6','Registre em cerca de 1 minuto por dia. O Evura cruza tudo.'],['sparkles','Dia 7','Você recebe o relatório com o que pesa no seu caso e o porquê.']];
+ setCta('<button class="btn" id="go">'+(FROM_APP?'Continuar no app':'Baixar o app')+'</button><p class="fine">7 dias grátis para testar o app. Cancele quando quiser.</p>');
  shell(waves()+mas('cheer',110)+'<h2 class="q" style="margin-top:0">Seu plano está salvo, '+esc(nome())+'!</h2><p class="sub">'+(motivTxt()?'Você quer '+esc(motivTxt())+'. ':'')+'É assim que o seu dia 1 vai ficar no app.</p>'+mock
   +'<div class="road">'+road.map(function(r,i){return '<div class="rd" style="animation-delay:'+(.6+i*.45)+'s"><img src="'+aurl(r[0])+'" alt=""><div><b>'+r[1]+'</b><small>'+r[2]+'</small></div></div>'}).join('')+'</div>'
   +'<div class="stores2"><a href="'+CFG.ios+'" id="ios"><svg viewBox="0 0 24 24"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2.1-.5 2.7-1.3z"/></svg>iPhone</a><a href="'+CFG.android+'" id="and"><svg viewBox="0 0 24 24"><path d="M4 3.3v17.4c0 .5.5.8.9.6l9.6-8.7L4.9 2.7c-.4-.2-.9.1-.9.6zm11.6 8.2l2.6-2.4-11-6.3 8.4 8.7zm0 1l-8.4 8.7 11-6.3-2.6-2.4zm3.6-3.1l-2.9 2.6 2.9 2.6 1.9-1.1c.7-.4.7-1.4 0-1.9l-1.9-2.2z"/></svg>Android</a></div>'
   +'<p class="cred">Ilustrações: Microsoft Fluent Emoji (MIT) e Google Noto Emoji (CC BY 4.0).</p>');
- track('QuizComplete',{area:S.area});
+ track('QuizComplete',{area:S.area});handOff();if(FROM_APP){var st2=document.querySelector('.stores2');if(st2)st2.style.display='none'}
  function go(store){track('AppClick',{store:store,area:S.area})}
  $('#ios').onclick=function(){go('ios')};$('#and').onclick=function(){go('android')};
- $('#go').onclick=function(){tap();var ua=navigator.userAgent||'';var u=/android/i.test(ua)?CFG.android:CFG.ios;go(/android/i.test(ua)?'android':'ios');if(u&&u!=='#')location.href=u;else $('.stores2').scrollIntoView({behavior:'smooth',block:'center'})}}
+ $('#go').onclick=function(){tap();if(FROM_APP){if(!window.ReactNativeWebView)location.href='/app/entrar';return}var ua=navigator.userAgent||'';var u=/android/i.test(ua)?CFG.android:CFG.ios;go(/android/i.test(ua)?'android':'ios');if(u&&u!=='#')location.href=u;else $('.stores2').scrollIntoView({behavior:'smooth',block:'center'})}}
 };
 function qn(i){
  var a=area(),q=QS[i],m=S.sex==='Homem'&&q.tm;var t=m?q.tm:q.t,o=m?q.om:q.o;if(q===COMMON[0])t=C0T[a.id];setCta('');
