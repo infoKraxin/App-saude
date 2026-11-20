@@ -11,6 +11,6 @@ for f in __*; do mv "$f" "${f#__}"; done
 for f in _layout-*; do mv "$f" "rt$f"; done
 cd ../../../..
 grep -rl "__common-\|__expo-metro-runtime-\|_layout-" . | xargs sed -i -E 's#([/"])__(common|expo-metro-runtime)-#\1\2-#g; s#([/"])_layout-#\1rt_layout-#g'
-find . -name "*.ttf" | grep -vE "600SemiBold/Bric|700Bold/Bric|400Regular/Hank|500Medium/Hank|600SemiBold/Hank" | xargs -r rm
+find . -name "*.ttf" | grep -vE "600SemiBold/Bric|700Bold/Bric|400Regular/Hank|500Medium/Hank|600SemiBold/Hank|600SemiBold/Fraunces" | xargs -r rm
 rm -f metadata.json
 echo "prévia em $(pwd)"
