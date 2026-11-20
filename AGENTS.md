@@ -54,3 +54,7 @@ Regras: a IA só redige a partir do pacote do motor (seção 9); nunca diagnóst
 - `tests/rls.mjs` — testa as políticas em Postgres (PGlite): `cd supabase/tests && npm install && npm test`.
 
 Ainda não feito (depende de decisão ou de conta): projeto Supabase real, Groq (texto) e provedor de visão (foto), Health Connect (build nativo + aprovação da Play), notificações, checkout/webhook, comunidade com backend, painel interno, fichas de evidência revisadas, projeção de peso (decisão 3).
+
+# Publicação (Vercel, projeto `appaurasaude`)
+
+Ligado ao GitHub (`main`). `vercel.json` na raiz roda `scripts/vercel-build.sh`, que monta `public/` com o **quiz na raiz** e o **app em `/app`** (`experiments.baseUrl: "/app"` em `app/app.json`). Todo push em `main` publica os dois.

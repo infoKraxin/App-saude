@@ -35,7 +35,8 @@
     ],
     "scheme": "evura",
     "experiments": {
-      "typedRoutes": false
+      "typedRoutes": false,
+      "baseUrl": "/app"
     }
   }
 }
