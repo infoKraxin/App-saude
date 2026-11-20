@@ -315,7 +315,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .zz{animation:zz 2.6s ease-in-out infinite;opacity:0}@keyframes zz{0%{transform:translateY(8px);opacity:0}40%{opacity:1}100%{transform:translateY(-14px);opacity:0}}
 .dr{animation:dr 2.4s ease-in infinite;transform-box:fill-box;transform-origin:top}@keyframes dr{0%{transform:translateY(-6px) scale(.4);opacity:0}30%{opacity:1}100%{transform:translateY(18px);opacity:0}}
 .ck{stroke-dasharray:80;animation:ck 2.8s ease-in-out infinite}@keyframes ck{0%{stroke-dashoffset:80}35%,100%{stroke-dashoffset:0}}
-.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s cubic-bezier(.5,0,.2,1) forwards}@keyframes draw{to{stroke-dashoffset:0}}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s cubic-bezier(.33,0,.67,1) forwards}@keyframes draw{to{stroke-dashoffset:0}}
 .fade{opacity:0;animation:fadein .6s ease forwards}@keyframes fadein{to{opacity:1}}
 .popin{opacity:0;transform:scale(.6);animation:popin .5s cubic-bezier(.2,1.4,.4,1) forwards}@keyframes popin{to{opacity:1;transform:none}}
 .yn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
@@ -545,3 +545,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 .proof .pq{padding:12px 16px;border-bottom:1px solid var(--line)}.proof .pq:last-child{border:0}.proof .pq p{margin:0 0 4px;font-size:15px;line-height:1.45}.proof .pq small{color:var(--mut);font-size:13px}
 @media (prefers-reduced-motion:reduce){.mas,.mas *{animation:none !important}.scan{display:none}.mgr,.mgi{animation-duration:.01s !important;animation-delay:0s !important}}
 @media(max-height:720px){.mgs{height:150px}.mgc{display:none}.ea{display:none}.calg button{height:34px}.cal{margin-top:8px;padding:8px 8px 10px}.mgi .mas{height:48px!important;width:44px!important}}
+
+/* Telas de curva ganham o tom ultraclaro do foco (família de 4 tons: acc, acc-l, acc-bg, acc-ul) */
+:root{--acc-l:color-mix(in srgb,var(--acc) 45%,#fff);--acc-bg:color-mix(in srgb,var(--acc) 16%,#fff);--acc-ul:color-mix(in srgb,var(--acc) 8%,#fff)}
+.phone{transition:background .6s ease}.phone.ul{background:var(--acc-ul)}
+.phone.ul .pchart,.phone.ul .upd{background:#fff}
