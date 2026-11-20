@@ -2,6 +2,7 @@ import React from 'react';
 import { Screen, T, Group, ToggleRow, Segmented, Field } from '@/components/ui';
 import { setPrefs, useApp } from '@/data/store';
 import { addDays, dayKey } from '@/data/dates';
+import { HeroScreen } from '@/components/premium';
 
 const hhmm = (t: string) => /^([01]\d|2[0-3]):[0-5]\d$/.test(t);
 
@@ -9,8 +10,7 @@ export default function Notificacoes() {
   const n = useApp((s) => s.prefs.notif);
   const paused = !!n.pausedUntil && n.pausedUntil >= dayKey();
   return (
-    <Screen back title="Notificações">
-      <T tone="mut">Poucos avisos, no horário que você escolher, e nunca para cobrar. Nenhum aviso mostra dados de saúde na tela bloqueada.</T>
+    <HeroScreen img="tela-notificacoes" back title="Notificações" subtitle="Poucos avisos, no horário que você escolher, e nunca para cobrar. Nada de dados de saúde na tela bloqueada.">
       <Group title="Avisos">
         <ToggleRow label="Lembrete de registro" desc="Um por dia." value={n.logs} onChange={(v) => setPrefs({ notif: { logs: v } })} />
         <ToggleRow label="Água" value={n.water} onChange={(v) => setPrefs({ notif: { water: v } })} />
@@ -24,6 +24,6 @@ export default function Notificacoes() {
       <Segmented<string> label={paused ? `Pausado até ${n.pausedUntil}` : 'Pausar tudo'} value={paused ? 'p' : 'n'} onChange={(v) => setPrefs({ notif: { pausedUntil: v === 'n' ? undefined : v === '1' ? addDays(dayKey(), 1) : v === '7' ? addDays(dayKey(), 7) : '9999-12-31' } })}
         options={[{ v: 'n', label: 'Ativo' }, { v: '1', label: '1 dia' }, { v: '7', label: '1 semana' }, { v: 'x', label: 'Até eu voltar' }]} />
       <T v="small" tone="mut">Sem avisos entre {n.quietFrom} e {n.quietTo}.</T>
-    </Screen>
+    </HeroScreen>
   );
 }

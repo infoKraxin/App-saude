@@ -6,6 +6,7 @@ import { removeLog, restoreLog, useLiveLogs } from '@/data/store';
 import { fmtDay, fmtWeekday } from '@/data/dates';
 import type { Log } from '@/data/types';
 import { space } from '@/theme/tokens';
+import { Illus } from '@/components/premium';
 
 const L3 = ['', 'baixa', 'média', 'alta'];
 
@@ -40,7 +41,10 @@ export default function Dia() {
         </Card>
       )}
       {logs.length === 0 ? (
-        <T tone="mut">Nenhum registro neste dia. Tudo bem: o que conta é o conjunto.</T>
+        <View style={{ alignItems: 'center', gap: space(3) }}>
+          <Illus name="tela-vazio" width="80%" />
+          <T tone="mut" center>Nenhum registro neste dia. Tudo bem: o que conta é o conjunto.</T>
+        </View>
       ) : (
         <Group>
           {logs.map((l) => {

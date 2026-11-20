@@ -3,6 +3,8 @@ import { View } from 'react-native';
 import { BookOpen, Info, ThumbsDown, ThumbsUp } from 'lucide-react-native';
 import { Screen, T, Card, Pill, Button, Group, Row } from '@/components/ui';
 import { Evu } from '@/components/art';
+import { HeroScreen, TipCard } from '@/components/premium';
+import { Enter } from '@/components/motion';
 import { giveFeedback, useApp } from '@/data/store';
 import { useToday } from '@/lib/useDay';
 import { useTheme } from '@/theme/useTheme';
@@ -20,14 +22,10 @@ export default function Descobertas() {
   const day7 = trialDay >= 7;
 
   return (
-    <Screen>
-      <T v="h1" accessibilityRole="header">{day7 ? 'Seu relatório do dia 7' : 'Descobertas'}</T>
-      <T tone="mut">
-        {report.daysLogged === 0
-          ? 'Ainda não há registros. Mesmo assim, aqui está o que vamos investigar e o que falta medir.'
-          : `Com base em ${report.daysLogged} ${report.daysLogged === 1 ? 'dia registrado' : 'dias registrados'}. Cada ponto mostra quanto dado sustenta o que dizemos.`}
-      </T>
-
+    <HeroScreen img={day7 ? 'tela-relatorio' : 'tela-descobertas'} title={day7 ? 'Seu relatório do dia 7' : 'Descobertas'}
+      subtitle={report.daysLogged === 0
+        ? 'Ainda não há registros. Mesmo assim, aqui está o que vamos investigar e o que falta medir.'
+        : `Com base em ${report.daysLogged} ${report.daysLogged === 1 ? 'dia registrado' : 'dias registrados'}. Cada ponto mostra quanto dado sustenta o que dizemos.`}>
       {report.safety.mode === 'cuidado' && (
         <Card tone="sunk">
           <View style={{ flexDirection: 'row', gap: space(3) }}>
@@ -40,14 +38,11 @@ export default function Descobertas() {
         </Card>
       )}
 
-      <Card tone="brand">
-        <T v="small" style={{ color: c.onBrand, opacity: 0.8 }}>Para testar amanhã</T>
-        <T v="h3" style={{ color: c.onBrand }}>{report.action}</T>
-      </Card>
+      <Enter i={1}><TipCard tag={`Dia ${trialDay}`} title="Para testar amanhã" text={report.action} img="icone-sentir" /></Enter>
 
       <T v="h2" accessibilityRole="header">O que vimos até agora</T>
-      {report.findings.map((f) => (
-        <Card key={f.id}>
+      {report.findings.map((f, k) => (
+        <Enter key={f.id} i={k + 2}><Card>
           <Pill label={f.confidenceLabel} tone={toneFor(f.confidence)} />
           <T v="h3">{f.title}</T>
           <T>{f.body}</T>
@@ -62,7 +57,7 @@ export default function Descobertas() {
               <T v="small" tone="mut" accessibilityLiveRegion="polite">Obrigado. Isso ajuda a melhorar os relatórios.</T>
             )}
           </View>
-        </Card>
+        </Card></Enter>
       ))}
 
       <T v="h2" accessibilityRole="header">Suas hipóteses do quiz</T>
@@ -90,6 +85,6 @@ export default function Descobertas() {
           {ai ? 'Versão simples, escrita pelo motor do app. A versão escrita pela IA chega quando ela for ligada.' : 'Versão simples, escrita pelo motor do app. Você escolheu não usar a IA.'} Isto é informação, não diagnóstico. {report.engine}
         </T>
       </View>
-    </Screen>
+    </HeroScreen>
   );
 }

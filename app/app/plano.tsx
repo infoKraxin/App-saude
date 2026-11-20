@@ -2,10 +2,13 @@
 // segurança e os consentimentos. Termina com o teste de 7 dias começando hoje.
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTheme } from '@/theme/useTheme';
-import { View } from 'react-native';
+import { Image, View } from 'react-native';
 import { useRouter } from 'expo-router';
-import { Screen, T, Button, Chip, Field, Card, ToggleRow, Group, Segmented } from '@/components/ui';
+import { Screen, T, Button, Chip, Field, Card, ToggleRow, Group, Segmented, tap } from '@/components/ui';
 import { Evu } from '@/components/art';
+import { Checks, Illus } from '@/components/premium';
+import { ILLUS, AREA_ILLUS } from '@/components/illus';
+import { Pressy } from '@/components/motion';
 import { getState, setPrefs, setProfile, useApp } from '@/data/store';
 import { AREAS, areaById, type AreaId } from '@/data/areas';
 import { dayKey, fmtDay } from '@/data/dates';
@@ -74,7 +77,7 @@ export default function Plano() {
   if (step === 'confirm') {
     body = (
       <>
-        <Evu mood="cheer" size={88} />
+        <Illus name="tela-relatorio" width="100%" style={{ borderRadius: 20, overflow: 'hidden' }} />
         <T v="h1" accessibilityRole="header">{p.name ? `${p.name}, seu plano já está aqui.` : 'Seu plano já está aqui.'}</T>
         <T tone="mut">Trouxemos o que você respondeu no quiz. Confira antes de começar.</T>
         <Group>
@@ -82,6 +85,7 @@ export default function Plano() {
           {p.motive ? <Row2 k="O que te move" v={p.motive} /> : null}
           {p.eventName ? <Row2 k="Evento" v={`${p.eventName}${p.eventDate ? `, ${fmtDay(p.eventDate)}` : ''}`} /> : null}
         </Group>
+        <Checks items={['Registro de 1 minuto por dia', 'Relatório diário com o que pesa no seu caso', 'Relatório do dia 7 grátis, sempre com conteúdo']} />
         <T v="small" tone="mut">Dá para mudar tudo isso depois em Perfil.</T>
       </>
     );
@@ -102,11 +106,17 @@ export default function Plano() {
         <T tone="mut">O app inteiro se ajusta a essa escolha. Dá para somar outros focos depois.</T>
         <View style={{ gap: space(2) }}>
           {AREAS.map((a) => (
-            <Card key={a.id} onPress={() => setProfile({ area: a.id as AreaId, usesPen: a.id === 'cane', hypotheses: a.defaultHypotheses })} label={`${a.name}. ${a.short}${p.area === a.id ? '. Selecionado' : ''}`}
-              style={p.area === a.id ? { borderWidth: 2, borderColor: c.brand } : undefined}>
-              <T weight="semi">{a.name}</T>
-              <T v="small" tone="mut">{a.short}</T>
-            </Card>
+            <Pressy key={a.id} accessibilityRole="radio" accessibilityState={{ checked: p.area === a.id }} accessibilityLabel={`${a.name}. ${a.short}`}
+              onPress={() => { tap(); setProfile({ area: a.id as AreaId, usesPen: a.id === 'cane', hypotheses: a.defaultHypotheses }); }}
+              style={{ flexDirection: 'row', alignItems: 'center', gap: space(3), backgroundColor: c.card, borderRadius: 20, borderWidth: p.area === a.id ? 2 : 1, borderColor: p.area === a.id ? c.brand : c.line, padding: space(2), paddingRight: space(4) }}>
+              <View style={{ width: 92, height: 64, borderRadius: 14, overflow: 'hidden', backgroundColor: ILLUS[AREA_ILLUS[a.id]].bg }}>
+                <Image source={ILLUS[AREA_ILLUS[a.id]].src} style={{ width: '100%', height: '100%' }} resizeMode="cover" />
+              </View>
+              <View style={{ flex: 1 }}>
+                <T weight="semi">{a.name}</T>
+                <T v="small" tone="mut">{a.short}</T>
+              </View>
+            </Pressy>
           ))}
         </View>
       </>
@@ -180,6 +190,7 @@ export default function Plano() {
     const s = p.safety;
     body = (
       <>
+        <Evu mood="calm" size={72} />
         <T v="h1" accessibilityRole="header">Para deixar o seu plano seguro</T>
         <T tone="mut">Nesses casos o app esconde metas de peso e mostra orientações mais cuidadosas. Você pode mudar depois.</T>
         <Group>
@@ -210,6 +221,7 @@ export default function Plano() {
   if (step === 'consents' && i < steps.length) {
     body = (
       <>
+        <Illus name="tela-privacidade" width="100%" style={{ borderRadius: 20, overflow: 'hidden', backgroundColor: ILLUS['tela-privacidade'].bg }} />
         <T v="h1" accessibilityRole="header">Seus dados, suas escolhas</T>
         <T tone="mut">Cada item é separado e pode ser desligado em Perfil, em Privacidade e dados.</T>
         <Group>

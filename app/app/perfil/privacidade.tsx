@@ -4,6 +4,7 @@ import { useRouter } from 'expo-router';
 import { Screen, T, Group, ToggleRow, Row, Button, Card } from '@/components/ui';
 import { exportData, setProfile, useApp, wipeAll } from '@/data/store';
 import { supabase } from '@/lib/supabase';
+import { HeroScreen } from '@/components/premium';
 
 export default function Privacidade() {
   const router = useRouter();
@@ -35,8 +36,7 @@ export default function Privacidade() {
   };
 
   return (
-    <Screen back title="Privacidade e dados">
-      <T tone="mut">Seus dados de saúde não são vendidos, não vão para anúncios e não treinam IA.</T>
+    <HeroScreen img="tela-privacidade" back title="Privacidade e dados" subtitle="Seus dados de saúde não são vendidos, não vão para anúncios e não treinam IA.">
       <Group title="Consentimentos" note="O primeiro é necessário para o app funcionar. Para retirá-lo, exclua a conta.">
         <Row label="Usar meus dados de saúde para gerar relatórios" value={p.consents.health ? 'Ativo' : 'Inativo'} />
         <ToggleRow label="Resumo sem nome para a IA escrever os textos" value={!!p.consents.ai} onChange={(v) => set('ai', v)} />
@@ -60,6 +60,6 @@ export default function Privacidade() {
         </Card>
       )}
       <Button kind="ghost" label="Política de privacidade e termos" onPress={() => router.push('/legal')} />
-    </Screen>
+    </HeroScreen>
   );
 }

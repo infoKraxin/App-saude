@@ -1,35 +1,36 @@
 import React from 'react';
 import { View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { T, Button } from '@/components/ui';
 import { Evu } from '@/components/art';
+import { Enter } from '@/components/motion';
+import { Illus } from '@/components/premium';
+import { ILLUS } from '@/components/illus';
+import { radius, space } from '@/theme/tokens';
 import { useTheme } from '@/theme/useTheme';
-import { space } from '@/theme/tokens';
 
 export default function Welcome() {
   const { c } = useTheme();
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: c.brand }}>
-      <View style={{ flex: 1, padding: space(6), justifyContent: 'space-between', maxWidth: 560, width: '100%', alignSelf: 'center' }}>
-        <View style={{ marginTop: space(10), gap: space(5) }}>
-          <Evu mood="hi" size={112} />
-          <T v="hero" accessibilityRole="header" style={{ color: c.onBrand }}>
-            O sistema de saúde que se adapta a você.
-          </T>
-          <T v="h3" weight="med" style={{ color: c.onBrand, opacity: 0.86 }}>
-            Um minuto por dia de registro. Em 7 dias, o que pesa no seu caso e por quê.
-          </T>
-        </View>
-        <View style={{ gap: space(3) }}>
-          <Button label="Começar" kind="secondary" onPress={() => router.push('/entrar')} />
-          <Button label="Já fiz o quiz, quero meu plano" kind="onBrand" onPress={() => router.push('/entrar')} hint="Entre com o mesmo e-mail que você usou no quiz" />
-          <T v="micro" center style={{ color: c.onBrand, opacity: 0.8 }}>
-            Para maiores de 18 anos. O Evura informa; não substitui médicos e nutricionistas.
-          </T>
-        </View>
+    <View style={{ flex: 1, backgroundColor: ILLUS['cena-dezembro'].bg }}>
+      <View style={{ paddingTop: insets.top, alignItems: 'center' }}>
+        <Illus name="cena-dezembro" style={{ maxWidth: 620 }} />
       </View>
-    </SafeAreaView>
+      <View style={{ flex: 1, backgroundColor: c.bg, borderTopLeftRadius: radius.sheet, borderTopRightRadius: radius.sheet, marginTop: -space(8), paddingHorizontal: space(6), paddingTop: space(2), paddingBottom: insets.bottom + space(5), justifyContent: 'space-between' }}>
+        <View style={{ maxWidth: 560, width: '100%', alignSelf: 'center', gap: space(3) }}>
+          <View style={{ marginTop: -space(12), alignSelf: 'center' }}><Evu mood="hi" size={96} /></View>
+          <Enter i={1}><T v="hero" center accessibilityRole="header">O sistema de saúde que se adapta a você</T></Enter>
+          <Enter i={2}><T v="h3" weight="med" tone="mut" center>Um minuto por dia de registro. Em 7 dias, o que pesa no seu caso e por quê.</T></Enter>
+        </View>
+        <Enter i={3} style={{ gap: space(3), maxWidth: 560, width: '100%', alignSelf: 'center', marginTop: space(5) }}>
+          <Button label="Começar" onPress={() => router.push('/entrar')} />
+          <Button label="Já fiz o quiz, quero meu plano" kind="ghost" onPress={() => router.push('/entrar')} hint="Entre com o mesmo e-mail que você usou no quiz" />
+          <T v="micro" tone="mut" center>Para maiores de 18 anos. O Evura informa; não substitui médicos e nutricionistas.</T>
+        </Enter>
+      </View>
+    </View>
   );
 }

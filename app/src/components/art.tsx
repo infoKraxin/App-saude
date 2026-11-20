@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Animated, { useAnimatedProps, useSharedValue, withDelay, withSpring, withTiming } from 'react-native-reanimated';
+import { EASE } from './motion';
 import { View } from 'react-native';
-import Svg, { Circle, Defs, Ellipse, G, LinearGradient, Path, Stop, Text as SvgText } from 'react-native-svg';
-import { useTheme } from '../theme/useTheme';
+import Svg, { Circle, ClipPath, Defs, Ellipse, G, LinearGradient, Path, Rect, Stop, Text as SvgText } from 'react-native-svg';
+import { useReduceMotion, useTheme } from '../theme/useTheme';
 import { useApp } from '../data/store';
 import { T } from './ui';
 
@@ -57,12 +59,25 @@ export function Evu({ mood = 'hi', size = 96 }: { mood?: 'hi' | 'calm' | 'think'
   );
 }
 
-// Anel do dia: um arco por tarefa, aceso quando feita. A contagem também vem em texto.
+// Anel do dia: um arco por tarefa; ao concluir, o arco se desenha em âmbar.
+const APath = Animated.createAnimatedComponent(Path);
+const ARect = Animated.createAnimatedComponent(Rect);
+
+function Arc({ d, len, on, color, delay }: { d: string; len: number; on: boolean; color: string; delay: number }) {
+  const reduce = useReduceMotion();
+  const p = useSharedValue(on ? 1 : 0);
+  useEffect(() => {
+    p.value = reduce ? (on ? 1 : 0) : withDelay(delay, withTiming(on ? 1 : 0, { duration: 700, easing: EASE }));
+  }, [on, reduce, delay, p]);
+  const props = useAnimatedProps(() => ({ strokeDashoffset: len * (1 - p.value) }));
+  return <APath d={d} stroke={color} strokeWidth={14} strokeLinecap="round" fill="none" strokeDasharray={`${len} ${len}`} animatedProps={props} />;
+}
+
 export function DayRing({ done, total, size = 168, children }: { done: boolean[]; total?: number; size?: number; children?: React.ReactNode }) {
   const { c } = useTheme();
   const n = total ?? done.length;
   const r = 70;
-  const gap = 0.07; // radianos entre arcos
+  const gap = 0.16;
   const seg = (Math.PI * 2) / n;
   const arc = (i: number) => {
     const a0 = -Math.PI / 2 + i * seg + gap / 2;
@@ -70,17 +85,17 @@ export function DayRing({ done, total, size = 168, children }: { done: boolean[]
     const p = (a: number) => `${80 + r * Math.cos(a)} ${80 + r * Math.sin(a)}`;
     return `M${p(a0)} A${r} ${r} 0 ${seg - gap > Math.PI ? 1 : 0} 1 ${p(a1)}`;
   };
+  const len = r * (seg - gap);
   const count = done.filter(Boolean).length;
   return (
     <View accessible accessibilityRole="progressbar" accessibilityLabel={`Seu dia: ${count} de ${n} registros feitos`} accessibilityValue={{ min: 0, max: n, now: count }} style={{ width: size, height: size, alignItems: 'center', justifyContent: 'center' }}>
       <Svg viewBox="0 0 160 160" width={size} height={size} style={{ position: 'absolute' }}>
-        {Array.from({ length: n }, (_, i) => (
-          <Path key={i} d={arc(i)} stroke={done[i] ? c.amber : c.sunk} strokeWidth={14} strokeLinecap="round" fill="none" />
-        ))}
+        {Array.from({ length: n }, (_, i) => <Path key={`t${i}`} d={arc(i)} stroke={c.sunk} strokeWidth={14} strokeLinecap="round" fill="none" />)}
+        {Array.from({ length: n }, (_, i) => <Arc key={`a${i}`} d={arc(i)} len={len} on={!!done[i]} color={c.amber} delay={i * 90} />)}
       </Svg>
       {children ?? (
         <View style={{ alignItems: 'center' }}>
-          <T v="hero">{count}<T v="h3" tone="mut">/{n}</T></T>
+          <T v="hero" weight="display">{count}<T v="h3" tone="mut">/{n}</T></T>
           <T v="micro" tone="mut">registros hoje</T>
         </View>
       )}
@@ -88,14 +103,20 @@ export function DayRing({ done, total, size = 168, children }: { done: boolean[]
   );
 }
 
-// Copo de água: altura do líquido = parte da meta. Texto ao lado diz o número.
+// Copo de água: o líquido sobe com uma mola suave a cada registro.
 export function WaterGlass({ pct, size = 64 }: { pct: number; size?: number }) {
   const { c } = useTheme();
-  const p = Math.max(0, Math.min(1, pct));
-  const y = 8 + (1 - p) * 52;
+  const reduce = useReduceMotion();
+  const target = Math.max(0, Math.min(1, pct));
+  const p = useSharedValue(target);
+  useEffect(() => { p.value = reduce ? target : withSpring(target, { damping: 16, stiffness: 120 }); }, [target, reduce, p]);
+  const props = useAnimatedProps(() => ({ y: 8 + (1 - p.value) * 53, height: 53 * p.value + 1 }));
   return (
     <Svg viewBox="0 0 48 64" width={size * 0.75} height={size} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-      <Path d={`M8 ${y}H40L36 60H12Z`} fill={c.water} opacity={0.85} />
+      <Defs>
+        <ClipPath id="glass"><Path d="M6 5H42L36.5 60H11.5Z" /></ClipPath>
+      </Defs>
+      <ARect x={0} width={48} fill={c.water} opacity={0.85} clipPath="url(#glass)" animatedProps={props} />
       <Path d="M5 4H43L37 61H11Z" fill="none" stroke={c.water} strokeWidth={2.5} strokeLinejoin="round" />
     </Svg>
   );

@@ -5,10 +5,12 @@ import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useFonts, BricolageGrotesque_600SemiBold, BricolageGrotesque_700Bold } from '@expo-google-fonts/bricolage-grotesque';
+import { Fraunces_600SemiBold } from '@expo-google-fonts/fraunces';
 import { HankenGrotesk_400Regular, HankenGrotesk_500Medium, HankenGrotesk_600SemiBold } from '@expo-google-fonts/hanken-grotesk';
 import { loadState, useApp } from '@/data/store';
 import { useTheme } from '@/theme/useTheme';
 import { syncNow } from '@/lib/sync';
+import { ToastHost } from '@/components/premium';
 
 SplashScreen.preventAutoHideAsync().catch(() => {});
 if (typeof document !== 'undefined') document.documentElement.lang = 'pt-BR';
@@ -28,7 +30,7 @@ function Gate() {
 
 export default function Root() {
   const [ready, setReady] = useState(false);
-  const [fontsOk] = useFonts({ BricolageGrotesque_600SemiBold, BricolageGrotesque_700Bold, HankenGrotesk_400Regular, HankenGrotesk_500Medium, HankenGrotesk_600SemiBold });
+  const [fontsOk] = useFonts({ Fraunces_600SemiBold, BricolageGrotesque_600SemiBold, BricolageGrotesque_700Bold, HankenGrotesk_400Regular, HankenGrotesk_500Medium, HankenGrotesk_600SemiBold });
   const { c, dark } = useTheme();
 
   useEffect(() => {
@@ -53,6 +55,7 @@ export default function Root() {
         <Stack.Screen name="registro/[tipo]" options={{ presentation: 'modal', animation: 'slide_from_bottom' }} />
       </Stack>
       <Gate />
+      <ToastHost />
     </SafeAreaProvider>
   );
 }

@@ -19,6 +19,8 @@ export type Palette = {
   crit: string;
   focus: string;
   overlay: string;
+  peach: string; // cartões de dica
+  peachTag: string;
 };
 
 export const light: Palette = {
@@ -38,6 +40,8 @@ export const light: Palette = {
   crit: '#B3261E',
   focus: '#1F6FEB',
   overlay: 'rgba(11,42,46,0.45)',
+  peach: '#FDEBDB',
+  peachTag: '#F7A35C',
 };
 
 export const dark: Palette = {
@@ -57,10 +61,13 @@ export const dark: Palette = {
   crit: '#FF8A80',
   focus: '#8AB4FF',
   overlay: 'rgba(0,0,0,0.6)',
+  peach: '#3A2A1E',
+  peachTag: '#C7783A',
 };
 
 export const font = {
-  display: 'BricolageGrotesque_700Bold',
+  serif: 'Fraunces_600SemiBold', // títulos: serifa quente, como livro de receitas
+  display: 'BricolageGrotesque_700Bold', // números grandes
   displayMed: 'BricolageGrotesque_600SemiBold',
   body: 'HankenGrotesk_400Regular',
   bodyMed: 'HankenGrotesk_500Medium',

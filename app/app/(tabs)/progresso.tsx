@@ -7,6 +7,7 @@ import { useApp, useLiveLogs } from '@/data/store';
 import { addDays, dayKey, fmtShort, parseDay } from '@/data/dates';
 import { useToday } from '@/lib/useDay';
 import { useTheme } from '@/theme/useTheme';
+import { HeroScreen } from '@/components/premium';
 import { space } from '@/theme/tokens';
 
 export default function Progresso() {
@@ -37,8 +38,7 @@ export default function Progresso() {
   const trendWord = trend == null ? null : Math.abs(trend) < 0.3 ? 'estável' : trend < 0 ? 'em queda' : 'em alta';
 
   return (
-    <Screen>
-      <T v="h1" accessibilityRole="header">Progresso</T>
+    <HeroScreen img="cena-dezembro" tall title="Seu progresso" subtitle="Pequenos registros, somados, viram descobertas.">
 
       <Card>
         <T v="label" tone="mut">Últimos 7 dias</T>
@@ -90,7 +90,7 @@ export default function Progresso() {
         </View>
         <T v="micro" tone="mut">Dias em âmbar têm registro; quanto mais forte, mais registros. Toque em um dia para ver e editar.</T>
       </Card>
-    </Screen>
+    </HeroScreen>
   );
 }
 

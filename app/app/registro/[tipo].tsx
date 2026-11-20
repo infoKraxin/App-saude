@@ -3,7 +3,10 @@ import { View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Minus, Plus } from 'lucide-react-native';
 import { Screen, T, Button, Chip, Field, Segmented, Group, ToggleRow, Card } from '@/components/ui';
-import { addLog, saveFavorite, useApp } from '@/data/store';
+import { addLog, removeLog, saveFavorite, useApp } from '@/data/store';
+import { SheetHeader, toast } from '@/components/premium';
+import { KIND_ICON } from '@/components/illus';
+import type { LogKind } from '@/data/types';
 import { areaById, AREAS } from '@/data/areas';
 import { hoursBetween, pad } from '@/data/dates';
 import type { Level3, MealSlot } from '@/data/types';
@@ -56,6 +59,16 @@ export default function RegistroTipo() {
   const profile = useApp((s) => s.profile);
   const favorites = useApp((s) => s.favorites);
   const done = () => (router.canGoBack() ? router.back() : router.replace('/'));
+  const SUB: Record<string, string> = {
+    water: 'Cada copo conta.', meal: 'Escreva do seu jeito, sem pesar nada.', sleep: 'Sobre a noite passada.', feel: 'Quatro toques e pronto.',
+    move: 'Qualquer movimento conta.', symptom: 'O que você sentiu hoje.', evening: 'Ajuda a entender o seu sono.', measure: 'Uma vez por semana basta.',
+    med: 'Só para acompanhar a rotina.', cycle: 'Em que fase você está?',
+  };
+  const log: typeof addLog = (e) => {
+    const l = addLog(e);
+    toast(`${TITLES[tipo ?? ''] ?? 'Registro'} registrado`, () => removeLog(l.id));
+    return l;
+  };
 
   // estados de cada formulário
   const [ml, setMl] = useState(300);
@@ -103,7 +116,7 @@ export default function RegistroTipo() {
       save = () => {
         const v = mlText ? Number(mlText) : ml;
         if (!v || v > 3000) return setErr('Use um valor entre 1 e 3000 ml.');
-        addLog({ kind: 'water', ml: v });
+        log({ kind: 'water', ml: v });
         done();
       };
       break;
@@ -138,7 +151,7 @@ export default function RegistroTipo() {
       can = text.trim().length > 0;
       save = () => {
         const t = text.trim().slice(0, 300);
-        addLog({ kind: 'meal', slot, text: t, ...tags });
+        log({ kind: 'meal', slot, text: t, ...tags });
         if (fav) saveFavorite({ text: t, slot, ...tags });
         done();
       };
@@ -146,7 +159,6 @@ export default function RegistroTipo() {
     case 'sleep':
       body = (
         <>
-          <T tone="mut">Sobre a noite passada.</T>
           <TimeStepper label="Fui dormir" value={bed} onChange={setBed} />
           <TimeStepper label="Acordei" value={wake} onChange={setWake} />
           <T v="small" tone="mut">{hoursBetween(bed, wake).toLocaleString('pt-BR')} horas na cama.</T>
@@ -154,7 +166,7 @@ export default function RegistroTipo() {
         </>
       );
       can = quality != null;
-      save = () => { addLog({ kind: 'sleep', bed, wake, quality: quality! }); done(); };
+      save = () => { log({ kind: 'sleep', bed, wake, quality: quality! }); done(); };
       break;
     case 'evening':
       body = (
@@ -166,7 +178,7 @@ export default function RegistroTipo() {
           </Group>
         </>
       );
-      save = () => { addLog({ kind: 'evening', ...eve }); done(); };
+      save = () => { log({ kind: 'evening', ...eve }); done(); };
       break;
     case 'feel':
       body = (
@@ -178,7 +190,7 @@ export default function RegistroTipo() {
         </>
       );
       can = !!(feel.energy && feel.hunger && feel.mood && feel.stress);
-      save = () => { addLog({ kind: 'feel', energy: feel.energy!, hunger: feel.hunger!, mood: feel.mood!, stress: feel.stress! }); done(); };
+      save = () => { log({ kind: 'feel', energy: feel.energy!, hunger: feel.hunger!, mood: feel.mood!, stress: feel.stress! }); done(); };
       break;
     case 'move':
       body = (
@@ -189,7 +201,7 @@ export default function RegistroTipo() {
         </>
       );
       can = move != null;
-      save = () => { addLog({ kind: 'move', level: move!, minutes: minutes ? Number(minutes) : undefined }); done(); };
+      save = () => { log({ kind: 'move', level: move!, minutes: minutes ? Number(minutes) : undefined }); done(); };
       break;
     case 'symptom':
       body = (
@@ -207,12 +219,12 @@ export default function RegistroTipo() {
         </>
       );
       can = Object.keys(sym).length > 0;
-      save = () => { addLog({ kind: 'symptom', items: Object.entries(sym).map(([id, level]) => ({ id, level })) }); done(); };
+      save = () => { log({ kind: 'symptom', items: Object.entries(sym).map(([id, level]) => ({ id, level })) }); done(); };
       break;
     case 'measure':
       body = (
         <>
-          <T tone="mut">Uma vez por semana basta, de preferência no mesmo horário.</T>
+          <T tone="mut">De preferência no mesmo horário, ao acordar.</T>
           <Field label="Peso (kg)" value={weight} onChangeText={(t) => { setWeight(t.replace(/[^\d,.]/g, '').slice(0, 5)); setErr(undefined); }} keyboardType="decimal-pad" placeholder="Ex.: 72,5" error={err} />
           <Field label="Cintura (cm, opcional)" value={waist} onChangeText={(t) => setWaist(t.replace(/[^\d,.]/g, '').slice(0, 5))} keyboardType="decimal-pad" />
         </>
@@ -222,7 +234,7 @@ export default function RegistroTipo() {
         const w = weight ? num(weight) : undefined;
         const c = waist ? num(waist) : undefined;
         if (w != null && !(w >= 25 && w <= 350)) return setErr('Confira o peso: use quilos, entre 25 e 350.');
-        addLog({ kind: 'measure', weightKg: w, waistCm: c && c > 30 && c < 250 ? c : undefined });
+        log({ kind: 'measure', weightKg: w, waistCm: c && c > 30 && c < 250 ? c : undefined });
         done();
       };
       break;
@@ -241,7 +253,7 @@ export default function RegistroTipo() {
         </>
       );
       can = !!med.name.trim();
-      save = () => { addLog({ kind: 'med', name: med.name.trim(), doseText: med.doseText.trim(), site: med.site || undefined }); done(); };
+      save = () => { log({ kind: 'med', name: med.name.trim(), doseText: med.doseText.trim(), site: med.site || undefined }); done(); };
       break;
     case 'cycle':
       body = (
@@ -252,14 +264,14 @@ export default function RegistroTipo() {
         </View>
       );
       can = !!phase;
-      save = () => { addLog({ kind: 'cycle', phase: phase as 'menstrual' }); done(); };
+      save = () => { log({ kind: 'cycle', phase: phase as 'menstrual' }); done(); };
       break;
     default:
       body = <T>Esse tipo de registro não existe.</T>;
   }
 
   return (
-    <Screen back title={TITLES[tipo ?? ''] ?? 'Registrar'} footer={save ? <Button label="Salvar" disabled={!can} onPress={save} /> : undefined}>
+    <Screen header={<SheetHeader img={KIND_ICON[(tipo ?? 'water') as LogKind] ?? 'icone-agua'} title={TITLES[tipo ?? ''] ?? 'Registrar'} subtitle={SUB[tipo ?? '']} />} footer={save ? <Button label="Salvar" disabled={!can} onPress={save} /> : undefined}>
       {body}
       {err && tipo === 'water' ? <T v="small" tone="crit">{err}</T> : null}
     </Screen>

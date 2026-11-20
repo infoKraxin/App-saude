@@ -42,6 +42,7 @@ Expo SDK 58 + Expo Router + TypeScript. Android primeiro; iOS depois com o mesmo
 - `src/data/` — tipos, estado local (`store.ts`, AsyncStorage, offline primeiro), portas (`areas.ts`, mesmos ids do quiz), datas.
 - `src/engine/` — **motor de cruzamento**, TS puro e testado: `summary.ts` (resumo do dia), `hypotheses.ts` (biblioteca fixa), `analyze.ts` (com x sem, d de Cohen, níveis pouco dado / sinal fraco / sinal consistente, checagem de confusão), `safety.ts` (gestação, amamentação, transtorno alimentar, menor de 18, perda rápida, sintoma de alerta), `report.ts` (relatório sempre cheio + pacote para a IA, sem nome/e-mail).
 - `src/lib/` — Supabase (login por código), sincronização (`sync.ts`), ponte do quiz (`quizLead.ts`), `useDay.ts`.
+- `src/components/illus.ts` (ilustrações do Codex, `design/`), `premium.tsx` (HeroScreen, SheetHeader, Thumb, TipCard, Checks, toast com desfazer), `motion.tsx` (Enter, Pressy, Pop; Reanimated, respeita reduzir movimento). Títulos em Fraunces (serifa), números em Bricolage, texto em Hanken.
 - `src/theme/` + `src/components/` — tokens (mesma identidade do quiz), tema claro/escuro, componentes acessíveis (alvo >= 48, rótulos, foco, escala de texto).
 
 Regras: a IA só redige a partir do pacote do motor (seção 9); nunca diagnóstico, dose ou "causa"; sem número de peso/projeção no modo cuidadoso; sem SDK de anúncio no app; dado sem ficha revisada é dito como "observado só nos seus dados".

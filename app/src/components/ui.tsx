@@ -21,12 +21,13 @@ export function T({
 }: { v?: Variant; tone?: Tone; weight?: 'reg' | 'med' | 'semi' | 'display'; style?: StyleProp<TextStyle>; children: ReactNode; center?: boolean } & Omit<React.ComponentProps<typeof Text>, 'style'>) {
   const { c, scale } = useTheme();
   const size = (v === 'label' ? ts.small : ts[v]) * scale;
-  const isDisplay = v === 'hero' || v === 'h1' || v === 'h2' || weight === 'display';
-  const family = isDisplay ? font.display : weight === 'semi' || v === 'h3' || v === 'label' ? font.bodySemi : weight === 'med' ? font.bodyMed : font.body;
+  const isSerif = (v === 'hero' || v === 'h1' || v === 'h2') && weight !== 'display';
+  const isDisplay = isSerif || weight === 'display';
+  const family = isSerif ? font.serif : weight === 'display' ? font.display : weight === 'semi' || v === 'h3' || v === 'label' ? font.bodySemi : weight === 'med' ? font.bodyMed : font.body;
   return (
     <Text
       maxFontSizeMultiplier={2}
-      style={[{ color: c[tone], fontSize: size, lineHeight: Math.round(size * (isDisplay ? 1.12 : 1.45)), fontFamily: family, letterSpacing: isDisplay ? -0.4 : 0 }, center && { textAlign: 'center' }, style]}
+      style={[{ color: c[tone], fontSize: size, lineHeight: Math.round(size * (isDisplay ? 1.12 : 1.45)), fontFamily: family, letterSpacing: isSerif ? -0.3 : isDisplay ? -0.6 : 0 }, center && { textAlign: 'center' }, style]}
       {...rest}
     >
       {children}
@@ -41,14 +42,15 @@ export const tap = () => {
 };
 
 export function Screen({
-  title, back, children, scroll = true, footer, pad = true, right, onBack,
-}: { title?: string; back?: boolean; onBack?: () => void; children: ReactNode; scroll?: boolean; footer?: ReactNode; pad?: boolean; right?: ReactNode }) {
+  title, back, children, scroll = true, footer, pad = true, right, onBack, header,
+}: { title?: string; back?: boolean; onBack?: () => void; header?: ReactNode; children: ReactNode; scroll?: boolean; footer?: ReactNode; pad?: boolean; right?: ReactNode }) {
   const { c } = useTheme();
   const router = useRouter();
   const body = <View style={{ padding: pad ? space(5) : 0, paddingBottom: space(10), gap: space(4), maxWidth: 560, width: '100%', alignSelf: 'center' }}>{children}</View>;
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: c.bg }} edges={['top', 'left', 'right']}>
-      {(title || back) && (
+    <SafeAreaView style={{ flex: 1, backgroundColor: c.bg }} edges={header ? ['left', 'right'] : ['top', 'left', 'right']}>
+      {header}
+      {!header && (title || back) && (
         <View style={{ flexDirection: 'row', alignItems: 'center', paddingHorizontal: space(2), minHeight: 56, gap: space(1) }}>
           {back ? (
             <Pressable accessibilityRole="button" accessibilityLabel="Voltar" onPress={() => (onBack ? onBack() : router.canGoBack() ? router.back() : router.replace('/'))} hitSlop={8} style={{ width: hit, height: hit, alignItems: 'center', justifyContent: 'center', borderRadius: 24 }}>
