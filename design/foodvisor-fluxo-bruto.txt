@@ -1,0 +1,171 @@
+- main_goal_sunflower_noname <SingleAnswerWithHeaderQuestion> Por que você está aqui?
+    opções: Perder peso | Ganhar músculos e perder gordura | Ganhar músculos, perder gordura é secu | Comer mais saudável sem perder peso
+- foodvisor_method <CustomSlide> 
+- goal_and_profile <Category> 
+  [SE] core_motivation_lose_weight_routing
+    quando user.tags contains main_goal/lose_weight:
+      - core_motivation_lose_weight <MultipleAnswersQuestion> Todos temos razões diferentes para perder peso, quais são as suas?
+          opções: Sentir-me melhor na minha pele | Estar mais saudável | Voltar à forma | Voltar a usar minhas roupas antigas | Ter mais energia | Progredir em um esporte | Melhorar a minha saúde mental | Para a minha família | Por razões médicas
+    quando user.tags contains main_goal/gain_muscle_lose_fat:
+      - core_motivation_gain_muscle_and_lose_fat <MultipleAnswersQuestion> Todos temos razões diferentes para ganhar músculo e perder gordura, quais são as suas?Isso nos ajuda
+          opções: Sentir-me melhor na minha pele | Estar mais saudável | Voltar à forma | Voltar a usar minhas roupas antigas | Ter mais energia | Progredir em um esporte | Melhorar a minha saúde mental | Por razões médicas | Aumentar minha expectativa de vida
+    quando user.tags contains main_goal/gain_muscle:
+      - core_motivation_gain_muscle <MultipleAnswersQuestion> Todos temos razões diferentes para ganhar músculo, quais são as suas?
+          opções: Sentir-me melhor na minha pele | Estar mais saudável | Voltar à forma | Voltar a usar minhas roupas antigas | Ter uma aparência mais musculosa | Ter mais energia | Progredir em um esporte | Melhorar a minha saúde mental | Por razões médicas
+  - motivation_level_true <SingleAnswerQuestion> Você está motivado(a) para alcançar seu objetivo?
+      opções: Muito motivado(a) | Motivado(a) o suficiente | Motivado(a) | Nada motivado(a) | Não motivado(a) de jeito nenhum
+  [SE] willingness_to_do_loseweight_or_losefat_routing
+    quando {"operator": "OR", "conditions": [{"lhs": "user.tags", "rhs": "main_goal/lose_weight", "operator": "contains", "_type": "RelationalCondition:
+      - willingness_to_do_loseweight_or_losefat <MultipleAnswersQuestion> O que você está disposto a fazer para atingir seu objetivo?
+          opções: Contar minhas calorias | Seguir uma dieta restritiva | Fazer atividade física | Alterar o padrão alimentar (jejum) | Outro
+    quando user.tags contains main_goal/gain_muscle:
+      - willingness_to_do_gain_muscle <MultipleAnswersQuestion> O que você está disposto a fazer para atingir seu objetivo?
+          opções: Seguir uma dieta específica | Fazer atividade física | Adicionar refeições | Contar minhas calorias | Outro
+  - reassurance_goal_profile <ReassuranceScreen> Você está no lugar certo!
+  - profile_set_up <CustomSlide> 
+  [SE] goal_set_up_routing
+    quando user.tags contains main_goal/healthy:
+  - dietary_restriction_binary <YesNoQuestion> Você tem alguma restrição ou alergia alimentar?
+      opções: Sim | Não
+  [SE] dietary_restriction_routing
+    quando user.tags contains dietary_restriction/yes:
+      - dietary_restriction <MultipleAnswersQuestion> Quais restrições/alergias você tem?
+          opções: Veganismo | Vegetarianismo | Pescetarianismo | Sem glúten | Intolerância à lactose | Alergia a amendoim | Frutos do mar ou crustáceos | Preferências religiosas | Outro
+  - medical_history <MultipleAnswersQuestion> Você já sofreu de alguma das seguintes doenças?
+      opções: Hipertensão ou pressão arterial alta | Diabetes | Depressão | Distúrbios alimentares (anorexia, buli | Outro | Nenhuma
+  [SE] loader_routing
+    quando settings.weight_current > settings.weight_goal:
+      - loader_1 <CustomSlide> 
+      - loader1_weight_curve <CustomSlide> 
+- environment <Category> 
+  - reassurance_your_environment <ReassuranceScreen> Seu ambiente tem um impacto considerável na maneira como você pode atingir seu objetivo.
+  [SE] conditions_block
+    quando user.tags contains main_goal/lose_weight:
+      [SE] dedication_lose_weight_other_routing
+        quando {"operator": "AND", "conditions": [{"lhs": "settings.gender", "rhs": "M", "operator": "!=", "_type": "RelationalCondition", "parse_rhs": fal:
+          - dedication_lose_weight_other <SingleAnswerQuestion> Pessoas de {settings.age} anos que querem perder peso podem precisar de uma abordagem diferente para
+              opções: Muito | Uma duração moderada | Um pouco
+        quando settings.gender == M:
+          - dedication_lose_weight_male <SingleAnswerQuestion> Homens de {settings.age} anos que querem perder peso podem precisar de uma abordagem diferente para 
+              opções: Muito | Uma duração moderada | Um pouco
+        quando settings.gender == F:
+          - dedication_lose_weight_female <SingleAnswerQuestion> Mulheres de {settings.age} anos que querem perder peso podem precisar de uma abordagem diferente par
+              opções: Muito | Uma duração moderada | Um pouco
+    quando user.tags contains main_goal/gain_muscle_lose_fat:
+      [SE] dedication_gain_muscle_lose_fat_male_routing
+        quando settings.gender == M:
+          - dedication_gain_muscle_lose_fat_male <SingleAnswerQuestion> Homens de {settings.age} anos que querem ganhar músculo e perder peso podem precisar de uma abordage
+              opções: Muito | Uma duração moderada | Um pouco
+        quando settings.gender == F:
+          - dedication_gain_muscle_lose_fat_female <SingleAnswerQuestion> Mulheres de {settings.age} anos que querem ganhar músculo e perder peso podem precisar de uma aborda
+              opções: Muito | Uma duração moderada | Um pouco
+        quando {"operator": "AND", "conditions": [{"lhs": "settings.gender", "rhs": "M", "operator": "!=", "_type": "RelationalCondition", "parse_rhs": fal:
+          - dedication_gain_muscle_lose_fat_other <SingleAnswerQuestion> Pessoas de {settings.age} anos que querem ganhar músculo e perder peso podem precisar de uma abordag
+              opções: Muito | Uma duração moderada | Um pouco
+    quando user.tags contains main_goal/gain_muscle:
+      [SE] dedication_gain_muscle_male_routing
+        quando settings.gender == M:
+          - dedication_gain_muscle_male <SingleAnswerQuestion> Homens de {settings.age} anos que querem ganhar músculo podem precisar de uma abordagem diferente pa
+              opções: Muito | Uma duração moderada | Um pouco
+        quando settings.gender == F:
+          - dedication_gain_muscle_female <SingleAnswerQuestion> Mulheres de {settings.age} anos que querem ganhar músculo podem precisar de uma abordagem diferente 
+              opções: Muito | Uma duração moderada | Um pouco
+        quando {"operator": "AND", "conditions": [{"lhs": "settings.gender", "rhs": "M", "operator": "!=", "_type": "RelationalCondition", "parse_rhs": fal:
+          - dedication_gain_muscle_other <SingleAnswerQuestion> Pessoas de {settings.age} anos que querem ganhar músculo podem precisar de uma abordagem diferente p
+              opções: Muito | Uma duração moderada | Um pouco
+    quando user.tags contains main_goal/healthy:
+      [SE] dedication_healthy_male_routing
+        quando settings.gender == M:
+          - dedication_healthy_male <SingleAnswerQuestion> Homens de {settings.age} anos que querem comer de forma mais saudável podem precisar de uma abordage
+              opções: Muito | Uma duração moderada | Um pouco
+        quando settings.gender == F:
+          - dedication_healthy_female <SingleAnswerQuestion> Mulheres de {settings.age} anos que querem comer de forma mais saudável podem precisar de uma aborda
+              opções: Muito | Uma duração moderada | Um pouco
+        quando {"operator": "AND", "conditions": [{"lhs": "settings.gender", "rhs": "M", "operator": "!=", "_type": "RelationalCondition", "parse_rhs": fal:
+          - dedication_healthy_other <SingleAnswerQuestion> Pessoas de {settings.age} anos que querem comer de forma mais saudável podem precisar de uma abordag
+              opções: Muito | Uma duração moderada | Um pouco
+  - parent <YesNoQuestion> Ter filhos tem um impacto enorme na vida de uma pessoa!
+      opções: Sim | Não
+  - student <YesNoQuestion> Estar estudando é ótimo, mas às vezes pode ser desgastante para sua saúde.
+      opções: Sim | Não
+  - work <SingleAnswerQuestion> E o trabalho, como está?
+      opções: Estou trabalhando demais | Estou trabalhando e me sinto bem | Está tudo bem | Atualmente não estou trabalhando | Outro
+  - money_issue <YesNoQuestion> Você diria que o dinheiro é um fator em sua jornada de saúde?
+      opções: Sim | Não
+  [SE] social_support_routing
+    quando settings.weight_current > settings.weight_goal:
+      - social_support <YesNoQuestion> Família, amigos e colegas podem ser de grande ajuda.
+          opções: Sim | Não
+      - social_pressure <YesNoQuestion> Você diria que algumas pessoas em sua vida estão pressionando você demais para perder peso?
+          opções: Sim | Não
+    quando {"operator": "OR", "conditions": [{"lhs": "settings.weight_current", "rhs": "settings.weight_goal", "operator": "<=", "_type": "RelationalCo:
+      - social_support_gain_maintain_weight <YesNoQuestion> Família, amigos e colegas podem ser de grande ajuda.
+          opções: Sim | Não
+      [SE] social_pressure_gain_muscle_routing
+        quando settings.weight_current < settings.weight_goal:
+          - social_pressure_gain_muscle <YesNoQuestion> Você diria que algumas pessoas em sua vida estão pressionando você demais para ganhar músculo?
+              opções: Sim | Não
+  [SE] past_attempt_routing
+    quando settings.weight_current > settings.weight_goal:
+      [SE] past_routing
+        quando settings.gender == F:
+          - past_female <MultipleAnswersQuestion> Nos últimos anos, algum desses eventos fez você ganhar peso?
+              opções: Menopausa | Gravidez | Covid-19 | Casamento ou relacionamento | Equilíbrio entre vida profissional e p | Saúde mental ou estresse | Vida familiar | Distúrbio hormonal | Parar de fumar
+      - past_attempt <YesNoQuestion> Você já tentou perder peso antes?
+          opções: Sim | Não
+      [SE] past_method_routing
+        quando user.tags contains past_attempt/yes:
+          - past_method <MultipleAnswersQuestion> Da última vez que você tentou perder peso, o que fez?
+              opções: Comer de forma equilibrada | Jejum intermitente | Contagem de calorias | Academia | Tratamentos GLP-1 | Consultou um nutricionista | Dietas restritivas | Aplicativo de perda de peso | Cirurgia
+          - past_method_redo <SingleAnswerQuestion> Sua última tentativa foi um sucesso?
+              opções: Sim, sem dúvida | Sim, mas foi difícil | Não, não foi um sucesso
+          - reassurance_past_failure <ReassuranceScreen> Os fracassos passados não implicam falhas futuras.
+- habits_behaviour <Category> 
+  - reassurance_habits_behaviour <ReassuranceScreen> Está quase terminando!
+  - snacker <YesNoQuestion> Você diria que beliscar é um problema para você?
+      opções: Sim | Não
+  [SE] snacker_type_routing
+    quando user.tags contains snacker/yes:
+      - snacker_type <MultipleAnswersQuestion> Em geral, o que leva você a beliscar?
+          opções: Tédio | Fome | Ver comida | Estresse | Emoções fortes | Outro
+      - reassurance_snacker <ReassuranceScreen> Não se preocupe. Todos passamos por isso!
+  - nutrition <SingleAnswerQuestion> Qual afirmação parece mais verdadeira para você?
+      opções: Minha dieta é essencialmente saudável | Preciso trabalhar muito na minha dieta
+  - hard_meal <SingleAnswerQuestion> Para você, em qual refeição é mais difícil comer de forma saudável?
+      opções: No café da manhã | No almoço | No jantar
+  - hard_meal_why <MultipleAnswersQuestion> Por quê?
+      opções: É difícil comer de forma diferente dos | Não tenho tempo para cozinhar | Não sei o que é saudável | Não tenho fácil acesso a alimentos sau | Outro
+  - single_answer_soda <SingleAnswerQuestion> Com que frequência você bebe refrigerante?
+      opções: O dia todo, todos os dias | Quase todos os dias | 4-5 vezes por semana | Pelo menos uma vez por semana | Raramente
+  - activity <SingleAnswerQuestion> Durante um dia típico, quanto tempo você passa sentado(a)?
+      opções: Fico sentado(a) o dia todo | O dia todo, mas caminho pelo menos uma | Meio a meio | Fico em pé quase o dia todo | Fico em pé o dia todo
+  - workout <SingleAnswerQuestion> Você pratica exercícios físicos?
+      opções: 6-7 dias por semana | 3-5 dias por semana | 1-2 dias por semana | Menos que isso | Nunca
+  [SE] willingness_workout_loseweight_routing
+    quando settings.weight_current > settings.weight_goal:
+      - willingness_workout_loseweight <YesNoQuestion> No Foodvisor, nunca pediremos que você faça algo que não queira. Você está disposto a praticar exerc
+          opções: Sim | Não
+    quando settings.weight_current <= settings.weight_goal:
+      - willingness_workout_gain_maintain_weight <YesNoQuestion> No Foodvisor, nunca pediremos que você faça algo que não queira. Você está disposto a praticar muscu
+          opções: Sim | Não
+- last_explainer_with_weight_curve <CustomSlide> 
+- needs <Category> 
+  - interest <MultipleAnswersQuestion> O que você gostaria de aprender conosco?
+      opções: As chaves da nutrição | Desenvolver hábitos saudáveis | Gerenciar meu estresse | Aumentar a motivação | Ciências comportamentais | Os segredos do sono | Outro
+  - need <MultipleAnswersQuestion> O Foodvisor é totalmente personalizado para suas necessidades.
+      opções: Receitas saudáveis e deliciosas | Um nutricionista dedicado (uma pessoa  | Escaneie fotos de seus alimentos | Desafios para beber mais água | Rotinas de treinamento | Acompanhamento de calorias e macronutr | Terapia cognitivo-comportamental (TCC) | Menus personalizados | Uma avaliação diária para melhorar sua
+  - need_program <SingleAnswerQuestion> O que é mais importante para que seu programa seja um sucesso?
+      opções: Obter resultados rápidos | Poder comer de tudo | Que seja fácil de seguir | Outro
+  [SE] 2_week_success_lose_weight_routing
+    quando user.tags contains main_goal/lose_weight:
+      - 2_week_success_lose_weight <SingleAnswerQuestion> Como seria o seu sucesso em 2 semanas?
+          opções: Ter mais energia | Perder peso | Sentir-me melhor comigo mesma | Viver melhor com a minha família | Ser melhor em um esporte | Outro
+    quando user.tags contains main_goal/gain_muscle_lose_fat:
+      - 2_week_success_lose_weight_gain_muscle <SingleAnswerQuestion> 
+          opções: Ter mais energia | Perder peso | Ver ganho de massa muscular | Dormir melhor | Participar de uma corrida (5k, maraton | Outro
+    quando user.tags contains main_goal/gain_muscle:
+      - 2_week_success_gain_muscle <SingleAnswerQuestion> 
+          opções: Ter mais energia | Ver ganho de massa muscular | Dormir melhor | Participar de uma corrida (5k, maraton | Outro
+    quando user.tags contains main_goal/healthy:
+      - 2_week_success_maintain_weight <SingleAnswerQuestion> 
+          opções: Ter mais energia | Comer de forma mais saudável | Dormir melhor | Participar de uma corrida (5k, maraton | Outro
