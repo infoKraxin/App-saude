@@ -564,3 +564,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
 
 /* Campo do 'Outro' */
 .field.oth{margin-top:10px;font-size:16px}
+
+/* Cartão da previsão que reaparece com a data recuando */
+.pjbx .dbx b{transition:transform .12s}.pjbx .dbx.tick b.dd{animation:dtk .16s ease}@keyframes dtk{50%{transform:translateY(-3px)}}
+.pjg{margin:6px 0 0;font-weight:600;color:color-mix(in srgb,var(--acc) 62%,#000);opacity:0;transition:opacity .5s}.pjg.on{opacity:1}
+.pjbx.sm h2.q{font-size:22px;margin:2px 0 0}.pjbx.sm .dbx{margin:8px 0 2px}.pjbx.sm .dbx b{height:48px;font-size:24px}.pjbx.sm .pjs{margin:4px 0 0;font-size:13.5px}
+.scr:has(.pjbx.sm) .ckr{width:104px;height:104px;margin:0 auto}.scr:has(.pjbx.sm) .ckr b{font-size:26px}.scr:has(.pjbx.sm)>h2.q{font-size:24px;margin:6px 0 4px}.scr:has(.pjbx.sm) .ckl{display:none}.scr:has(.pjbx.sm)>p.sub{margin-bottom:6px}

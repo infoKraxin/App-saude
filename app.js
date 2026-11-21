@@ -396,9 +396,14 @@ function yn(key,dr,title,sub){
  bindOpts(function(v){S[key]=v})}
 function safeMode(){return S.cond.indexOf('Gravidez ou amamentação')>-1||S.cond.indexOf('Distúrbio alimentar')>-1}
 function fmtD(d){var o={day:'numeric',month:'long'};if(d.getFullYear()!==new Date().getFullYear())o.year='numeric';return d.toLocaleDateString('pt-BR',o)}
-function proj(){
+function boost(st){var b=0;if(!st)return 0;
+ if(st>=1){b+={'Sou bem ativo':.05,'Me movimento um pouco':.03}[S.move]||0;b+={'8 horas ou mais':.04,'Cerca de 7 horas':.03,'Cerca de 6 horas':.01}[S.sleep]||0}
+ if(st>=2){var ml=S.mlev||'';b+=/^Muito/.test(ml)?.04:/suficiente/.test(ml)?.03:/Mais ou menos/.test(ml)?.01:0;var wn=(S.will||[]).length;b+=wn>=3?.04:wn===2?.03:wn===1?.02:0;if(S.social==='Sim')b+=.02}
+ if(st>=3){b+={'O que for preciso':.06,'Cerca de 10 minutos':.05,'Cerca de 5 minutos':.04,'Até 2 minutos':.02}[S.q[11]]||0;if(S.tok==='Sim, deu certo')b+=.03}
+ return Math.min(.3,b)}
+function proj(st){
  var a=S.area;if(['emag','cane','mass'].indexOf(a)<0||S.wg==null||S.wg===S.w||safeMode())return null;
- var loss=S.wg<S.w,pc=Math.max(0,Math.min(2,S.pace)),rate=loss?[0.25,0.4,0.6][pc]:[0.1,0.2,0.3][pc],d=Math.abs(S.w-S.wg),wks=Math.max(1,Math.ceil(d/rate)),dt=new Date();dt.setDate(dt.getDate()+wks*7);
+ var loss=S.wg<S.w,pc=Math.max(0,Math.min(2,S.pace)),rate=(loss?[0.25,0.4,0.6][pc]:[0.1,0.2,0.3][pc])*(1+boost(st||0)),d=Math.abs(S.w-S.wg);rate=Math.min(rate,loss?S.w*.01:.4);var dys=Math.max(7,Math.ceil(d/rate*7)),wks=Math.ceil(dys/7),dt=new Date();dt.setHours(0,0,0,0);dt.setDate(dt.getDate()+dys);
  return {start:S.w,goal:S.wg,weeks:wks,date:fmtD(dt),dt:dt,rate:rate,loss:loss}}
 /* Linguagem de curva (estudo do fluxo do Foodvisor, aplicada do nosso jeito): curva do foco por cima da cinza, faixa pontilhada de incerteza, fases com rótulo e área em degradê. */
 function bzY(x0,y0,x1,y1,x2,y2,x3,y3,X){var lo=0,hi=1,t=.5,m,x;for(var i=0;i<30;i++){t=(lo+hi)/2;m=1-t;x=m*m*m*x0+3*m*m*t*x1+3*m*t*t*x2+t*t*t*x3;if(x<X)lo=t;else hi=t}m=1-t;return m*m*m*y0+3*m*m*t*y1+3*m*t*t*y2+t*t*t*y3}
@@ -406,7 +411,7 @@ function phGuides(b,x0,x1,yT,yB){return b.map(function(x,i){return '<path class=
 function phLabels(b,x0,x1,y,L){var e=[x0].concat(b,[x1]);return L.map(function(t,i){return '<text class="fade" style="animation-delay:'+(.7+i*.25)+'s" x="'+((e[i]+e[i+1])/2).toFixed(1)+'" y="'+y+'" font-size="12" font-weight="600" text-anchor="middle" fill="#7A868A">'+t+'</text>'}).join('')}
 function gradDef(id){return '<defs><linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--acc);stop-opacity:.3"/><stop offset="1" style="stop-color:var(--acc);stop-opacity:0"/></linearGradient></defs>'}
 /* Previsão de peso nos momentos em que o Foodvisor mostra (meta definida, carregamento, 1ª previsão, troca de bloco, fim das perguntas). */
-function projEv(){var p=proj();if(!p)return null;var ed=evDate(),evp=false;
+function projEv(st){var p=proj(st);if(!p)return null;var ed=evDate(),evp=false;
  if(ed){var wkE=(ed-new Date())/6048e5,dl=p.rate*wkE;if(ed<p.dt&&wkE>=1&&dl>=.3){var wE=Math.round((p.loss?p.start-dl:p.start+dl)*10)/10;p=Object.assign({},p,{goal:wE,dt:ed,date:fmtD(ed)});evp=true}}
  return {p:p,evp:evp}}
 function mesTxt(p){var m=Math.round(Math.min(Math.abs(p.start-p.goal),p.rate*30/7)*10)/10;return 'Você vai '+(p.loss?'perder':'ganhar')+' cerca de '+String(m).replace('.',',')+' kg em 1 mês'}
@@ -414,7 +419,7 @@ function wChart(p,g){var gk=function(v){return String(v).replace('.',',')},up=!p
  var PB=[116.7,203.3],bd=function(k){return '<path d="M30 '+y0+'C120 '+(y0+k*4)+' 180 '+(y1+k*14)+' 290 '+(y1+k*16)+'" fill="none" stroke="#C2CBCE" stroke-width="2" stroke-dasharray="4 5" stroke-linecap="round" class="fade" style="animation-delay:1.9s"/>'},
  band=bd(-1)+bd(1),mid=PB.map(function(X,i){var Y=bzY(30,y0,120,y0,180,y1,290,y1,X);return '<circle class="popin" style="animation-delay:'+(.9+i*.55)+'s;transform-box:fill-box;transform-origin:center" cx="'+X+'" cy="'+Y.toFixed(1)+'" r="5" fill="#fff" stroke="var(--acc)" stroke-width="3"/>'}).join('');
  return '<div class="pchart2"><svg viewBox="0 0 320 190" aria-hidden="true">'+gradDef(g)+phGuides(PB,30,290,10,140)+'<path d="M30 10V140H310" fill="none" stroke="#C9D0D2" stroke-width="2" stroke-linecap="round"/><path d="M30 '+y0+'C120 '+y0+' 180 '+(y1)+' 290 '+y1+'V140H30Z" fill="url(#'+g+')" class="fade" style="animation-delay:1.2s"/>'+band+'<path d="M30 '+y0+'C120 '+y0+' 180 '+y1+' 290 '+y1+'" pathLength="1" class="draw" fill="none" stroke="var(--acc)" stroke-width="4.5" stroke-linecap="round"/>'+mid+'<circle cx="30" cy="'+y0+'" r="6" fill="#fff" stroke="var(--acc)" stroke-width="3.5"/><circle class="popin" style="animation-delay:1.7s;transform-box:fill-box;transform-origin:center" cx="290" cy="'+y1+'" r="7" fill="#fff" stroke="var(--acc)" stroke-width="3.5"/><text x="36" y="'+(y0+(up?20:-12))+'" font-size="13" font-weight="600" fill="#5A666A">'+p.start+' kg</text><text x="30" y="162" font-size="13" fill="#7A868A">Hoje</text><text x="310" y="162" font-size="13" fill="#7A868A" text-anchor="end">'+esc(p.date)+'</text>'+phLabels(PB,30,290,182,['Preparar','Avançar','Estabilizar'])+'</svg><span class="pchip popin" style="animation-delay:1.8s;top:'+(y1/190*100)+'%;margin-top:'+(up?'-6px':'-40px')+'">'+gk(p.goal)+' kg</span></div>'}
-function miniPj(){var o=projEv();if(!o)return '';var p=o.p,d=p.dt,y1=p.loss?58:14,y0=p.loss?14:58;
+function miniPj(st){var o=projEv(st);if(!o)return '';var p=o.p,d=p.dt,y1=p.loss?58:14,y0=p.loss?14:58;
  return '<div class="mpj"><svg viewBox="0 0 300 70" aria-hidden="true">'+gradDef('gM')+'<path d="M14 '+y0+'C110 '+y0+' 170 '+y1+' 286 '+y1+'V70H14Z" fill="url(#gM)" class="fade" style="animation-delay:1s"/><path d="M14 '+y0+'C110 '+y0+' 170 '+y1+' 286 '+y1+'" pathLength="1" class="draw" fill="none" stroke="var(--acc)" stroke-width="4" stroke-linecap="round"/><circle cx="14" cy="'+y0+'" r="5" fill="#fff" stroke="var(--acc)" stroke-width="3"/><circle class="popin" style="animation-delay:1.6s;transform-box:fill-box;transform-origin:center" cx="286" cy="'+y1+'" r="6" fill="#fff" stroke="var(--acc)" stroke-width="3"/></svg><div class="mpl"><span>Hoje</span><span><b>Chegar a '+String(p.goal).replace('.',',')+' kg</b><small>até '+(d.getDate()<=15?'o início':'o final')+' de '+d.toLocaleDateString('pt-BR',{month:'long'})+'</small></span></div></div>'}
 /* Textos personalizados por sexo, idade e foco (como o Foodvisor faz com {settings.age} e o objetivo). */
 function gx(m,f){return S.sex==='Mulher'?f:m}
@@ -427,6 +432,20 @@ function otherHook(key){var b=main.querySelector('.opt[data-v^="Outr"]'),ops=mai
  var box=document.createElement('input');box.className='field oth';box.type='text';box.maxLength=80;box.placeholder='Conte em poucas palavras';box.setAttribute('aria-label','Especifique');box.value=S[key+'Tx']||'';ops.parentNode.insertBefore(box,ops.nextSibling);
  function sync(e){var on=(S[key]||[]).some(function(x){return /^Outr/.test(x)});box.style.display=on?'':'none';if(on&&e&&e.currentTarget===b)box.focus()}
  box.oninput=function(){S[key+'Tx']=box.value.trim()};main.querySelectorAll('.opt').forEach(function(o){o.addEventListener('click',sync)});sync()}
+/* Cartão da previsão que reaparece (como o Foodvisor): mesma frase, a data recua dia a dia até a nova estimativa. */
+function pjBox(st,pv,small){var o=projEv(st);if(!o)return '';var p=o.p,q=pv!=null?projEv(pv):null,mo=function(d){return d.toLocaleDateString('pt-BR',{month:'long'})},iso=function(d){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()},gk=function(v){return String(v).replace('.',',')};
+ var d0=q?q.p.dt:p.dt,k0=q?q.p.goal:p.goal,days=Math.round((d0-p.dt)/864e5),kg=Math.round(Math.abs(p.goal-k0)*10)/10;
+ var gain=o.evp?(kg>0?'São mais '+gk(kg)+' kg '+(p.loss?'a menos':'a mais')+' até essa data.':''):(days>0?'Você chega '+(days===1?'1 dia':days+' dias')+' antes.':'');
+ return '<div class="pjbx'+(small?' sm':'')+'"><p class="pjs">'+(q?'Atualizado com as suas respostas':'Com base nas nossas estimativas')+'</p><h2 class="q" style="margin-top:4px">Você estará com <span class="kgv" data-a="'+k0+'" data-b="'+p.goal+'">'+gk(k0)+'</span> kg até</h2><div class="dbx" data-a="'+iso(d0)+'" data-b="'+iso(p.dt)+'"><b class="dd" style="width:72px">'+d0.getDate()+'</b><b class="dm" style="padding:0 18px;min-width:150px">'+esc(mo(d0))+'</b></div>'+(gain?'<p class="pjg">'+esc(gain)+'</p>':'')+'</div>'}
+function pjAnim(){main.querySelectorAll('.pjbx').forEach(function(bx){var x=bx.querySelector('.dbx'),kv=bx.querySelector('.kgv'),g=bx.querySelector('.pjg');
+ var P=function(s){var a=s.split('-');return new Date(+a[0],+a[1]-1,+a[2])},a=P(x.getAttribute('data-a')),b=P(x.getAttribute('data-b')),n=Math.round((a-b)/864e5),k0=+kv.getAttribute('data-a'),k1=+kv.getAttribute('data-b'),steps=Math.max(n,Math.round(Math.abs(k1-k0)*10)),i=0;
+ if(!steps){if(g)g.classList.add('on');return}
+ var tk=Math.max(55,Math.min(170,2000/steps)),dd=x.querySelector('.dd'),dm=x.querySelector('.dm');
+ timers.push(setTimeout(function(){var iv=setInterval(function(){i++;
+  if(n>0){var d=new Date(a);d.setDate(d.getDate()-Math.min(i,n));dd.textContent=d.getDate();dm.textContent=d.toLocaleDateString('pt-BR',{month:'long'})}
+  var kk=k0+(k1-k0)*Math.min(1,i/steps);kv.textContent=String(Math.round(kk*10)/10).replace('.',',');
+  x.classList.remove('tick');void x.offsetWidth;x.classList.add('tick');
+  if(i>=steps){clearInterval(iv);if(g)g.classList.add('on')}},tk);ivs.push(iv)},700))})}
 var R={
 intro:function(){
  setCta('<p class="fine" style="margin:0">Ao continuar, você concorda com os <a href="#">Termos de uso</a> e a <a href="#">Política de privacidade</a>.</p>');
@@ -487,7 +506,7 @@ proj:function(){
  var wk=function(c){return c>0?String(c).replace('.',','):''};
  if(p){
   var up=!p.loss,y0=up?120:30,y1=up?30:120,per=Math.round(p.rate*10)/10;
-  shell(waves()+'<p class="pjs">Com base nas nossas estimativas</p><h2 class="q" style="margin-top:6px">Você estará com '+gk(p.goal)+' kg até</h2><div class="dbx"><b id="dd" style="width:72px">1</b><b id="dm" style="padding:0 18px;min-width:150px;opacity:0">'+esc(mo(p.dt))+'</b></div><p class="sub" style="margin-top:2px">'+(evp?'Estimativa a tempo '+(ET[eventTxt()]||'do seu evento')+', no ritmo que você escolheu.':'Estimativa para o ritmo que você escolheu.'+evs)+'</p>'+wChart(p,'gA')+'<div class="upd"><p style="animation-delay:1.9s"><i>'+CK.replace('#fff','currentColor')+'</i>Com base no seu perfil</p><p style="animation-delay:2.3s"><i>'+CK.replace('#fff','currentColor')+'</i>'+mesTxt(p)+'</p><small>As próximas perguntas ajudam a confirmar o seu caminho. É uma estimativa, não uma garantia.</small></div>');
+  shell(waves()+'<p class="pjs">Com base nas nossas estimativas</p><h2 class="q" style="margin-top:6px">Você estará com '+gk(p.goal)+' kg até</h2><div class="dbx"><b id="dd" style="width:72px">1</b><b id="dm" style="padding:0 18px;min-width:150px;opacity:0">'+esc(mo(p.dt))+'</b></div><p class="sub" style="margin-top:2px">'+(evp?'Estimativa a tempo '+(ET[eventTxt()]||'do seu evento')+', no ritmo que você escolheu.':'Estimativa para o ritmo que você escolheu.'+evs)+'</p>'+wChart(p,'gA')+'<div class="upd"><p style="animation-delay:1.9s"><i>'+CK.replace('#fff','currentColor')+'</i>Com base no seu perfil</p><p style="animation-delay:2.3s"><i>'+CK.replace('#fff','currentColor')+'</i>'+mesTxt(p)+'</p><small>As próximas perguntas ajudam a ver se você pode chegar antes. É uma estimativa, não uma garantia.</small></div>');
   var dd=$('#dd'),n=0,tg=p.dt.getDate(),iv=setInterval(function(){n++;dd.textContent=Math.min(n,tg);if(n>=tg){clearInterval(iv);var m=$('#dm');if(m){m.style.transition='opacity .5s';m.style.opacity=1}}},Math.max(18,900/tg));ivs.push(iv)}
  else{
   var X=[0,1,2,3,4,5,6].map(function(i){return 30+i*43}),Y=[118,104,96,78,70,50,36],dots='',DB=[94.5,245.5],path='M'+X.map(function(x,i){return x+' '+Y[i]}).join('L');
@@ -502,7 +521,10 @@ pjload:function(){
 mlev:function(){setCta('');
  shell('<span class="tag"><i></i>Seu perfil</span>'+mas('think',92)+'<h2 class="q">Quanto você está '+gx('motivado','motivada')+' para '+esc(goalP())+', '+esc(nome())+'?</h2><p class="sub">Sem resposta certa. Isso ajusta o tamanho dos primeiros passos.</p>'+opts([gx('Muito motivado','Muito motivada')+'|flame',gx('Motivado o suficiente','Motivada o suficiente')+'|smile','Mais ou menos|meh',gx('Pouco motivado','Pouco motivada')+'|frown'],S.mlev));bindOpts(function(v){S.mlev=v})},
 will:function(){multi('will','Seu perfil','O que você topa fazer para '+goalP()+'?','O Evura nunca vai pedir algo que você não queira. Pode marcar mais de uma.',(WILL[S.area]||WILL.emag).concat(['Outro|pencil']),'','<div class="ea">'+mas('cheer',86)+'</div>')},
-envi:function(){var mp=miniPj();story({tag:'Seu ambiente',html:mp||art('seedling',130),title:'O seu ambiente pesa muito no seu resultado',text:'As próximas perguntas mostram o que cabe na sua rotina de verdade, '+esc(nome())+'.'})},
+envi:function(){var bx=pjBox(1,0);if(!bx){story({tag:'Seu ambiente',html:art('seedling',130),title:'O seu ambiente pesa muito no seu resultado',text:'As próximas perguntas mostram o que cabe na sua rotina de verdade, '+esc(nome())+'.'});return}
+ setCta('<button class="btn" id="go">Continuar</button>');
+ shell(waves()+'<span class="tag"><i></i>Seu ambiente</span>'+bx+miniPj(1)+'<p class="sub" style="margin-top:12px">O seu ambiente pesa muito no resultado. As próximas perguntas ajudam a ver se você pode chegar ainda antes.</p>');
+ var ph=document.getElementById('phone');if(ph)ph.classList.add('ul');pjAnim();$('#go').onclick=function(){tap();next()}},
 work:function(){setCta('');
  shell('<span class="tag"><i></i>Seu ambiente</span>'+art('mantelpiece-clock',88)+'<h2 class="q">E o trabalho ou o estudo, como está?</h2><p class="sub">A rotina muda o que é possível no dia a dia.</p>'+opts(['Trabalho demais|timer','Trabalho e me sinto bem|smile','Estou estudando|pencil','Não estou trabalhando agora|coffee',gx('Sou aposentado','Sou aposentada')+'|sun'],S.work));bindOpts(function(v){S.work=v})},
 kids:function(){yn('kids','heart','Ter filhos muda muito a rotina. Você tem filhos?','O plano se encaixa nos horários da casa.')},
@@ -625,10 +647,10 @@ analysis:function(){
  var iv=setInterval(function(){var t=Math.min(1,(Date.now()-t0)/T),p=100*(1-Math.pow(1-t,2.2));
   ab.style.width=p+'%';var si=0;TH.forEach(function(x,i){if(p>=x)si=i});al.textContent=ST[si]+' · '+Math.floor(p)+'%';
   var k=Math.min(SL.length-1,Math.floor(t*SL.length));if(k!==cur)show(k);
-  if(t>=1&&!done){done=true;clearInterval(iv);al.textContent='Plano pronto · 100%';timers.push(setTimeout(function(){var o=projEv();if(!o){next();return}var p=o.p;
+  if(t>=1&&!done){done=true;clearInterval(iv);al.textContent='Plano pronto · 100%';timers.push(setTimeout(function(){var o=projEv(3);if(!o){next();return}var p=o.p;
    setCta('<button class="btn" id="go">Continuar</button>');
-   shell(waves()+'<div class="pjfin"><h2 class="q">Encontramos o seu programa, '+esc(nome())+'!</h2><p class="sub">Você estará com <b>'+String(p.goal).replace('.',',')+' kg</b> até <b>'+esc(p.date)+'</b>'+(o.evp?', a tempo '+(ET[eventTxt()]||'do seu evento'):'')+'.</p>'+wChart(p,'gF')+'<div class="upd"><p style="animation-delay:1.9s"><i>'+CK.replace('#fff','currentColor')+'</i>Atualizado com as suas respostas</p><p style="animation-delay:2.3s"><i>'+CK.replace('#fff','currentColor')+'</i>'+mesTxt(p)+'</p><small>O seu plano é montado para chegar até essa data. É uma estimativa, não uma garantia.</small></div></div>');
-   var ph=document.getElementById('phone');if(ph)ph.classList.add('ul');
+   shell(waves()+'<div class="pjfin"><p class="anq" style="margin:0">Encontramos o seu programa, '+esc(nome())+'!</p>'+pjBox(3,2,true)+wChart(p,'gF')+'<div class="upd"><p style="animation-delay:1.9s"><i>'+CK.replace('#fff','currentColor')+'</i>Atualizado com as suas respostas</p><p style="animation-delay:2.3s"><i>'+CK.replace('#fff','currentColor')+'</i>'+mesTxt(p)+'</p><small>O seu plano é montado para chegar até essa data. É uma estimativa, não uma garantia.</small></div></div>');
+   var ph=document.getElementById('phone');if(ph)ph.classList.add('ul');pjAnim();
    $('#go').onclick=function(){tap();next()}},700))}},50);
  ivs.push(iv)},
 email:function(){
@@ -639,7 +661,7 @@ email:function(){
  em.oninput=v;v();
  go.onclick=function(){if(go.disabled)return;tap();sendLead();/* aqui dispara o evento de Lead da Meta */next()}},
 ck1:function(){var a=area();ckpt(45,'Seu perfil está 45% montado, '+esc(nome()),'Já temos o seu corpo, a sua rotina, a sua saúde e o seu ambiente. Agora vêm as perguntas sobre '+esc(nm(a))+'.',['Corpo e medidas','Rotina e sono','Saúde e restrições','Seu ambiente'],'Hábitos de '+nm(a))},
-ck2:function(){var a=area();ckpt(80,'Falta pouco, '+esc(nome()),'Já entendemos os seus hábitos de '+esc(nm(a))+'. As últimas perguntas fecham o seu histórico.',['Corpo e medidas','Rotina e sono','Saúde e restrições','Seu ambiente','Hábitos de '+nm(a)],'Seu histórico e o que já tentou')},
+ck2:function(){var a=area();ckpt(80,'Falta pouco, '+esc(nome()),'Já entendemos os seus hábitos de '+esc(nm(a))+'. As últimas perguntas fecham o seu histórico.',['Corpo e medidas','Rotina e sono','Saúde e restrições','Seu ambiente','Hábitos de '+nm(a)],'Seu histórico e o que já tentou',pjBox(2,1,true));pjAnim()},
 result:function(){
  var c=calc(),a=area(),P=profile(),sc=P.score,ch=sc>=75?['Adequado','ok']:sc>=50?['Atenção','mid']:['Pede cuidado','low'];
  var lbl=sc>=75?'Você tem uma boa base. Os ajustes agora são finos.':sc>=50?'Bom ponto de partida, com pontos claros para ajustar.':'O seu perfil mostra vários pontos que pedem atenção agora.';
