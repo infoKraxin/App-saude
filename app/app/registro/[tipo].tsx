@@ -3,9 +3,7 @@ import { View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Minus, Plus } from 'lucide-react-native';
 import { Screen, T, Button, Chip, Field, Segmented, Group, ToggleRow, Card } from '@/components/ui';
-import { addLog, markTutorialSeen, removeLog, saveFavorite, useApp, useLiveLogs } from '@/data/store';
-import { RecapModal } from '@/components/foodvisor';
-import { computeStreak } from '@/data/gamification';
+import { addLog, removeLog, saveFavorite, useApp } from '@/data/store';
 import { SheetHeader, toast } from '@/components/premium';
 import { KIND_ICON } from '@/components/illus';
 import type { LogKind } from '@/data/types';
@@ -60,19 +58,7 @@ export default function RegistroTipo() {
   const router = useRouter();
   const profile = useApp((s) => s.profile);
   const favorites = useApp((s) => s.favorites);
-  const tutorialSeen = useApp((s) => s.tutorialSeen);
-  const streakState = useApp((s) => s.streak);
-  const allLogs = useLiveLogs();
-  const [recap, setRecap] = useState<{ title: string; summary: string; streakDays: number } | null>(null);
-  const goBack = () => (router.canGoBack() ? router.back() : router.replace('/'));
-  const done = () => {
-    const st = computeStreak(allLogs, streakState);
-    setRecap({
-      title: `${TITLES[tipo ?? ''] ?? 'Registro'} salvo!`,
-      summary: 'Cada registro alimenta o motor de descobertas e fortalece a sua sequência.',
-      streakDays: Math.max(1, st.current),
-    });
-  };
+  const done = () => (router.canGoBack() ? router.back() : router.replace('/'));
   const SUB: Record<string, string> = {
     water: 'Cada copo conta.', meal: 'Escreva do seu jeito, sem pesar nada.', sleep: 'Sobre a noite passada.', feel: 'Quatro toques e pronto.',
     move: 'Qualquer movimento conta.', symptom: 'O que você sentiu hoje.', evening: 'Ajuda a entender o seu sono.', measure: 'Uma vez por semana basta.',
@@ -288,20 +274,6 @@ export default function RegistroTipo() {
     <Screen header={<SheetHeader img={KIND_ICON[(tipo ?? 'water') as LogKind] ?? 'icone-agua'} title={TITLES[tipo ?? ''] ?? 'Registrar'} subtitle={SUB[tipo ?? '']} />} footer={save ? <Button label="Salvar" disabled={!can} onPress={save} /> : undefined}>
       {body}
       {err && tipo === 'water' ? <T v="small" tone="crit">{err}</T> : null}
-          {!tutorialSeen && (
-        <Card tone="sunk">
-          <T v="small" weight="semi">Primeira vez registrando?</T>
-          <T v="small" tone="mut">Preencha só o que fizer sentido agora e toque em Salvar. Leva menos de 1 minuto.</T>
-          <Button small kind="secondary" label="Entendi" onPress={markTutorialSeen} />
-        </Card>
-      )}
-      <RecapModal
-        visible={!!recap}
-        title={recap?.title ?? ''}
-        summary={recap?.summary ?? ''}
-        streakDays={recap?.streakDays ?? 1}
-        onDone={() => { setRecap(null); goBack(); }}
-      />
     </Screen>
   );
 }

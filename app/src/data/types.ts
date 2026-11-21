@@ -99,16 +99,6 @@ export type Prefs = {
   lockApp: boolean;
 };
 
-export type StreakGoal = 7 | 14 | 30 | 50;
-
-export type StreakState = {
-  goalDays: StreakGoal;
-  freezes: number; // até 2 equipados
-  usedFreezeDays: string[]; // AAAA-MM-DD protegidos por gelo
-  bestStreak: number;
-  lastCelebratedStreak: number;
-};
-
 export type AppState = {
   version: 1;
   profile: Profile | null;
@@ -116,12 +106,4 @@ export type AppState = {
   logs: Log[];
   favorites: { text: string; slot: MealSlot; protein: boolean; fiber: boolean; ultra: boolean; alcohol: boolean }[];
   feedback: { findingId: string; day: string; useful: boolean }[];
-  streak: StreakState;
-  evuName: string;
-  completedLessons: string[];
-  lessonFeedback: Record<string, boolean>;
-  completedMissions: Record<string, string[]>;
-  tutorialSeen: boolean;
-  lastActiveDay?: string;
-  reactivationStrategies?: string[];
 };

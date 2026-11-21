@@ -10,7 +10,7 @@ with sync_playwright() as p:
     for i in range(130):
         pg.wait_for_timeout(700);k=pg.evaluate("window.__k")
         if k in want and k not in done:
-            pg.wait_for_timeout({'proj':3500,'magic':5200,'done':2500,'pact':800}.get(k,1200));pg.screenshot(path='n7_%s_%d.png'%(k,W));done.add(k)
+            pg.wait_for_timeout({'proj':3500,'magic':5200,'done':2500,'pact':800,'envi':3800,'ck2':3800}.get(k,1200));pg.screenshot(path='n7_%s_%d.png'%(k,W));done.add(k)
             if len(done)==len(want):break
         if k=='intro':pg.tap('.sex >> nth=%d'%sex);pg.wait_for_timeout(1300);continue
         if k=='name':pg.fill('#nm','Marina');pg.keyboard.press('Enter');continue
@@ -26,7 +26,7 @@ with sync_playwright() as p:
         if k=='motiv':pg.tap('.opt >> nth=0');pg.tap('#go');continue
         if k=='analysis':
             pg.wait_for_selector('.rep,.pjfin',timeout=30000)
-            if pg.locator('.pjfin').count():pg.wait_for_timeout(3000);pg.screenshot(path='n7_pjfin_%d.png'%W);pg.tap('#go')
+            if pg.locator('.pjfin').count():pg.wait_for_timeout(4200);pg.screenshot(path='n7_pjfin_%d.png'%W);pg.tap('#go')
             continue
         if k=='pact':
             bb=pg.locator('#pb').bounding_box();pg.mouse.move(bb['x']+50,bb['y']+50);pg.mouse.down();pg.wait_for_timeout(2800);pg.mouse.up();pg.wait_for_timeout(1800);pg.tap('#go');continue
