@@ -661,7 +661,11 @@ email:function(){
  em.oninput=v;v();
  go.onclick=function(){if(go.disabled)return;tap();sendLead();/* aqui dispara o evento de Lead da Meta */next()}},
 ck1:function(){var a=area();ckpt(45,'Seu perfil está 45% montado, '+esc(nome()),'Já temos o seu corpo, a sua rotina, a sua saúde e o seu ambiente. Agora vêm as perguntas sobre '+esc(nm(a))+'.',['Corpo e medidas','Rotina e sono','Saúde e restrições','Seu ambiente'],'Hábitos de '+nm(a))},
-ck2:function(){var a=area();ckpt(80,'Falta pouco, '+esc(nome()),'Já entendemos os seus hábitos de '+esc(nm(a))+'. As últimas perguntas fecham o seu histórico.',['Corpo e medidas','Rotina e sono','Saúde e restrições','Seu ambiente','Hábitos de '+nm(a)],'Seu histórico e o que já tentou',pjBox(2,1,true));pjAnim()},
+ck2:function(){var a=area(),bx=pjBox(2,1);
+ if(bx){setCta('<button class="btn" id="go">Continuar</button>');
+  shell(waves()+'<span class="tag"><i></i>Perfil 80% montado</span>'+bx+miniPj(2)+'<p class="sub" style="margin-top:12px">Falta pouco, '+esc(nome())+'. Já entendemos os seus hábitos de '+esc(nm(a))+'. As últimas perguntas fecham o seu histórico.</p>');
+  var ph=document.getElementById('phone');if(ph)ph.classList.add('ul');pjAnim();$('#go').onclick=function(){tap();next()};return}
+ ckpt(80,'Falta pouco, '+esc(nome()),'Já entendemos os seus hábitos de '+esc(nm(a))+'. As últimas perguntas fecham o seu histórico.',['Corpo e medidas','Rotina e sono','Saúde e restrições','Seu ambiente','Hábitos de '+nm(a)],'Seu histórico e o que já tentou')},
 result:function(){
  var c=calc(),a=area(),P=profile(),sc=P.score,ch=sc>=75?['Adequado','ok']:sc>=50?['Atenção','mid']:['Pede cuidado','low'];
  var lbl=sc>=75?'Você tem uma boa base. Os ajustes agora são finos.':sc>=50?'Bom ponto de partida, com pontos claros para ajustar.':'O seu perfil mostra vários pontos que pedem atenção agora.';
