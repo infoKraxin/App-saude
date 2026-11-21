@@ -24,7 +24,7 @@ with sync_playwright() as p:
             out[k+'_sheet']=pg.evaluate("document.querySelector('.shov').innerText");pg.tap('.shov #go');continue
         if k=='tour':pg.tap('#sk');continue
         if k=='edate':
-            pg.evaluate("document.querySelectorAll('.calg button:not([disabled])')[9].click()");pg.wait_for_timeout(400);pg.tap('#go');continue
+            pg.evaluate("document.querySelectorAll('.calg button:not([disabled])')[Math.min(9,document.querySelectorAll('.calg button:not([disabled])').length-1)].click()");pg.wait_for_timeout(400);pg.tap('#go');continue
         if k=='intro':pg.tap('.sex >> nth=%d'%sex);pg.wait_for_timeout(1300);continue
         if k=='name':pg.fill('#nm','Marina');pg.keyboard.press('Enter');continue
         if k=='area':
