@@ -4,7 +4,7 @@
 
 import { useMemo, useSyncExternalStore } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { AppState, Log, Prefs, Profile } from './types';
+import type { AppState, Log, Prefs, Profile, StreakGoal, StreakState } from './types';
 import { dayKey } from './dates';
 
 const KEY = 'evura:v1';
@@ -36,7 +36,28 @@ export const defaultPrefs: Prefs = {
   lockApp: false,
 };
 
-const initial: AppState = { version: 1, profile: null, prefs: defaultPrefs, logs: [], favorites: [], feedback: [] };
+export const defaultStreak: StreakState = {
+  goalDays: 7,
+  freezes: 2,
+  usedFreezeDays: [],
+  bestStreak: 0,
+  lastCelebratedStreak: 0,
+};
+
+const initial: AppState = {
+  version: 1,
+  profile: null,
+  prefs: defaultPrefs,
+  logs: [],
+  favorites: [],
+  feedback: [],
+  streak: defaultStreak,
+  evuName: 'Evu',
+  completedLessons: [],
+  lessonFeedback: {},
+  completedMissions: {},
+  tutorialSeen: false,
+};
 
 let state: AppState = initial;
 let loaded = false;
@@ -65,10 +86,20 @@ export async function loadState() {
   try {
     const raw = await AsyncStorage.getItem(KEY);
     if (raw) {
-      const parsed = JSON.parse(raw) as AppState;
-      state = { ...initial, ...parsed, prefs: { ...defaultPrefs, ...parsed.prefs, notif: { ...defaultPrefs.notif, ...parsed.prefs?.notif } } };
-      // v2: tema claro por padrão; quem estava em "do sistema" sem ter escolhido volta para o claro.
-      if (!(parsed as { themeV2?: boolean }).themeV2) { state = { ...state, prefs: { ...state.prefs, theme: state.prefs.theme === 'dark' ? 'dark' : 'light' } }; }
+      const parsed = JSON.parse(raw) as Partial<AppState>;
+      state = {
+        ...initial,
+        ...parsed,
+        prefs: { ...defaultPrefs, ...parsed.prefs, notif: { ...defaultPrefs.notif, ...parsed.prefs?.notif } },
+        streak: { ...defaultStreak, ...parsed.streak },
+        completedLessons: parsed.completedLessons ?? [],
+        lessonFeedback: parsed.lessonFeedback ?? {},
+        completedMissions: parsed.completedMissions ?? {},
+        evuName: parsed.evuName || 'Evu',
+      };
+      if (!(parsed as { themeV2?: boolean }).themeV2) {
+        state = { ...state, prefs: { ...state.prefs, theme: state.prefs.theme === 'dark' ? 'dark' : 'light' } };
+      }
       (state as { themeV2?: boolean }).themeV2 = true;
     }
   } catch {
@@ -99,8 +130,9 @@ type NewLog = DistOmit<Log, 'id' | 'at' | 'updatedAt' | 'day' | 'source'> & { da
 
 export function addLog(entry: NewLog): Log {
   const now = new Date().toISOString();
-  const log = { id: uid(), at: now, updatedAt: now, day: dayKey(), source: 'manual', ...entry } as Log;
-  setState((s) => ({ ...s, logs: [...s.logs, log] }));
+  const today = dayKey();
+  const log = { id: uid(), at: now, updatedAt: now, day: today, source: 'manual', ...entry } as Log;
+  setState((s) => ({ ...s, logs: [...s.logs, log], lastActiveDay: today }));
   return log;
 }
 
@@ -112,7 +144,6 @@ export function updateLog(id: string, patch: Partial<Log>) {
   }));
 }
 
-// Apagar é lógico: some da tela, mas sobe para o servidor como apagado (apagar vence editar).
 export const removeLog = (id: string) => updateLog(id, { deleted: true });
 export const restoreLog = (id: string) => updateLog(id, { deleted: false });
 
@@ -132,6 +163,61 @@ export function giveFeedback(findingId: string, useful: boolean) {
   setState((s) => ({ ...s, feedback: [...s.feedback, { findingId, day: dayKey(), useful }] }));
 }
 
+// ---------- gamificação, aulas e reativação ----------
+
+export function setStreakGoal(goalDays: StreakGoal) {
+  setState((s) => ({ ...s, streak: { ...s.streak, goalDays } }));
+}
+
+export function updateBestStreak(best: number) {
+  setState((s) => (best > s.streak.bestStreak ? { ...s, streak: { ...s.streak, bestStreak: best } } : s));
+}
+
+export function useFreezeOnDay(day: string) {
+  setState((s) => {
+    if (s.streak.freezes <= 0 || s.streak.usedFreezeDays.includes(day)) return s;
+    return {
+      ...s,
+      streak: {
+        ...s.streak,
+        freezes: Math.max(0, s.streak.freezes - 1),
+        usedFreezeDays: [...s.streak.usedFreezeDays, day],
+      },
+    };
+  });
+}
+
+export function setEvuName(evuName: string) {
+  setState((s) => ({ ...s, evuName: evuName.trim().slice(0, 20) || 'Evu' }));
+}
+
+export function completeLesson(lessonId: string) {
+  setState((s) => ({
+    ...s,
+    completedLessons: s.completedLessons.includes(lessonId) ? s.completedLessons : [...s.completedLessons, lessonId],
+  }));
+}
+
+export function rateLesson(lessonId: string, liked: boolean) {
+  setState((s) => ({ ...s, lessonFeedback: { ...s.lessonFeedback, [lessonId]: liked } }));
+}
+
+export function toggleMission(missionId: string, day = dayKey()) {
+  setState((s) => {
+    const cur = s.completedMissions[day] ?? [];
+    const next = cur.includes(missionId) ? cur.filter((x) => x !== missionId) : [...cur, missionId];
+    return { ...s, completedMissions: { ...s.completedMissions, [day]: next } };
+  });
+}
+
+export function markTutorialSeen() {
+  setState((s) => ({ ...s, tutorialSeen: true }));
+}
+
+export function saveReactivation(strategies: string[]) {
+  setState((s) => ({ ...s, reactivationStrategies: strategies, lastActiveDay: dayKey() }));
+}
+
 export const exportData = () => JSON.stringify({ exportadoEm: new Date().toISOString(), ...state }, null, 2);
 
 export async function wipeAll() {
@@ -140,8 +226,6 @@ export async function wipeAll() {
   emit();
 }
 
-// Seletores. `useApp` precisa receber seletores que devolvem referências já existentes
-// (s.logs, s.profile); derivados são calculados com useMemo para não recriar a cada leitura.
 export const liveLogs = (logs: Log[]) => logs.filter((l) => !l.deleted);
 
 export function useLiveLogs() {
