@@ -29,7 +29,7 @@ def run():
         if k=='done':break
         if pg.locator('.shov').count():
             log.append((k+'_sheet',pg.evaluate("document.querySelector('.shov').innerText")));pg.tap('.shov #go');continue
-        if k=='tour':pg.tap('#sk');continue
+        if k in('welcome','tour'):pg.tap('#go');continue
         if k=='edate':
             pg.evaluate("document.querySelectorAll('.calg button:not([disabled])')[Math.min(%d,document.querySelectorAll('.calg button:not([disabled])').length-1)].click()"%P.get('edays',9));pg.wait_for_timeout(400);pg.tap('#go');continue
         if k=='intro':pg.tap('.sex >> nth=0');pg.wait_for_timeout(1300);continue

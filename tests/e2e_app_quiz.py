@@ -22,7 +22,7 @@ with sync_playwright() as p:
         if k=='done':break
         if pg.locator('.shov').count():
             out[k+'_sheet']=pg.evaluate("document.querySelector('.shov').innerText");pg.tap('.shov #go');continue
-        if k=='tour':pg.tap('#sk');continue
+        if k in('welcome','tour'):pg.tap('#go');continue
         if k=='edate':
             pg.evaluate("document.querySelectorAll('.calg button:not([disabled])')[9].click()");pg.wait_for_timeout(400);pg.tap('#go');continue
         if k=='intro':pg.tap('.sex >> nth=%d'%sex);pg.wait_for_timeout(1300);continue
